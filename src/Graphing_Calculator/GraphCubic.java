@@ -1,6 +1,6 @@
 //to launch this menu option: create an instance of a graph object in the menu file
 package Graphing_Calculator;
-
+//Alex Hu-imported from the calculator project
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
@@ -34,7 +34,7 @@ public class GraphCubic extends JFrame {
     public static String d = null;
     public static String magX = null, magY = null, smoothness = null;
 
-    public GraphCubic () { //constructor
+    public GraphCubic () { //constructor for initializing labels and textboxes and add them to getcontentpane
         inputBox.setBounds(50, 140, 300, 40);
         inputBox2.setBounds(50, 140, 300, 40);
         inputBox3.setBounds(50, 140, 300, 40);
