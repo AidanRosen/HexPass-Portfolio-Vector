@@ -11,7 +11,6 @@ public class GraphPoly extends JFrame {
             try {
                 GraphPoly frame = new GraphPoly();
                 frame.setVisible(true);
-                System.out.println("test");
             } catch (Exception e) {
                 e.printStackTrace();
             }
