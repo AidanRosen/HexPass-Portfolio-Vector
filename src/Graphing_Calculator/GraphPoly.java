@@ -1,4 +1,5 @@
 package Graphing_Calculator;
+//ui: ask user for the coefficient and exponent value, then ask if they want another term after they finish entering
 
 import javax.swing.*;
 import java.awt.*;
