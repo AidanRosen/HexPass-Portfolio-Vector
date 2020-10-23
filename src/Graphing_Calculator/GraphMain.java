@@ -1,5 +1,5 @@
 package Graphing_Calculator;
-//todo: allow user to choose between cubic (done), more polynomial (expand to allow all polynomials: ask for coef and exponent; ask until user chooses graph, only provide approx solutions by checking in the 2d array where y = 50, y-int by pluggin in zero), exponential/root, log
+//Alex Hu
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
