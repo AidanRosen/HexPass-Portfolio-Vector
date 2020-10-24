@@ -43,10 +43,4 @@ This code was worked on by Aidan Rosen and Andrew Hale, and can all be found und
                 the team on track while also working on the project itself.  
                 
                 
-        Andrew Joseph:     
-                During this week I focused on my graphing calculator and while it doesn’t work I feel that I was able to get a decent portion 
-                of it done. I mainly focused on making sure that the “points”, which I will eventually use to create the graph, are calculated
-                 correctly. To do this I created two classes: Point and Separator. Point is a simple class as it acts as a setter that runs the calculate 
-                 method to calculate y through a recognizable format. It is the job of separator to make it recognizable, and it does so by iterating through
-                  the input and separating out the numbers and operators into arrays. These arrays are returned and used to calculate y, though like I previously 
-                  said it isn’t perfect yet. I plan to clean up the code, add an order of operations, and work on the UI next week. 
+        
