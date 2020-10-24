@@ -1,16 +1,21 @@
+package vector_calc;
+
 import java.util.*;
-//package vector_calc;
 // Created by Aidan <3 Rosen
 
 //When I push I need to put it into a folder called vector_calc
 //write package
 public class VectorCreate { //created by Aidan Rosen EXCEPT for the sqrt method, which was made by Andrew Joseph
 
+    //The below enum is for the trig functions for computing vector quantities
+    public enum TRIG {iHat, jHat, resultant, angle}
+    //named resultantV so that if we need to calculate the resultant VECTOR and to avoid namespace errors with the parameter
+    //Need functions for sin, cos, tan, and tanInv
 
     private double magnitude = 0;
     private double directionality = 0;
 
-    //cite them using VectorCreate.magnitude
+    //cite them using vector_calc.VectorCreate.magnitude
 
     public static double sqrt(double arg1) {//Created by Andrew Joseph
         double squareroot = arg1/2;
@@ -26,17 +31,39 @@ public class VectorCreate { //created by Aidan Rosen EXCEPT for the sqrt method,
 
     public VectorCreate (double verticalComponent, double horizComponent){
         this.directionality = Math.atan2(verticalComponent, horizComponent);
-        this.magnitude = sqrt((verticalComponent * verticalComponent) + (horizComponent * horizComponent));
+        System.out.println("\n\nThis is the value of the vertical component: " + String.valueOf(verticalComponent));
+        System.out.println("\n\nThis is the value of the horizontal component: " + String.valueOf(horizComponent));
+        double radical = (verticalComponent * verticalComponent) + (horizComponent * horizComponent);
+        this.magnitude = sqrt(radical);
 
 
 
     }
 
+    public double resultantMag(String property) {
 
-    //The below enum is for the trig functions for computing vector quantities
-    public enum TRIG {iHat, jHat, resultant, angle}
-    //named resultantV so that if we need to calculate the resultant VECTOR and to avoid namespace errors with the parameter
-    //Need functions for sin, cos, tan, and tanInv
+        double value = 0.0;
+        switch (property) {
+            case "magnitude":
+                value = 0 + this.magnitude;
+                System.out.println("This is the value of magnitude: " + String.valueOf(magnitude));
+
+            case "directionality":
+                value = this.directionality;
+
+        }
+
+        System.out.println("Before return: This is the value of value: " + String.valueOf(value));
+        return this.magnitude;
+    }
+
+    public double resultantDirec() {
+        return this.directionality;
+    }
+
+
+
+
 
 
     public static double vectorResolve (double  magnitude, double angle, TRIG component){
