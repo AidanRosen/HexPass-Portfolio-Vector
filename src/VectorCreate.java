@@ -4,7 +4,13 @@ import java.util.*;
 
 //When I push I need to put it into a folder called vector_calc
 //write package
-public class VectorCreate {
+public class VectorCreate { //created by Aidan Rosen EXCEPT for the sqrt method, which was made by Andrew Joseph
+
+
+    private double magnitude = 0;
+    private double directionality = 0;
+
+    //cite them using VectorCreate.magnitude
 
     public static double sqrt(double arg1) {//Created by Andrew Joseph
         double squareroot = arg1/2;
@@ -17,12 +23,6 @@ public class VectorCreate {
         while ((temp - squareroot) != 0);
         return squareroot;
     }//Added here so that it can be used for calculating resultant vector magnitude
-
-
-    private double magnitude = 0;
-    private double directionality = 0;
-
-    //cite them using VectorCreate.magnitude
 
     public VectorCreate (double verticalComponent, double horizComponent){
         this.directionality = Math.atan2(verticalComponent, horizComponent);
