@@ -41,7 +41,9 @@ public class VectorCreate { //created by Aidan Rosen EXCEPT for the sqrt method,
     }
 
     public double resultantMag(String property) {
-
+        //We are keeping the switch case in the event that the error with setting value
+        //to what is returned no longer causes issues
+        //previously, it returned a value that was not what we intended despite assigning it equal to this.magnitude or this.direction
         double value = 0.0;
         switch (property) {
             case "magnitude":
@@ -67,6 +69,7 @@ public class VectorCreate { //created by Aidan Rosen EXCEPT for the sqrt method,
 
 
     public static double vectorResolve (double  magnitude, double angle, TRIG component){
+        //This will be used in the future to get components from vectors that are typed in
         //This method RESOLVES vectors. It isn't for returning calculated vectors (resultants)
         double resultLeg = 0;
         switch(component)

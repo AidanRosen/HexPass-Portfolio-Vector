@@ -182,6 +182,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         textField_vert.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
+                //This code is for making sure the value updates after the key is pressed
                 if (e.getKeyCode()==KeyEvent.VK_ENTER){
                     saveValueOfArg1(textField_vert);
                 }
@@ -216,12 +217,14 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         button_create.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
+                //This code is for making sure arguments are consistent with what is typed in the text box
                 saveValueOfArg1(textField_horiz);
                 saveValueOfArg1(textField_vert);
                 button_create.setBackground(Color.WHITE);
             }
 
             public void mouseReleased(MouseEvent e) {
+                //This code is for making sure the value updates after the key is pressed
                 button_create.setBackground(Color.BLUE);
             }
         });
