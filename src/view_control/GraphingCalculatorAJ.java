@@ -1,4 +1,6 @@
-package View_Control;
+//Andrew Joseph
+//NOTE: not currently functional, kinks will be worked out in the future, basic layout is here for now.
+package view_control;
 
 import javax.swing.*;
 import javax.swing.border.MatteBorder;
@@ -15,12 +17,12 @@ public class GraphingCalculatorAJ extends JFrame {
     public static JTextField JBar = new JTextField();
     public static String input = new String();
     ArrayList<util.Point> Cords = new ArrayList<util.Point>();
-    /*char[] x;
-    char[] y;
+   //initializes textbars for further use
+   /*
+   ArrayList<util.Point> Cords = new ArrayList<util.Point>(); creates an array of the point to be later used
+    for graphing, though this isn't implemented yet
 */
-    //char[][] point = new char[][] {double x, OPERATOR, double y};
-
-    public static void main(String[] args) {
+    public static void main(String[] args) { //creates the window
         EventQueue.invokeLater(() -> {
             try {
                 GraphingCalculatorAJ frame = new GraphingCalculatorAJ();
@@ -31,9 +33,10 @@ public class GraphingCalculatorAJ extends JFrame {
         });
     }
 
+
     public GraphingCalculatorAJ() {
 
-
+//general UI stuff, setting up textbars and such
         getContentPane().setBackground(new Color(175, 238, 238));
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setBounds(100, 100, 418, 315);
@@ -67,16 +70,16 @@ public class GraphingCalculatorAJ extends JFrame {
             @Override
             public void mouseReleased(MouseEvent e) {
                 GCalculate.setBackground(new Color(236, 120, 20));
-
+                ;
             }
         });
 
         GCalculate.addActionListener(e -> {
 
             input = TBar.getText();
-
-            //   Convert(input);
+            //takes input from textbar and puts it into a String
             getPoints();
+            //runs point function to generate array of points
         });
         GCalculate.setBounds(35, 86, 75, 40);
         getContentPane().add(GCalculate);
@@ -85,9 +88,12 @@ public class GraphingCalculatorAJ extends JFrame {
     }
 
     public void getPoints() {
-        for (double x = 0; x < 1; x = x + 1) {
-            double y = 0;
+        for (double x = 0; x < 1; x = x + 1) { //setter code for now, will be replaced with more exact
+            // measurements later
+
+            double y = 0; //setter code for now
             util.Point nextPoint = new util.Point(x, y);
+            //generates Point objects through iteration
             Cords.add(nextPoint);
 
 
@@ -96,14 +102,7 @@ public class GraphingCalculatorAJ extends JFrame {
 
     }
 
-    /*public static void Convert(String in) {
-in.replaceAll("*"," MULTIPLY ");
-        in.replaceAll("/"," DIVIDE ");
-        in.replaceAll("^"," EXPONENT ");
 
-
-    }
-    */
 
 }
 

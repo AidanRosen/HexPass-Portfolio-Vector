@@ -2,7 +2,7 @@ package util;
 
 public class Math {
 
-    public static enum OPERATOR {NOOP, PLUS, MINUS, DIVIDE, MULTIPLY, SQUAREROOT}
+    public static enum OPERATOR {NOOP, PLUS, MINUS, DIVIDE, MULTIPLY, SQUARED, SQUAREROOT}
 
 
 
@@ -21,6 +21,9 @@ public class Math {
                 break;
             case MULTIPLY:
                 calcAnswer = arg1 * arg2;
+                break;
+            case SQUARED:
+                calcAnswer = arg1*arg1;
                 break;
             case SQUAREROOT:
                 calcAnswer = sqrt(arg1);
