@@ -42,5 +42,17 @@ This code was worked on by Aidan Rosen and Andrew Hale, and can all be found und
                 but I laid the groundwork to ensure its success. I deserve a 5/5 for working hard in communication and keeping 
                 the team on track while also working on the project itself.  
                 
+        Andrew Hale:
+                This week I learne how to use InteliJ, GitHub, and JFrame. I had a lot of prooblems in setting up Intelij
+                many of my files either wern't installed or in the wrong place. My scrum team really helped me out in fixing
+                these issues. They helped me get the correct SDK installed and also fix the issue with building the program.
+                I also learned how to push, pull, and commit with Git using InteliJ. The knowlage from last year's Computer
+                Scieince class definently helped me and I was able to help out other memebers of my scrum group who wern't
+                as familiar with GitHub. Lastly, I mainly worked on learning Java and JFrame. This week started out with
+                me using your calculator in order to learn how to edit JFrame buttons but by the end of the week I added
+                text fields. This included adding a new import and adding a new JFrame type. I believe I deserve a 5/5
+                this week becaouse of the amount of time I spent fixing issues with the program and working on our new
+                projects layout.
+                
                 
         
