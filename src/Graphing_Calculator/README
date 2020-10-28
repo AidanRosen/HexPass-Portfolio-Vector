@@ -7,3 +7,7 @@ Alex-this week I worked on making a main menu for the graphing calculator part o
 Atharva- This week I worked on making the text based UI for the calculator and Alex guided me on how to do so, since I have little experience with coding. Next week, I plan to contribute more to our portfolio and communicate strongly both in and out of the classroom (by using Zoom when necessary).
 Individual block of code: Calculator2-MVC--Alex-Atharva/mvc-idea/src/view_control/CalculatorTextUI.java 
 Self-grade: 4/5 because I could have probably communicated better this week and checked slack on a regular basis; I would only check after long periods of time, which made communication slightly harder for my teammates. I will make sure to improve on this for next week.
+
+Instructions for graphing calculator operation:
+Click on the option in the main menu for the type of equation that you would like to graph.
+Cubic graph can only graph up to cubic functions in the form ax^3 + bx^2 + cx + d and solves for x-intercept, y-intercept and vertex if possible.
