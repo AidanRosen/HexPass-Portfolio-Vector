@@ -1,5 +1,7 @@
 package Graphing_Calculator;
 //Alex Hu
+import Graphing_Calculator.Model_Files.*;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,6 +12,7 @@ public class GraphMain extends JFrame {
     JLabel options = new JLabel("1: Cubic    2: Polynomial    3: Trig    4: Exponent/Roots    5: Log/Ln");
     JTextField userInput = new JTextField(5);
     String choice = null;
+    public static JLabel[][] Graph = new JLabel[101][101]; //for the graph
 
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
