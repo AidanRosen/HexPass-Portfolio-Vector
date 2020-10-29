@@ -11,3 +11,4 @@ Self-grade: 4/5 because I could have probably communicated better this week and 
 Instructions for graphing calculator operation:
 Click on the option in the main menu for the type of equation that you would like to graph.
 Cubic graph can only graph up to cubic functions in the form ax^3 + bx^2 + cx + d and solves for x-intercept, y-intercept and vertex if possible.
+Smoothness refers to the horizontal distance between each coordinate that is shown in the graph. Smaller values mean a more connected line.
