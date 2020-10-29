@@ -61,67 +61,17 @@ public class GraphCubic extends GraphCubicControl { //I think this also extends 
 
     public void Graph(String a1, String b1, String c1, String d1, String magx1, String magy1, String smoothness1) {
 
-        try {
-            double numTest = (double)Integer.parseInt(a1);
-        } catch (NumberFormatException nfe) {
-            resetScreen();
-            prompt.setText("Please enter only numbers");
-            GraphCubic newGraphCubic1 = new GraphCubic(); //need to change
-            System.out.println("failed"); //change to rerun program
-        }
+        String[] inputs = {a1, b1, c1, d1, magx1, magy1, smoothness1};
 
-        try {
-            double numTest = (double)Integer.parseInt(b1);
-        } catch (NumberFormatException nfe) {
-            resetScreen();
-            prompt.setText("Please enter only numbers");
-            GraphCubic newGraphCubic1 = new GraphCubic();
-            System.out.println("failed");
-        }
-
-        try {
-            double numTest = (double)Integer.parseInt(c1);
-        } catch (NumberFormatException nfe) {
-            resetScreen();
-            prompt.setText("Please enter only numbers");
-            GraphCubic newGraphCubic1 = new GraphCubic();
-            System.out.println("failed");
-        }
-
-        try {
-            double numTest = (double)Integer.parseInt(d1);
-        } catch (NumberFormatException nfe) {
-            resetScreen();
-            prompt.setText("Please enter only numbers");
-            GraphCubic newGraphCubic1 = new GraphCubic();
-            System.out.println("failed");
-        }
-
-        try {
-            double numTest = (double)Integer.parseInt(magx1);
-        } catch (NumberFormatException nfe) {
-            resetScreen();
-            prompt.setText("Please enter only numbers");
-            GraphCubic newGraphCubic1 = new GraphCubic();
-            System.out.println("failed");
-        }
-
-        try {
-            double numTest = (double)Integer.parseInt(magy1);
-        } catch (NumberFormatException nfe) {
-            resetScreen();
-            prompt.setText("Please enter only numbers");
-            GraphCubic newGraphCubic1 = new GraphCubic();
-            System.out.println("failed");
-        }
-
-        try {
-            double numTest = (double)Integer.parseInt(smoothness1);
-        } catch (NumberFormatException nfe) {
-            resetScreen();
-            prompt.setText("Please enter only numbers");
-            GraphCubic newGraphCubic1 = new GraphCubic();
-            System.out.println("failed");
+        for (int i = 0; i < 6; i++) {
+            try {
+                double numTest = (double)Integer.parseInt(inputs[i]); //to avoid 7 for loops
+            } catch (NumberFormatException nfe) {
+                resetScreen();
+                prompt.setText("Please enter only numbers");
+                GraphCubic newGraphCubic1 = new GraphCubic(); //need to change
+                System.out.println("failed"); //change to rerun program
+            }
         }
 
         double sola, solb, vertexX;
