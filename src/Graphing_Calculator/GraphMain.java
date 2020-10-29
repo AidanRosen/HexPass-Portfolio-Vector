@@ -1,7 +1,7 @@
 package Graphing_Calculator;
 //Alex Hu
 import Graphing_Calculator.Model_Files.*;
-
+//Anytime you need to access a variable or method from a class outside your package, you must import package_name.class_name
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -17,7 +17,7 @@ public class GraphMain extends JFrame {
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
             try {
-                GraphMain frame = new GraphMain();
+                GraphMain frame = new GraphMain(); //this creates a new jframe window becuase this class extends JFrame and is therefore a subclass of JFrame; this calls the constructor of this class and whenever a class' constructor is called, all its parent class' contructors are also called. The constructor for the parent class JFrame is to just create a new JFrame window. Interestingly this doesn't seem to create a new JFrame if an object of this class is created from a different class;=
                 frame.setVisible(true);
             } catch (Exception e) {
                 e.printStackTrace();
