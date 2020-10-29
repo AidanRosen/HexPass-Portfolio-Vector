@@ -119,17 +119,25 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         calcArea.setForeground(Color.WHITE);
         calcArea.setFont(new Font("Lucida Grande", Font.PLAIN, 72));
         calcArea.setHorizontalAlignment(SwingConstants.RIGHT);
-        calcArea.setBounds(18, 6, 377, 67);
+        calcArea.setBounds(18, 36, 377, 67);
         getContentPane().add(calcArea);
 
 
-
+        //label for organization
+        JLabel label1 = new JLabel("Horizontal Component");
+        label1.setText("Horizontal Component");
+        label1.setOpaque(true);
+        label1.setForeground(Color.WHITE);
+        label1.setFont(new Font("Lucida Grande", Font.BOLD, 12));
+        label1.setBackground(new Color(247, 220, 180));
+        label1.setBounds(169, 105, 130, 15);
+        getContentPane().add(label1);
 
 
         textField_horiz.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
-                textField_horiz.setText("0.0"); textField_horiz.setBackground(Color.BLUE);
+                textField_horiz.setBackground(Color.BLUE);
                 System.out.println("After mouse press: this is the value of Arg1" + String.valueOf(arg1));
             }
 
@@ -141,7 +149,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
 
         });
 
-
+        textField_horiz.setText("1.0");
         textField_horiz.setBorder(new MatteBorder(4, 4, 4, 4, Color.WHITE));
         textField_horiz.setOpaque(true);
         textField_horiz.setForeground(Color.WHITE);
@@ -152,18 +160,26 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         * - Aidan
         *
         * */
-        textField_horiz.setBounds(165, 86, 130, 100);
+        textField_horiz.setBounds(165, 126, 130, 100);
         //Error fixed: wrong x location
         getContentPane().add(textField_horiz);
 
 
-
+        //label for organization
+        JLabel label2 = new JLabel("Vertical Component");
+        label2.setText("Vertical Component");
+        label2.setOpaque(true);
+        label2.setForeground(Color.WHITE);
+        label2.setFont(new Font("Lucida Grande", Font.BOLD, 12));
+        label2.setBackground(new Color(247, 220, 180));
+        label2.setBounds(35, 105, 130, 15);
+        getContentPane().add(label2);
 
 
         textField_vert.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
-                textField_vert.setText("0.0");textField_vert.setBackground(Color.BLUE);
+                textField_vert.setBackground(Color.BLUE);
             }
 
             @Override
@@ -172,6 +188,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
             }
         });
 
+        textField_vert.setText("1.0");
         textField_vert.setBorder(new MatteBorder(4, 4, 4, 4, Color.WHITE));
         textField_vert.setOpaque(true);
         textField_vert.setForeground(Color.WHITE);
@@ -183,7 +200,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         *
         *
         * */
-        textField_vert.setBounds(35, 86, 115, 100);
+        textField_vert.setBounds(35, 126, 130, 100);
         getContentPane().add(textField_vert);
 
 
@@ -226,7 +243,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         direction.setForeground(Color.WHITE);
         direction.setBorder(new MatteBorder(4, 4, 4, 4,new Color(61, 237, 151)));
         direction.setBackground(new Color(61, 237, 151));
-        direction.setBounds(60, 242, 250, 100);
+        direction.setBounds(35, 242, 260, 100);
         getContentPane().add(direction);
 
 
@@ -250,7 +267,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         button_clear.setForeground(Color.BLACK);
         button_clear.setBorder(new MatteBorder(4, 4, 4, 4, Color.WHITE));
         button_clear.setBackground(new Color(221, 160, 221));
-        button_clear.setBounds(327, 85, 75, 40);
+        button_clear.setBounds(327, 126, 75, 40);
         getContentPane().add(button_clear);
 
 
