@@ -16,6 +16,9 @@ import vector_calc.VectorCreate.TRIG;
 public class VectorCalculatorUI extends JFrame { //From Andrew Hale
     private final JLabel calcArea = new JLabel("");
     private final JLabel direction = new JLabel("");
+    private JTextField textField_horiz = new JTextField("Type the magnitude of the Horizontal Component", 20);
+    private JTextField textField_vert = new JTextField("Type the magnitude of the Vertical Component", 20);
+//You MUST move these text fields to here so that they can be accessed throughout the whole file instead of getting an "unknown symbol" error
 
     private boolean initialCalcAreaInputState;
     private enum STATE { INITIAL, SAVE1, SAVE2, CALC }
@@ -99,8 +102,11 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         calcArea.setText(calcAreaDefault);
         mathState = STATE.INITIAL;
         initialCalcAreaInputState = true;
-        arg1 = 55;
-        arg2 = 55;
+        arg1 = 0.0;
+        arg2 = 0.0;
+        saveValueOfArg1(textField_horiz);
+        saveValueOfArg2(textField_horiz);
+        direction.setText("BLANK degrees out of 360");
         calcAnswer = 0.0;
     }
 
@@ -119,11 +125,11 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
 
 
 
-        JTextField textField_horiz = new JTextField("Type the magnitude of the Horizontal Component", 20);
+
         textField_horiz.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
-                textField_horiz.setText("1"); textField_horiz.setBackground(Color.BLUE);
+                textField_horiz.setText("0.0"); textField_horiz.setBackground(Color.BLUE);
                 System.out.println("After mouse press: this is the value of Arg1" + String.valueOf(arg1));
             }
 
@@ -134,20 +140,6 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
             }
 
         });
-
-        textField_horiz.addKeyListener(new KeyAdapter() {
-            @Override
-            public void keyPressed(KeyEvent e) {
-                if (e.getKeyCode()==KeyEvent.VK_ENTER){
-                    System.out.println("\n\nThis is the value of horizontal arg2 after pressing enter" + String.valueOf(arg2));
-                    saveValueOfArg2(textField_horiz);
-                }
-                //System.out.println("\n\nThis is the value of horizontal arg2 after NOT pressing enter" + String.valueOf(arg2));
-                saveValueOfArg2(textField_horiz);
-                super.keyPressed(e);
-            }
-        });
-
 
 
         textField_horiz.setBorder(new MatteBorder(4, 4, 4, 4, Color.WHITE));
@@ -167,27 +159,16 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
 
 
 
-        JTextField textField_vert = new JTextField("Type the magnitude of the Vertical Component", 20);
+
         textField_vert.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
-                textField_vert.setText("1");textField_vert.setBackground(Color.BLUE);
+                textField_vert.setText("0.0");textField_vert.setBackground(Color.BLUE);
             }
 
             @Override
             public void mouseReleased(MouseEvent e) {
                  textField_vert.setBackground(Color.BLUE);
-            }
-        });
-        textField_vert.addKeyListener(new KeyAdapter() {
-            @Override
-            public void keyPressed(KeyEvent e) {
-                //This code is for making sure the value updates after the key is pressed
-                if (e.getKeyCode()==KeyEvent.VK_ENTER){
-                    saveValueOfArg1(textField_vert);
-                }
-                saveValueOfArg1(textField_vert);
-                super.keyPressed(e);
             }
         });
 
@@ -212,14 +193,14 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
 
 
 
-        // Create Vector Button
+        // Create Vector Button. Calculates magnitude and direction
         JButton button_create = new JButton("Click me to get \n the magnitude of \nthe vector");
         button_create.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
                 //This code is for making sure arguments are consistent with what is typed in the text box
-                saveValueOfArg1(textField_horiz);
                 saveValueOfArg1(textField_vert);
+                saveValueOfArg2(textField_horiz);
                 button_create.setBackground(Color.WHITE);
             }
 
