@@ -64,8 +64,8 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         //VectorDraw vector = new VectorDraw();
         //vector.vectorPaint(35,500, calcAnswer, resultant.resultantDirec()); Filled in parameters for later
 
+        VectorDraw drawnVector = new VectorDraw(calcAnswer, resultant.resultantDirec());
 
-        //this.paint(null);
 
         JLabel test = new JLabel();
         test.setOpaque(true);
