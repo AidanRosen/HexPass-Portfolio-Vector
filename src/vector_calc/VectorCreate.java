@@ -31,6 +31,7 @@ public class VectorCreate { //created by Aidan Rosen EXCEPT for the sqrt method,
 
     public VectorCreate (double verticalComponent, double horizComponent){
         this.directionality = Math.atan2(verticalComponent, horizComponent);
+        this.directionality = (this.directionality * 180) /  Math.PI;
         System.out.println("\n\nThis is the value of the vertical component: " + String.valueOf(verticalComponent));
         System.out.println("\n\nThis is the value of the horizontal component: " + String.valueOf(horizComponent));
         double radical = (verticalComponent * verticalComponent) + (horizComponent * horizComponent);
