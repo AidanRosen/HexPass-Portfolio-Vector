@@ -11,26 +11,22 @@ import javax.swing.JButton;
 import java.awt.event.*;
 import javax.swing.border.MatteBorder;
 
-import vector_calc.VectorCreate.TRIG;
 
 public class VectorCalculatorUI extends JFrame { //From Andrew Hale
     private final JLabel calcArea = new JLabel("");
     private final JLabel direction = new JLabel("");
-    private JTextField textField_horiz = new JTextField("Type the magnitude of the Horizontal Component", 20);
-    private JTextField textField_vert = new JTextField("Type the magnitude of the Vertical Component", 20);
+    private final JTextField textField_horiz = new JTextField("Type the magnitude of the Horizontal Component", 20);
+    private final JTextField textField_vert = new JTextField("Type the magnitude of the Vertical Component", 20);
 //You MUST move these text fields to here so that they can be accessed throughout the whole file instead of getting an "unknown symbol" error
 
-    private boolean initialCalcAreaInputState;
+
     private enum STATE { INITIAL, SAVE1, SAVE2, CALC }
 
     private STATE mathState;
 
     // calculator values
-    private TRIG mathOp;
     private double arg1;
     private double arg2;
-    private double verticalComponent;
-    private double horinzComponet;
     private double calcAnswer;
     /**
      * Launch the application.
@@ -48,30 +44,20 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
 
     private void calculateAnswer()  // method to perform calculation
     {
-        System.out.println("This is the value of arg1:" + String.valueOf(arg1));
-        System.out.println("\nThis is the value of arg1:" + String.valueOf(arg1));
+        System.out.println("This is the value of arg1:" + arg1);
+        System.out.println("\nThis is the value of arg1:" + arg1);
         VectorCreate resultant = new VectorCreate(arg1, arg2);
         calcAnswer = resultant.resultantMag("magnitude");
         String degrees = String.valueOf(resultant.resultantDirec());
-        System.out.println("\n\nThis is the value of resultant.resultant " + String.valueOf(resultant.resultantMag("magnitude")));
-        System.out.println("\n\n CalcAnswer value: " + String.valueOf(calcAnswer));
+        System.out.println("\n\nThis is the value of resultant.resultant " + resultant.resultantMag("magnitude"));
+        System.out.println("\n\n CalcAnswer value: " + calcAnswer);
         calcArea.setText(String.valueOf(calcAnswer));
-        direction.setText(degrees + " \ndegrees out of 360");
+        direction.setText(degrees + " \nRADIANS");
         arg1 = Double.parseDouble(calcArea.getText());
         mathState = STATE.CALC;
-        initialCalcAreaInputState = true;
     }
 
-    /*
-    private void updateCalcArea(String string) {
-        if (initialCalcAreaInputState) {  // sets text to string on initial key typed
-            calcArea.setText(string);
-            initialCalcAreaInputState = false;
-        } else  {                         // concatenates string to end of text subsequent keys typed
-            calcArea.setText(calcArea.getText() + string);
-        }
-    }
-*/ //Commenting out because this vector calculator works too differently from the previous one to be involved in updating
+//removed UpdateCalcArea because this vector calculator works too differently from the previous one to be involved in updating
     //the calc area
     /**
      * Save values for Calculator.
@@ -79,49 +65,53 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
     private void saveValueOfArg1(JTextField textfield) { // method to store 1st value in calculation (arg1)
         arg1 = Double.parseDouble((textfield.getText()));
         mathState = STATE.SAVE1;
-        initialCalcAreaInputState = true;
+
     }
 
     private void saveValueOfArg2(JTextField textfield) { // method to store 2nd value in calculation (arg2)
         if (mathState != STATE.CALC) {
             arg2 = Double.parseDouble((textfield.getText()));
             mathState = STATE.SAVE2;
-            initialCalcAreaInputState = true;
+
         }
     }
 
 
-
-    private void saveValueOfMathOp(TRIG op) { // method to store operator
-        mathOp = op;
-    }
 
     private void clearCalculator() {  // helper method to clear and update calculator to default
         // calculator control
         String calcAreaDefault = "0.0";
         calcArea.setText(calcAreaDefault);
         mathState = STATE.INITIAL;
-        initialCalcAreaInputState = true;
+
         arg1 = 0.0;
         arg2 = 0.0;
         saveValueOfArg1(textField_horiz);
         saveValueOfArg2(textField_horiz);
-        direction.setText("BLANK degrees out of 360");
+        direction.setText("BLANK Radians");
         calcAnswer = 0.0;
     }
 
     public VectorCalculatorUI() {
         System.out.println("Calculating answer...");
-        getContentPane().setBackground(new Color(247, 220, 180));
+        getContentPane().setBackground(new Color(252, 209, 42));
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setBounds(100, 100, 500, 500);
         getContentPane().setLayout(null);
         calcArea.setForeground(Color.WHITE);
-        calcArea.setFont(new Font("Lucida Grande", Font.PLAIN, 72));
+        calcArea.setFont(new Font("Lucida Grande", Font.PLAIN, 45));
         calcArea.setHorizontalAlignment(SwingConstants.RIGHT);
         calcArea.setBounds(18, 36, 377, 67);
         getContentPane().add(calcArea);
 
+        //Label to show where magnitude is presented
+        JLabel magLabel = new JLabel("Magnitude:");
+        magLabel.setOpaque(true);
+        magLabel.setForeground(Color.WHITE);
+        magLabel.setFont(new Font("Lucida Grande", Font.BOLD, 12));
+        magLabel.setBackground(new Color(247, 220, 180));
+        magLabel.setBounds(18, 26, 130, 15);
+        getContentPane().add(magLabel);
 
         //label for organization
         JLabel label1 = new JLabel("Horizontal Component");
@@ -138,7 +128,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
             @Override
             public void mousePressed(MouseEvent e) {
                 textField_horiz.setBackground(Color.BLUE);
-                System.out.println("After mouse press: this is the value of Arg1" + String.valueOf(arg1));
+                System.out.println("After mouse press: this is the value of Arg1" + arg1);
             }
 
 
@@ -243,10 +233,18 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         direction.setForeground(Color.WHITE);
         direction.setBorder(new MatteBorder(4, 4, 4, 4,new Color(61, 237, 151)));
         direction.setBackground(new Color(61, 237, 151));
-        direction.setBounds(35, 242, 260, 100);
+        direction.setBounds(35, 242, 260, 30);
         getContentPane().add(direction);
 
-
+        //Label to show where directionality is presented
+        JLabel dirLabel = new JLabel("Directionality ^^^^");
+        dirLabel.setOpaque(true);
+        dirLabel.setForeground(Color.WHITE);
+        dirLabel.setFont(new Font("Lucida Grande", Font.BOLD, 12));
+        dirLabel.setBackground(Color.GREEN);
+        dirLabel.setBounds(35, 280, 130, 15);
+        //Must place in y=350 because the button fpr direction is so large
+        getContentPane().add(dirLabel);
 
 
 
@@ -264,17 +262,13 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         });
         button_clear.addActionListener(e -> clearCalculator());
         button_clear.setOpaque(true);
-        button_clear.setForeground(Color.BLACK);
+        button_clear.setForeground(Color.WHITE);
         button_clear.setBorder(new MatteBorder(4, 4, 4, 4, Color.WHITE));
         button_clear.setBackground(new Color(221, 160, 221));
         button_clear.setBounds(327, 126, 75, 40);
         getContentPane().add(button_clear);
 
 
-
-        JLabel lblElliesCalculator = new JLabel("Sample Calculator -- design by Ellie");
-        lblElliesCalculator.setBounds(6, 6, 134, 16);
-        getContentPane().add(lblElliesCalculator);
 
     }
 

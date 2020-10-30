@@ -78,7 +78,7 @@ public class centralMenu extends JFrame { //created by Aidan <3 Rosen
         menuBar.add(vectorCalculator); //you MUST still add the actual menu item!
 
         //Add Andrew Josephs menu to the menu bar. This is what contains a submenu
-        JMenu graphingCalculator = new JMenu("Andrew Joseph's Graphing Calculator");
+        JMenu graphingCalculator = new JMenu("Graphing Calculator Projects");
         menuBar.add(graphingCalculator); //you MUST still add the actual menu item!
 
         //first JMenu item under the
