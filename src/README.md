@@ -77,7 +77,27 @@ Some of our goals this week included completeing the UI, figuring out how to cre
 
 # Andrew Joseph
 
-# Andrew Hale
+# Andrew Hale:
+
+Here is the link to the VectorCalculatorUI code. I am linking the entire .java file because I created it: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java
+
+The first goal I met this week was cleaning up the menu and fixing bugs.
+    
+    Achived this by adding labels in order for the user experience to be more obvious on what you are inputting. Before, when the user clicked on the text-box, the title for it dissapeared. By using a label above, the user clearly knows which value they are inputting.
+    
+Here is the link to ONE of the lines where this label is created: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L134
+    
+    I also fixed the 0/0 issue when the "Create" button was pressed. I did this by creating an inital number already inputted into the system for both the Horizontal and Vertical component.
+    
+Here is the link to ONE of the lines where I fixed this issue: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L159
+    
+    Throughout all this I fixed the spacing and overlapping buttons on the VectorCalculatorUI.
+    
+Another one of my goals was to create a vector line. We technically met this goal.
+
+     Althought we said only magnitude, we were determined to make a correct vector line. Aidan worked very hard on creating this line but I didn't get the time to create the arrow at the end of it. I am dissapointed that i could not achieve this goal.
+     
+ ***Grade 
 
  <br /> <br />
 # ##########Links to Journals################
