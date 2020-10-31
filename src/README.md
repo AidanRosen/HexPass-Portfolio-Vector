@@ -100,11 +100,15 @@ The first goal I met this week was cleaning up the menu and fixing bugs.
     
     Achived this by adding labels in order for the user experience to be more obvious on what you are inputting. Before, when the user clicked on the text-box, the title for it dissapeared. By using a label above, the user clearly knows which value they are inputting.
     
-Here is the link to ONE of the lines where this label is created: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L134
-    
+Here is the link to the first of 8 lines where the Horizontal label is created: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L134
+
+Here is the link to the first of 8 lines where the Vertical label is created: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L176  
+
     I also fixed the 0/0 issue when the "Create" button was pressed. I did this by creating an inital number already inputted into the system for both the Horizontal and Vertical component.
     
-Here is the link to ONE of the lines where I fixed this issue: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L159
+Here is the link to the line where I fixed this issue for the horizontal component: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L159
+
+Here is the link to the line where I fixed this issue for the vertical component: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L198
     
     Throughout all this I fixed the spacing and overlapping buttons on the VectorCalculatorUI.
     
