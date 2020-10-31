@@ -71,7 +71,9 @@ Some of our goals this week included completeing the UI, figuring out how to cre
     
     Although we did not get around to creating a new graph option, I was able to convert the code to mvc format. I also worked on creating logic guidelines for Atharva as he has never done Java before this class and I think it should be more important for him to practice writing code right now rather than figuring out logic and program flow.
     
-***Grade: 5/5. Contributed heavily to the graphing calculator code.
+Self-grade: 24/25. I feel like I definitely contributed enough to the project, but maybe I could have prioritized the frameworks so that Atharva can start earlier with his work.
+    
+***Grade: 
 
 # Atharva:
 
