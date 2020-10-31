@@ -71,9 +71,8 @@ Some of our goals this week included completeing the UI, figuring out how to cre
     
     Although we did not get around to creating a new graph option, I was able to convert the code to mvc format. I also worked on creating logic guidelines for Atharva as he has never done Java before this class and I think it should be more important for him to practice writing code right now rather than figuring out logic and program flow.
     
-Self-grade: 19/20. I feel like I definitely contributed enough to the project, but maybe I could have prioritized the frameworks so that Atharva can start earlier with his work.
-    
-***Grade: 5/5. Contributed heavily to graphing calculator code and met goals.
+
+***Grade: 5/5. Converted to MVC format which is impressive since we didn't have BlueJ. 
 
 # Atharva:
 
@@ -83,9 +82,7 @@ This week I met my goals by working with Alex to finalize the text-based UI and 
 
 Since I am less experienced, Alex was able to help me with both the UI and making more graphing options by making a framework of logic for me to go off of. I took heed of this logic and understood what my code was doing.
 
-Self Grade: 19/20. I feel like I was quite productive in terms of writing code. I worked extremely well this week; we are very communcative on Slack as well as on iMessage. We ask each other questions if we need clarifications, and I definitely improved on effective communication from last week.
-
-***Grade: 
+***Grade: 4.5/5 Didn't talk very much during meetings so I don't know how he collaborated with Alex, but he seemingly accomplished a lot. 
 
 
 
@@ -113,7 +110,7 @@ Another one of my goals was to create a vector line. We technically met this goa
 
      Althought we said only magnitude, we were determined to make a correct vector line. Aidan worked very hard on creating this line but I didn't get the time to create the arrow at the end of it. I am dissapointed that I could not achieve this goal.
      
- ***Grade:
+ ***Grade: 5/5 Always wanted to work, even when his assignment was done. Contributed well to the vector files 
 
  <br /> <br />
 # ##########Links to Journals################
