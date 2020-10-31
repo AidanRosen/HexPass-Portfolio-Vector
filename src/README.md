@@ -13,7 +13,7 @@
 
 NOTE: please be realistic with values because this vector calculator also creates a calculator measured in pixels,
 so please use an appropriate number of pixels! (I.e don't type in "5", because that is too small to see, or "2000", because that is too large)
-
+<br /> <br />
  
 
 NOTES and future work: 
@@ -41,6 +41,7 @@ NOTES and future work:
 # %%%%%%Links to Code + Goals Met
 
 NOTE: Scrum Master Grades are marked with a ***
+<br /> 
 NOTE: Pair grades are marked with a !!!
 
 # Aidan:
