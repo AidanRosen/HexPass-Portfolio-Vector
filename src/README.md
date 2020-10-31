@@ -42,7 +42,7 @@ NOTES and future work:
 
 NOTE: Scrum Master Grades are marked with a ***
 <br /> 
-NOTE: Pair grades are marked with a !!!
+NOTE: Pair/Trio grades are marked with a !!!
 
 # Aidan:
    
