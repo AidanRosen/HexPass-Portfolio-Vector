@@ -1,4 +1,4 @@
-How to run VectorCalculatorUI
+#How to run VectorCalculatorUI
 
 1.Upon running the application, click at the top right of the menu on "VectorCalculator". A new window will open with the 
 
