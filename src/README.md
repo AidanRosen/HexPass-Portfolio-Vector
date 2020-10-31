@@ -40,7 +40,8 @@ NOTES and future work:
 
 # %%%%%%Links to Code + Goals Met
 
-NOTE: Grades are marked with a ***
+NOTE: Scrum Master Grades are marked with a ***
+NOTE: Pair grades are marked with a !!!
 
 # Aidan:
    
@@ -111,6 +112,9 @@ Another one of my goals was to create a vector line. We technically met this goa
      Althought we said only magnitude, we were determined to make a correct vector line. Aidan worked very hard on creating this line but I didn't get the time to create the arrow at the end of it. I am dissapointed that I could not achieve this goal.
      
  ***Grade: 5/5 Always wanted to work, even when his assignment was done. Contributed well to the vector files 
+ 
+ # Aidan, Andrew Hale, Andrew Joseph 
+ !!! 19/20 I didn't get to all the goals, namely drawing a vector with an arrowhead. However, Andrew and I worked extensively on the vector code and learned a lot about creating new JFrame elements (Andrew Hale learned more about adding text and polygon drawing) while I worked really hard on drawing rectangles and learning a lot about imported graphics. Much of our learning went into the journal, including Andrew Josephs. Andrew Joseph definitely contributed to keeeping on track, adding what he was working on to the journal, and producing content for the main project. 
 
  <br /> <br />
 # ##########Links to Journals################
