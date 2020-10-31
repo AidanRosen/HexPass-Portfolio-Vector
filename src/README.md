@@ -59,6 +59,20 @@ Here is the link to the line where the bug about having to press enter twice was
 
 ***Grade: 5/5. Worked hard with keeping everyone on track, goals set. Worked hard individually on menu code and drawing code 
 
+# Alex: 
+
+Here is the link to the graphing calculator section of the portfolio project that I worked on: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/tree/master/src/Graphing_Calculator
+
+Some of our gorals this week included completeing the UI, figuring out how to create a new JFrame window post-frame creation, and create new graph options.
+
+    I completed the UI for the main menu of the graphing calculator.
+    
+    I also figured out how to create more JFrames: create a new class extending JFrame, and call that class' contructor which will automatically call JFrame's constructor as well and create a new JFrame. This was implemented in the Graphing Calculator UI file which creates a new Frame to display the graph.
+    
+    Although we did not get around to creating a new graph option, I was able to convert the code to mvc format. I also worked on creating logic guidelines for Atharva as he has never done Java before this class and I think it should be more important for him to practice writing code right now rather than figuring out logic and program flow.
+    
+***Grade: 5/5. Contributed heavily to the graphing calculator code.
+
  <br /> <br />
 # ##########Links to Journals################
 
@@ -69,7 +83,8 @@ Atharva, Alex: https://docs.google.com/document/d/10XEXkkcqk-_1BDuC3DMJvTe5CAeD7
 
  <br /> <br /> <br /> <br />
 +++++++++++++++++++++++++++++++++++++++++
-OLD, week of 10/19 
+
+# OLD, week of 10/19 
 
 Notes for the future:
     Next week, we must create a main menu. Per the project plan, it will begin in the terminal then go into the menu. 
