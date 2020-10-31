@@ -26,9 +26,9 @@ NOTES and future work:
 TOBEFILLEDOUTBYANDREWJOSEPHATHARVAANDALEX
 
 
+ <br /> <br /> <br />
 
-
-# %%%%%%%%%%%%%%%%%Links to code + Goals met%%%%%%%%%%%%%%%%%%%%
+# %%%%%%Links to code + Goals met
 
 NOTE: Grades are marked with a ***
 
