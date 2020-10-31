@@ -5,6 +5,7 @@ package Graphing_Calculator.Model_Files;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.lang.Math.*; //for trig functions
 
 import Graphing_Calculator.Control_Files.GraphTrigControl;
 import Graphing_Calculator.GraphMain; //allows for calling of GraphMain. methods, which is outside the package Model_Files and therefore cannot be called without being imported

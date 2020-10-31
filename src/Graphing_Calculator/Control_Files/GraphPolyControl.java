@@ -8,4 +8,8 @@ import java.awt.event.*;
 
 //control files are for user input
 public class GraphPolyControl extends GraphPoly {
+    //methods needed: saveValueOfMagX() { GraphPoly.magX = magXInput.getText() } //also need trycatch to check if number and if loop to check if within range
+    //saveValueOfMagY
+    //saveValueOfSmooth
+    //enterNextActionListener which creates actionlistener for enter next button; only reset inputboxes if both of them are filled out
 }
