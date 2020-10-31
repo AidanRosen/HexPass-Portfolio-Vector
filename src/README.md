@@ -38,7 +38,7 @@ NOTES and future work:
 
  <br /> <br /> <br />
 
-# %%%%%%Links to code + Goals met
+# %%%%%%Links to Code + Goals Met
 
 NOTE: Grades are marked with a ***
 
@@ -63,7 +63,7 @@ Here is the link to the line where the bug about having to press enter twice was
 
 Here is the link to the graphing calculator section of the portfolio project that I worked on: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/tree/master/src/Graphing_Calculator
 
-Some of our gorals this week included completeing the UI, figuring out how to create a new JFrame window post-frame creation, and create new graph options.
+Some of our goals this week included completeing the UI, figuring out how to create a new JFrame window post-frame creation, and create new graph options.
 
     I completed the UI for the main menu of the graphing calculator.
     
@@ -72,6 +72,12 @@ Some of our gorals this week included completeing the UI, figuring out how to cr
     Although we did not get around to creating a new graph option, I was able to convert the code to mvc format. I also worked on creating logic guidelines for Atharva as he has never done Java before this class and I think it should be more important for him to practice writing code right now rather than figuring out logic and program flow.
     
 ***Grade: 5/5. Contributed heavily to the graphing calculator code.
+
+# Atharva:
+
+# Andrew Joseph
+
+# Andrew Hale
 
  <br /> <br />
 # ##########Links to Journals################
@@ -167,7 +173,7 @@ that I feel are more minor than major, 1 point seems
 like an appropriate deduction for these slight mistakes.
 
 
-Readme justifications (Week 7) for Alex and Atharva:
+Readme Justifications (Week 7) for Alex and Atharva:
 
 Alex-this week I worked on making a main menu for the graphing calculator part of the main project. I also worked on splitting Mr. M's calculator code into mvc for Calculator 2, and I guided Atharva to make a text-based Calculator UI for Calculator 2 (link to calculator 2: https://github.com/AlexH04/Calculator2-MVC--Alex-Atharva). Next ween I plan to organize the main project as mvc now that I have more experience with how it works.
   Individual block of code: src/Graphing_Calculator/GraphCubic was imported from the previous calculator project and src/Graphing_Calculator/GraphMain was coded my me this week.
