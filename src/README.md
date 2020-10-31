@@ -108,7 +108,7 @@ I did get a signifigant part of it done; I will complete this over the weekend, 
 
 
 
-***Grade: 
+***Grade: 4.5/5 Stayed focused and contributed often. However, there was frustration with not getting README finished earlier and a bit of trouble with commits. 
 
 # Andrew Hale:
 
