@@ -77,11 +77,21 @@ Self-grade: 19/20. I feel like I definitely contributed enough to the project, b
 
 # Atharva:
 
-Link to what I worked on: https://github.com/athkud123/HexPass-Portfolio-Vector/blob/master/src/Graphing_Calculator/GraphPoly.java
+Link to what I worked on: https://github.com/AlexH04/Calculator2-MVC--Alex-Atharva/blob/main/mvc-idea/src/view_control/CalculatorTextUI.java and https://github.com/athkud123/HexPass-Portfolio-Vector/blob/master/src/Graphing_Calculator/GraphPoly.java
+
+This week I met my goals by working with Alex to finalize the text-based UI and we also began focusing on GraphPoly code within our graphing calculator. I started to become more familliar with Github, IntelliJ, and JFrame after having more experience with them; I still have stuff to learn, but my work has become more efficient from last week.
+
+Since I am less experienced, Alex was able to help me with both the UI and making more graphing options by making a framework of logic for me to go off of. I took heed of this logic and understood what my code was doing.
+
+Self Grade: 19/20. I feel like I was quite productive in terms of writing code. I worked extremely well this week; we are very communcative on Slack as well as on iMessage. We ask each other questions if we need clarifications, and I definitely improved on effective communication from last week.
+
+***Grade: 
 
 
 
 # Andrew Joseph
+
+***Grade:
 
 # Andrew Hale:
 
@@ -91,15 +101,11 @@ The first goal I met this week was cleaning up the menu and fixing bugs.
     
     Achived this by adding labels in order for the user experience to be more obvious on what you are inputting. Before, when the user clicked on the text-box, the title for it dissapeared. By using a label above, the user clearly knows which value they are inputting.
     
-Here is the link to the first of 8 lines where the Horizontal label is created: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L134
-
-Here is the link to the first of 8 lines where the Vertical label is created: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L176
+Here is the link to ONE of the lines where this label is created: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L134
     
     I also fixed the 0/0 issue when the "Create" button was pressed. I did this by creating an inital number already inputted into the system for both the Horizontal and Vertical component.
     
-Here is the link to the line where I fixed this issue for the horizontal component: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L159
-
-Here is the link to the line where I fixed this issue for the vertical component: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L198
+Here is the link to ONE of the lines where I fixed this issue: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L159
     
     Throughout all this I fixed the spacing and overlapping buttons on the VectorCalculatorUI.
     
@@ -107,7 +113,7 @@ Another one of my goals was to create a vector line. We technically met this goa
 
      Althought we said only magnitude, we were determined to make a correct vector line. Aidan worked very hard on creating this line but I didn't get the time to create the arrow at the end of it. I am dissapointed that I could not achieve this goal.
      
- ***Grade 
+ ***Grade:
 
  <br /> <br />
 # ##########Links to Journals################
