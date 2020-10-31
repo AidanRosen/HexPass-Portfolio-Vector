@@ -15,6 +15,7 @@ End the program by exiting all windows and pressing stop
 NOTES and future work: 
     Add an arrow head to the drawn vector
     Cause the drawn vector to rotate according to the angle input into the calculator
+    Add old terminal project to portfolio
 
 How to run graphing calculator
 
@@ -23,6 +24,27 @@ Please change the configuration to GraphMain, then press run
 
 
 
+%%%%%%%%%%%%%%%%%Links to code + Goals met%%%%%%%%%%%%%%%%%%%%
+
+NOTE: Grades are marked with a ***
+
+Aidan:
+    Here is the link to my menu code, and the whole file is linked because I built it all: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/centralMenu.java
+        One of our goals this week was to build a JFrame menu (in our project plan, not the Slack message sent). This was completed and done with both menu buttons and menuItem buttons 
+        
+    Here is the link to my JFrame draw code, whole file linked because I built it all: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorDraw.java
+        Another goal was to actually render a shape based on the calculated magnitude. This was achieved with the above code. 
+        
+    Here is the link to the line where the bug about having to press enter twice was fixed: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/a75d771e4fb7696ac2c3416842405e865760e910/src/vector_calc/VectorCalculatorUI.java#L224
+    By changing the "SaveValueArg1" and "SaveValueArg2"calls from being after typing to just when the button to calculate the vector is pressed, the bug was fixed.
+    Notice how it says only "saveValueOfArg1(textField_vert);" and "saveValueOfArg1(textField_horiz);" only within this listener. That's how the bug was fixed     
+
+***Grade: 5/5. Worked hard with keeping everyone on track, goals set. Worked hard individually on menu code and drawing code 
+
+
+##########Links to Journals################
+
+Aidan, Andrew Hale, Andrew Joseph: https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit?usp=sharing
 
 
 
