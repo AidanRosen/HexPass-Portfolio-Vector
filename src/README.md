@@ -1,4 +1,4 @@
-# How to run VectorCalculatorUI:
+# How to Run VectorCalculatorUI:
 
     1.Upon running the application, click at the top right of the menu on "VectorCalculator". A new window will open with the 
 
@@ -21,7 +21,7 @@ NOTES and future work:
     Cause the drawn vector to rotate according to the angle input into the calculator
     Add old terminal project to portfolio
 
-# How to run graphing calculator:
+# How to Run Graphing Calculator:
 
     1. Choose a graphing option from the main menu. 
     
