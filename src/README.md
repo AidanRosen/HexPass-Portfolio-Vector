@@ -95,7 +95,7 @@ Here is the link to ONE of the lines where I fixed this issue: https://github.co
     
 Another one of my goals was to create a vector line. We technically met this goal.
 
-     Althought we said only magnitude, we were determined to make a correct vector line. Aidan worked very hard on creating this line but I didn't get the time to create the arrow at the end of it. I am dissapointed that i could not achieve this goal.
+     Althought we said only magnitude, we were determined to make a correct vector line. Aidan worked very hard on creating this line but I didn't get the time to create the arrow at the end of it. I am dissapointed that I could not achieve this goal.
      
  ***Grade 
 
