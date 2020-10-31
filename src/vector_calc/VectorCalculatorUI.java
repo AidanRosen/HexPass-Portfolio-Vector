@@ -60,20 +60,9 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         direction.setText(degrees + " \nRADIANS");
 
         //This section DRAWS the vector - Aidan
-        //Need a way to get and set the magnitude and direction of the vector.... separate method?
-        //VectorDraw vector = new VectorDraw();
-        //vector.vectorPaint(35,500, calcAnswer, resultant.resultantDirec()); Filled in parameters for later
 
+        //Note that calcAnswer is magnitude, and resultant.resultantDirec() is directionality
         VectorDraw drawnVector = new VectorDraw(calcAnswer, resultant.resultantDirec());
-
-
-        JLabel test = new JLabel();
-        test.setOpaque(true);
-        test.setForeground(Color.WHITE);
-        test.setFont(new Font("Lucida Grande", Font.BOLD, 12));
-        test.setBackground(new Color(127, 0, 253));
-        test.setBounds(35, 500, 130, 15);
-        getContentPane().add(test);
 
         System.out.println("\n\nEnd of vector painting");
         //End of vector drawing - Aidan
