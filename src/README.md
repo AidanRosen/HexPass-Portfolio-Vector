@@ -4,15 +4,18 @@ How to run VectorCalculatorUI:
 
     2.After entering the calculator, you will see two blue squares. Click on them and type a number into each. 
 
-    3.After typing into both boxes, press the blue bottom on the lower right. 
+    3.After typing into both boxes, press the blue bottom on the lower right. '
+    
+    4.After clicking the blue button in the lower right, A new window will open BEHIND the vectorCalculator. Please move vectorCalculator to see it.
+    
+    5.End the program by exiting all windows and pressing stop
 
 NOTE: please be realistic with values because this vector calculator also creates a calculator measured in pixels,
 so please use an appropriate number of pixels! (I.e don't type in "5", because that is too small to see, or "2000", because that is too large)
 
-    4.After clicking the blue button in the lower right, A new window will open BEHIND the vectorCalculator. Please move vectorCalculator to see it.
 This window contains a drawn rectangle representing the magnitude of the vector calculated in the calculator.
 
-    5.End the program by exiting all windows and pressing stop
+ 
 
 NOTES and future work: 
     Add an arrow head to the drawn vector
