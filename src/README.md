@@ -73,7 +73,7 @@ Some of our goals this week included completeing the UI, figuring out how to cre
     
 Self-grade: 19/20. I feel like I definitely contributed enough to the project, but maybe I could have prioritized the frameworks so that Atharva can start earlier with his work.
     
-***Grade: 
+***Grade: 5/5. Contributed heavily to graphing calculator code and met goals.
 
 # Atharva:
 
