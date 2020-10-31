@@ -33,13 +33,14 @@ TOBEFILLEDOUTBYANDREWJOSEPHATHARVAANDALEX
 NOTE: Grades are marked with a ***
 
 Aidan:
-    Here is the link to my menu code, and the whole file is linked because I built it all: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/centralMenu.java
+   
+Here is the link to my menu code, and the whole file is linked because I built it all: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/centralMenu.java
         One of our goals this week was to build a JFrame menu (in our project plan, not the Slack message sent). This was completed and done with both menu buttons and menuItem buttons 
         
-    Here is the link to my JFrame draw code, whole file linked because I built it all: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorDraw.java
-        Another goal was to actually render a shape based on the calculated magnitude. This was achieved with the above code. 
+Here is the link to my JFrame draw code, whole file linked because I built it all: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorDraw.java
+    Another goal was to actually render a shape based on the calculated magnitude. This was achieved with the above code. 
         
-    Here is the link to the line where the bug about having to press enter twice was fixed: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/a75d771e4fb7696ac2c3416842405e865760e910/src/vector_calc/VectorCalculatorUI.java#L224
+Here is the link to the line where the bug about having to press enter twice was fixed: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/a75d771e4fb7696ac2c3416842405e865760e910/src/vector_calc/VectorCalculatorUI.java#L224
     By changing the "SaveValueArg1" and "SaveValueArg2"calls from being after typing to just when the button to calculate the vector is pressed, the bug was fixed.
     Notice how it says only "saveValueOfArg1(textField_vert);" and "saveValueOfArg1(textField_horiz);" only within this listener. That's how the bug was fixed     
 
