@@ -1,4 +1,4 @@
-How to run VectorCalculatorUI:
+# How to run VectorCalculatorUI:
 
     1.Upon running the application, click at the top right of the menu on "VectorCalculator". A new window will open with the 
 
@@ -21,18 +21,18 @@ NOTES and future work:
     Cause the drawn vector to rotate according to the angle input into the calculator
     Add old terminal project to portfolio
 
-How to run graphing calculator:
+# How to run graphing calculator:
 
 TOBEFILLEDOUTBYANDREWJOSEPHATHARVAANDALEX
 
 
 
 
-%%%%%%%%%%%%%%%%%Links to code + Goals met%%%%%%%%%%%%%%%%%%%%
+# %%%%%%%%%%%%%%%%%Links to code + Goals met%%%%%%%%%%%%%%%%%%%%
 
 NOTE: Grades are marked with a ***
 
-Aidan:
+# Aidan:
    
 Here is the link to my menu code, and the whole file is linked because I built it all: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/centralMenu.java 
 
@@ -50,7 +50,7 @@ Here is the link to the line where the bug about having to press enter twice was
 ***Grade: 5/5. Worked hard with keeping everyone on track, goals set. Worked hard individually on menu code and drawing code 
 
  <br /> <br />
-##########Links to Journals################
+# ##########Links to Journals################
 
 Aidan, Andrew Hale, Andrew Joseph: https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit?usp=sharing
 
