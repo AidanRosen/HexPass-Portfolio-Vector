@@ -7,10 +7,11 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import java.awt.Font;
 import java.awt.Color;
+import java.awt.Graphics;
 import javax.swing.JButton;
 import java.awt.event.*;
 import javax.swing.border.MatteBorder;
-
+import java.awt.*;
 
 public class VectorCalculatorUI extends JFrame { //From Andrew Hale
     private final JLabel calcArea = new JLabel("");
@@ -31,6 +32,9 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
     /**
      * Launch the application.
      */
+
+
+
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
             try {
@@ -41,6 +45,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
             }
         });
     }
+
 
     private void calculateAnswer()  // method to perform calculation
     {
@@ -53,6 +58,15 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         System.out.println("\n\n CalcAnswer value: " + calcAnswer);
         calcArea.setText(String.valueOf(calcAnswer));
         direction.setText(degrees + " \nRADIANS");
+
+        //This section DRAWS the vector - Aidan
+
+        //Note that calcAnswer is magnitude, and resultant.resultantDirec() is directionality
+        VectorDraw drawnVector = new VectorDraw(calcAnswer, resultant.resultantDirec());
+
+        System.out.println("\n\nEnd of vector painting");
+        //End of vector drawing - Aidan
+
         arg1 = Double.parseDouble(calcArea.getText());
         mathState = STATE.CALC;
     }
@@ -103,6 +117,9 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         calcArea.setHorizontalAlignment(SwingConstants.RIGHT);
         calcArea.setBounds(18, 36, 377, 67);
         getContentPane().add(calcArea);
+
+
+
 
         //Label to show where magnitude is presented
         JLabel magLabel = new JLabel("Magnitude:");
@@ -257,7 +274,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
             }
 
             public void mouseReleased(MouseEvent e) {
-                button_clear.setBackground(Color.BLUE);
+                button_clear.setBackground(new Color(221, 160, 221));
             }
         });
         button_clear.addActionListener(e -> clearCalculator());
