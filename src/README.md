@@ -89,8 +89,26 @@ Since I am less experienced, Alex was able to help me with both the UI and makin
 
 
 # Andrew Joseph
+Link to what I worked on https://github.com/AndrewPhilipJoseph/APCSTri1 
 
-***Grade:
+The first goal that i met for this week was the cleaning up of my code
+this was the easiest goal to complete, though did take a little big of work to get around
+some issues; I had to reformat an entire section of code and essentially remake it.
+
+The second goal that I completed this week was getting my calculate function to run -- the storing of points to an arraylist
+is already completed -- so the calculator is functional on a basic level now. More functions need to be added
+though my current goal of getting it to be functional is done.
+
+
+As for my thrid goal for this week, completing the UI, I was unable to complete it
+the last two goals took more of my time than I expected. However, despite not being able to fully set up the UI
+I did get a signifigant part of it done; I will complete this over the weekend, and maybe talk to Aidian and Andrew who have used JFrame for graphing.
+
+
+
+
+
+***Grade: 
 
 # Andrew Hale:
 
