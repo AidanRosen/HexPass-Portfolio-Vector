@@ -49,13 +49,13 @@ Here is the link to the line where the bug about having to press enter twice was
 
 ***Grade: 5/5. Worked hard with keeping everyone on track, goals set. Worked hard individually on menu code and drawing code 
 
-
+ <br /> <br />
 ##########Links to Journals################
 
 Aidan, Andrew Hale, Andrew Joseph: https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit?usp=sharing
 
 
-\n\n\n\n\n\n\n\n\n\n\n\n
+ <br /> <br /> <br /> <br />
 +++++++++++++++++++++++++++++++++++++++++
 OLD, week of 10/19 
 
