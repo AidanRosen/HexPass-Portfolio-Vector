@@ -23,7 +23,7 @@ NOTES and future work:
 
 How to run graphing calculator:
 
-Please change the configuration to GraphMain, then press run 
+TOBEFILLEDOUTBYANDREWJOSEPHATHARVAANDALEX
 
 
 
