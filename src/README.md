@@ -121,7 +121,7 @@ Another one of my goals was to create a vector line. We technically met this goa
  # Aidan, Andrew Hale, Andrew Joseph 
  !!! 19/20 I didn't get to all the goals, namely drawing a vector with an arrowhead. However, Andrew and I worked extensively on the vector code and learned a lot about creating new JFrame elements (Andrew Hale learned more about adding text and polygon drawing) while I worked really hard on drawing rectangles and learning a lot about imported graphics. Much of our learning went into the journal, including Andrew Josephs. Andrew Joseph definitely contributed to keeeping on track, adding what he was working on to the journal, and producing content for the main project. 
  
- # Alex, Atharvaa
+ # Alex, Atharva
  19/20. We did a good job on working on the graphing calculator, but I feel like we could have shifted our priorities and made the framework first right after converting to mvc instead of first reworking the ui; as this would give Atharva more time to work on his part.
 
  <br /> <br />
