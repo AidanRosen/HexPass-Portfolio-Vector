@@ -8,10 +8,10 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class GraphMain extends JFrame {
-    JLabel prompt = new JLabel("Please enter an option: ");
-    JLabel options = new JLabel("1: Cubic    2: Polynomial    3: Trig    4: Exponent/Roots    5: Log/Ln");
-    JTextField userInput = new JTextField(5);
-    String choice = null;
+    public static JLabel prompt = new JLabel("Please enter an option: ");
+    public static JLabel options = new JLabel("1: Cubic    2: Polynomial    3: Trig    4: Exponent/Roots    5: Log/Ln");
+    public static JTextField userInput = new JTextField(5);
+    public static String choice = null;
     public static JLabel[][] Graph = new JLabel[101][101]; //for the graph
 
     public static void main(String[] args) {
@@ -38,38 +38,6 @@ public class GraphMain extends JFrame {
         getContentPane().add(options);
         getContentPane().add(userInput);
 
-        graphMainUI();
-    }
-
-    public void graphMainUI() {
-
-        userInput.setText("");
-
-        userInput.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                choice = userInput.getText();
-
-                switch (choice) {
-                    case "1":
-                        GraphCubic.main(null);
-                        break;
-                    case "2":
-                        GraphPoly.main(null);
-                        break;
-                    case "3":
-                        GraphTrig.main(null);
-                        break;
-                    case "4":
-                        GraphExpo.main(null);
-                        break;
-                    case "5":
-                        GraphLog.main(null);
-                        break;
-                    default:
-                        graphMainUI(); //recursion
-                }
-            }
-        });
+        GraphMainUI.MainUI();
     }
 }
