@@ -89,8 +89,26 @@ Since I am less experienced, Alex was able to help me with both the UI and makin
 
 
 # Andrew Joseph
+Link to what I worked on https://github.com/AndrewPhilipJoseph/APCSTri1 
 
-***Grade:
+The first goal that i met for this week was the cleaning up of my code
+this was the easiest goal to complete, though did take a little big of work to get around
+some issues; I had to reformat an entire section of code and essentially remake it.
+
+The second goal that I completed this week was getting my calculate function to run -- the storing of points to an arraylist
+is already completed -- so the calculator is functional on a basic level now. More functions need to be added
+though my current goal of getting it to be functional is done.
+
+
+As for my thrid goal for this week, completing the UI, I was unable to complete it
+the last two goals took more of my time than I expected. However, despite not being able to fully set up the UI
+I did get a signifigant part of it done; I will complete this over the weekend, and maybe talk to Aidian and Andrew who have used JFrame for graphing.
+
+
+
+
+
+***Grade: 4.5/5 Stayed focused and contributed often. However, there was frustration with not getting README finished earlier and a bit of trouble with commits. 
 
 # Andrew Hale:
 
@@ -100,11 +118,15 @@ The first goal I met this week was cleaning up the menu and fixing bugs.
     
     Achived this by adding labels in order for the user experience to be more obvious on what you are inputting. Before, when the user clicked on the text-box, the title for it dissapeared. By using a label above, the user clearly knows which value they are inputting.
     
-Here is the link to ONE of the lines where this label is created: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L134
-    
+Here is the link to the first of 8 lines where the Horizontal label is created: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L134
+
+Here is the link to the first of 8 lines where the Vertical label is created: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L176  
+
     I also fixed the 0/0 issue when the "Create" button was pressed. I did this by creating an inital number already inputted into the system for both the Horizontal and Vertical component.
     
-Here is the link to ONE of the lines where I fixed this issue: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L159
+Here is the link to the line where I fixed this issue for the horizontal component: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L159
+
+Here is the link to the line where I fixed this issue for the vertical component: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L198
     
     Throughout all this I fixed the spacing and overlapping buttons on the VectorCalculatorUI.
     
@@ -116,6 +138,9 @@ Another one of my goals was to create a vector line. We technically met this goa
  
  # Aidan, Andrew Hale, Andrew Joseph 
  !!! 19/20 I didn't get to all the goals, namely drawing a vector with an arrowhead. However, Andrew and I worked extensively on the vector code and learned a lot about creating new JFrame elements (Andrew Hale learned more about adding text and polygon drawing) while I worked really hard on drawing rectangles and learning a lot about imported graphics. Much of our learning went into the journal, including Andrew Josephs. Andrew Joseph definitely contributed to keeeping on track, adding what he was working on to the journal, and producing content for the main project. 
+ 
+ # Alex, Atharva
+ 19/20. We did a good job on working on the graphing calculator, but I feel like we could have shifted our priorities and made the framework first right after converting to mvc instead of first reworking the ui; as this would give Atharva more time to work on his part.
 
  <br /> <br />
 # ##########Links to Journals################
