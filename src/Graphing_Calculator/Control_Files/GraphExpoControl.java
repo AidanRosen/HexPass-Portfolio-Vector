@@ -8,4 +8,5 @@ import java.awt.event.*;
 
 //control files are for user input
 public class GraphExpoControl extends GraphExpo {
+
 }
