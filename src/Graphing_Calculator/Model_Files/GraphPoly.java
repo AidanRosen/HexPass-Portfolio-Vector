@@ -25,7 +25,7 @@ public class GraphPoly extends JFrame {
     public static JLabel promptS = new JLabel("Please enter the smoothness level (0.01-1):");
     public static JLabel errorMessage = new JLabel("");
     public static JLabel XIntColon = new JLabel("Approximate x-intercept(s): ");
-    public static JLabel YIntColon = new JLabel("Approximate y-intercept: ");
+    public static JLabel YIntColon = new JLabel("Y-intercept: ");
 
     public static JTextField inputBoxCoef = new JTextField("");
     public static JTextField inputBoxExp = new JTextField("");
@@ -179,17 +179,18 @@ public class GraphPoly extends JFrame {
         for (double x = domainLower; x < domainUpper; x += smoothness * magX) { //Graphs into a 2d array
             y = 0; //resets y for every new x-value
             for (int i = 0; i < coefficients1.size(); i++) {
-                y += (Math.pow(x, Double.parseDouble(exponents1.get(i)))) * Double.parseDouble(coefficients1.get(i)); //math.pow returns x to the power of exponents[i] abd multiplies that by the coefficient of that same term; then adds the y value to the existing y value from the other terms
+                y += (Math.pow(x, Double.parseDouble(exponents1.get(i)))) * Double.parseDouble(coefficients1.get(i));
+                //math.pow returns x to the power of exponents[i] abd multiplies that by the coefficient of that same term; then adds the y value to the existing y value from the other terms
             }
 
-            if (Math.abs(y) < rangeUpper && Math.abs(y) > rangeLower) { //puts x,y coordinates into 2d array
+            if (Math.abs(y) < rangeUpper && Math.abs(y) > rangeLower) { //puts x,y coordinates into 2d array if they are within -50,50 or otherwise specified by the magnitude
                 GraphMain.Graph[50 - (int) Math.round((y / magY))][50 + (int) Math.round((x / magX))].setText("0"); //inputs the coordinate into the 2darray
 
-                if ((int)y == 0) { //approx x-intercept
+                if (y >= (0 - smoothness / 10) && y <= (smoothness / 10) ) { //approx x-intercept
                     XInts.add(x); //stores current x-value as an x-int
                 }
 
-                if ((int)x == 0) { //approx y-int
+                if (x == 0.0) { //y-int
                     YInt = y;
                 }
             }
@@ -197,20 +198,27 @@ public class GraphPoly extends JFrame {
 
         GraphingCalculatorUI.main(null); //prints out graph
 
-        XIntColon.setBounds(25, 450, 200, 50);
+        XIntColon.setBounds(25, 500, 200, 50);
         getContentPane().add(XIntColon);
-        YIntColon.setBounds(1000, 50, 200, 50);
+        YIntColon.setBounds(1000, 50, 100, 50);
         getContentPane().add(YIntColon);
+        int wrapText = 0;
 
         for (int i = 0; i < XInts.size(); i++) {
             XIntDisplays.add(new JLabel(Double.toString(XInts.get(i)) + ", ")); //gets the value at xints arraylist[i], converts it into a string, and puts that string on a new jlabel
-            int rowNumber = (int)Math.ceil(i / 16.0); //for wrapping around the edge of the jframe to a new row; can fit 16 x-ints on 1 row
-            XIntDisplays.get(i).setBounds(225 + i * 100, 450 - rowNumber * 60, 100, 50);
+            int rowNumber = (int)Math.ceil((i + 1) / 12.0); //for wrapping around the edge of the jframe to a new row; can fit ~12 x-ints on 1 row
+            wrapText++;
+
+            if (i % 12 == 0) { //if a new row is starting, shift the labels back to the left side of the screen
+                wrapText = 0;
+            }
+
+            XIntDisplays.get(i).setBounds(225 + wrapText  * 100, 440 + rowNumber * 60, 100, 50);
             getContentPane().add(XIntDisplays.get(i)); //adds that new jlabel to the screen
         }
 
         YIntDisplay.setText(Double.toString(YInt)); //for y-int display
-        YIntDisplay.setBounds(1200, 50, 200, 50);
+        YIntDisplay.setBounds(1100, 50, 200, 50);
         getContentPane().add(YIntDisplay);
     }
 }
