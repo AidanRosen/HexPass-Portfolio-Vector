@@ -158,23 +158,13 @@ public class GraphPoly extends JFrame {
             main(null);
         }
 
-        for (int i = 0; i < 101; i++) { //set up axes
-            for (int j = 0; j < 101; j++) {
-                if (i == 50) {
-                    GraphMain.Graph[i][j] = new JLabel("-");
-                } else if (j == 50) {
-                    GraphMain.Graph[i][j] = new JLabel("|");
-                } else {
-                    GraphMain.Graph[i][j] = new JLabel(" ");
-                }
-            }
-        }
-
         double domainLower = -50.0 * magX;
         double domainUpper = 50.0 * magX;
         double rangeLower = -50.0 * magY;
         double rangeUpper = 50.0 * magY;
         double y = 0;
+
+        GraphMain.GraphSetUp(magX, magY, domainUpper, rangeUpper);
 
         for (double x = domainLower; x < domainUpper; x += smoothness * magX) { //Graphs into a 2d array
             y = 0; //resets y for every new x-value
@@ -184,7 +174,7 @@ public class GraphPoly extends JFrame {
             }
 
             if (Math.abs(y) < rangeUpper && Math.abs(y) > rangeLower) { //puts x,y coordinates into 2d array if they are within -50,50 or otherwise specified by the magnitude
-                GraphMain.Graph[50 - (int) Math.round((y / magY))][50 + (int) Math.round((x / magX))].setText("0"); //inputs the coordinate into the 2darray
+                GraphMain.Graph[50 - (int) Math.round((y / magY))][50 + (int) Math.round((x / magX))].setText("⬤"); //inputs the coordinate into the 2darray
 
                 if (y >= (0 - smoothness / 10) && y <= (smoothness / 10) ) { //approx x-intercept
                     XInts.add(x); //stores current x-value as an x-int

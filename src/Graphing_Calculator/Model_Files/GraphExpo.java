@@ -13,6 +13,9 @@ import Graphing_Calculator.GraphingCalculatorUI; //allows for calling of Graphin
 import Graphing_Calculator.Control_Files.GraphCubicControl;
 
 public class GraphExpo extends JFrame {
+    //here: initialize all the jlabels and textboxes and whatever that you may need
+    //will need 3 arraylists of coefficients and bases and exponents (eg 2*5^1.5x requires all 3 values), see graphpoly for declaration syntax
+
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
             try {
@@ -25,6 +28,104 @@ public class GraphExpo extends JFrame {
     }
 
     public GraphExpo() { //constructor for initializing labels and textboxes and add them to getcontentpane
+        //here: setbounds of and getcontentpane.add() all necessary labels
+        //here: intilize the actionlistener for the graph button and call the graphexpocontrol.main to initialize the rest of the actionlisteners
+        //actionlistener for graph button should call graph() after it checks that the user input for magx, magy and smoothness are there
+    }
 
+    public void Graph(ArrayList<String> coefficients1, ArrayList<String> bases1, ArrayList<String> exponents1, String magX1, String magY1, String smoothness1) {
+        /* some code is a copy paste from the other graph functions like poly
+        getContentPane().remove(errorMessage);
+
+        for (int i = 0; i < coefficients1.size(); i++) { //checks if they are numbers
+            try {
+                double numTest = Double.parseDouble(coefficients1.get(i)); //tests the see if the value in the arraylist at index/location i is a number
+            } catch (NumberFormatException nfe) {
+                errorMessage.setText("Inputs must be numbers");
+                this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING)); //closes current window
+                main(null); //creates new window and reruns program
+            }
+
+            try {
+                double numTest = Double.parseDouble(bases1.get(i));
+            } catch (NumberFormatException nfe) {
+                errorMessage.setText("Inputs must be numbers");
+                this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
+                main(null);
+            }
+
+            try {
+                double numTest = Double.parseDouble(exponents1.get(i));
+            } catch (NumberFormatException nfe) {
+                errorMessage.setText("Inputs must be numbers");
+                this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
+                main(null);
+            }
+        }
+
+        String[] inputs = {magX1, magY1, smoothness1}; //checks that all three of these are numbers
+
+        for (int i = 0; i < 3; i++) {
+            try {
+                double numTest = Double.parseDouble(inputs[i]);
+            } catch (NumberFormatException nfe) {
+                errorMessage.setText("Inputs must be numbers");
+                this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
+                main(null);
+            }
+        }
+
+        double magX = Double.parseDouble(magX1), magY = Double.parseDouble(magY1), smoothness = Double.parseDouble(smoothness1); //converts input into numbers
+
+        if (magX < 0.1 || magX > 10 || magY < 0.1 || magY > 10) {
+            errorMessage.setText("Magnitudes must be between 0.1 and 10");
+            this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
+            main(null);
+        }
+
+        if (smoothness < 0.01 || smoothness > 1) {
+            errorMessage.setText("Smoothness must be between 0.01 and 10");
+            this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
+            main(null);
+        }
+
+        double domainLower = -50.0 * magX;
+        double domainUpper = 50.0 * magX;
+        double rangeLower = -50.0 * magY;
+        double rangeUpper = 50.0 * magY;
+        double y = 0;
+
+        GraphMain.GraphSetUp(magX, magY, domainUpper, rangeUpper);
+
+        for (double x = domainLower; x < domainUpper; x += smoothness * magX) { //Graphs into a 2d array
+            y = 0; //resets y for every new x-value
+            for (int i = 0; i < coefficients1.size(); i++) {
+                //you will need to get an equation which takes the base at bases1.get(i)
+                //and puts it to the power of its respective exponent at exponents.get(i)
+                //and then multiply the whole thing by its respective coefficient at coefficients.get(i)
+
+            }
+
+            if (Math.abs(y) < rangeUpper && Math.abs(y) > rangeLower) { //puts x,y coordinates into 2d array if they are within -50,50 or otherwise specified by the magnitude
+                GraphMain.Graph[50 - (int) Math.round((y / magY))][50 + (int) Math.round((x / magX))].setText("⬤"); //inputs the coordinate into the 2darray
+                //50 is the axes
+                //eg if y is -20, the program puts a ⬤ (which makes up the line/curve) in the 2d array at row 50 - (-20) = row 70 from the top
+                //if x is 10, the program puts a ⬤ in column 50 + 10 = column 60 of the 2d array
+                //so "⬤" is inserted at (60, 70) or (10, -20) in graphical terms
+
+                if (y >= (0 - smoothness / 10) && y <= (smoothness / 10) ) { //approx x-intercept
+                    XInts.add(x); //stores current x-value as an x-int
+                }
+
+                if (x == 0.0) { //y-int
+                    YInt = y;
+                }
+            }
+
+            GraphingCalculatorUI.main(null); //prints out graph
+
+            //add code for displaying the arraylist of jlabels of x-intercepts and the y-intercept
+            //use graphpoly's code as a reference for this
+         */
     }
 }
