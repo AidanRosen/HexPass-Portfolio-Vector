@@ -4,17 +4,19 @@ package Graphing_Calculator.Model_Files;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.ArrayList;
+import java.lang.*;
 
+import Graphing_Calculator.Control_Files.GraphExpoControl;
 import Graphing_Calculator.GraphMain; //allows for calling of GraphMain. methods, which is outside the package Model_Files and therefore cannot be called without being imported
 import Graphing_Calculator.GraphingCalculatorUI; //allows for calling of GraphingCalculatorUI. methods
 import Graphing_Calculator.Control_Files.GraphCubicControl;
 
 public class GraphExpo extends JFrame {
-
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
             try {
-                GraphExpo frame = new GraphExpo();
+                GraphLog frame = new GraphLog();
                 frame.setVisible(true);
             } catch (Exception e) {
                 e.printStackTrace();
