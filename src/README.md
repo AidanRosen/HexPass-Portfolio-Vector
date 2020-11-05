@@ -1,4 +1,4 @@
-# How to Run VectorCalculatorUI:
+# How to run VectorCalculatorUI:
 
     1.Upon running the application, click at the top right of the menu on "VectorCalculator". A new window will open with the 
 
@@ -13,7 +13,7 @@
 
 NOTE: please be realistic with values because this vector calculator also creates a calculator measured in pixels,
 so please use an appropriate number of pixels! (I.e don't type in "5", because that is too small to see, or "2000", because that is too large)
-<br /> <br />
+
  
 
 NOTES and future work: 
@@ -21,7 +21,7 @@ NOTES and future work:
     Cause the drawn vector to rotate according to the angle input into the calculator
     Add old terminal project to portfolio
 
-# How to Run Graphing Calculator:
+# How to run graphing calculator:
 
     1. Choose a graphing option from the main menu. 
     
@@ -38,11 +38,9 @@ NOTES and future work:
 
  <br /> <br /> <br />
 
-# %%%%%%Links to Code + Goals Met
+# %%%%%%Links to code + Goals met
 
-NOTE: Scrum Master Grades are marked with a ***
-<br /> 
-NOTE: Pair/Trio grades are marked with a !!!
+NOTE: Grades are marked with a ***
 
 # Aidan:
    
@@ -65,7 +63,7 @@ Here is the link to the line where the bug about having to press enter twice was
 
 Here is the link to the graphing calculator section of the portfolio project that I worked on: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/tree/master/src/Graphing_Calculator
 
-Some of our goals this week included completeing the UI, figuring out how to create a new JFrame window post-frame creation, and create new graph options.
+Some of our gorals this week included completeing the UI, figuring out how to create a new JFrame window post-frame creation, and create new graph options.
 
     I completed the UI for the main menu of the graphing calculator.
     
@@ -73,74 +71,7 @@ Some of our goals this week included completeing the UI, figuring out how to cre
     
     Although we did not get around to creating a new graph option, I was able to convert the code to mvc format. I also worked on creating logic guidelines for Atharva as he has never done Java before this class and I think it should be more important for him to practice writing code right now rather than figuring out logic and program flow.
     
-
-***Grade: 5/5. Converted to MVC format which is impressive since we didn't have BlueJ. 
-
-# Atharva:
-
-Link to what I worked on: https://github.com/AlexH04/Calculator2-MVC--Alex-Atharva/blob/main/mvc-idea/src/view_control/CalculatorTextUI.java and https://github.com/athkud123/HexPass-Portfolio-Vector/blob/master/src/Graphing_Calculator/GraphPoly.java
-
-This week I met my goals by working with Alex to finalize the text-based UI and we also began focusing on GraphPoly code within our graphing calculator. I started to become more familliar with Github, IntelliJ, and JFrame after having more experience with them; I still have stuff to learn, but my work has become more efficient from last week.
-
-Since I am less experienced, Alex was able to help me with both the UI and making more graphing options by making a framework of logic for me to go off of. I took heed of this logic and understood what my code was doing.
-
-***Grade: 4.5/5 Didn't talk very much during meetings so I don't know how he collaborated with Alex, but he seemingly accomplished a lot. 
-
-
-
-# Andrew Joseph
-Link to what I worked on https://github.com/AndrewPhilipJoseph/APCSTri1 
-
-The first goal that i met for this week was the cleaning up of my code
-this was the easiest goal to complete, though did take a little big of work to get around
-some issues; I had to reformat an entire section of code and essentially remake it.
-
-The second goal that I completed this week was getting my calculate function to run -- the storing of points to an arraylist
-is already completed -- so the calculator is functional on a basic level now. More functions need to be added
-though my current goal of getting it to be functional is done.
-
-
-As for my thrid goal for this week, completing the UI, I was unable to complete it
-the last two goals took more of my time than I expected. However, despite not being able to fully set up the UI
-I did get a signifigant part of it done; I will complete this over the weekend, and maybe talk to Aidian and Andrew who have used JFrame for graphing.
-
-
-
-
-
-***Grade: 4.5/5 Stayed focused and contributed often. However, there was frustration with not getting README finished earlier and a bit of trouble with commits. 
-
-# Andrew Hale:
-
-Here is the link to the VectorCalculatorUI code. I am linking the entire .java file because I created it: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java
-
-The first goal I met this week was cleaning up the menu and fixing bugs.
-    
-    Achived this by adding labels in order for the user experience to be more obvious on what you are inputting. Before, when the user clicked on the text-box, the title for it dissapeared. By using a label above, the user clearly knows which value they are inputting.
-    
-Here is the link to the first of 8 lines where the Horizontal label is created: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L134
-
-Here is the link to the first of 8 lines where the Vertical label is created: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L176  
-
-    I also fixed the 0/0 issue when the "Create" button was pressed. I did this by creating an inital number already inputted into the system for both the Horizontal and Vertical component.
-    
-Here is the link to the line where I fixed this issue for the horizontal component: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L159
-
-Here is the link to the line where I fixed this issue for the vertical component: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorCalculatorUI.java#L198
-    
-    Throughout all this I fixed the spacing and overlapping buttons on the VectorCalculatorUI.
-    
-Another one of my goals was to create a vector line. We technically met this goal.
-
-     Althought we said only magnitude, we were determined to make a correct vector line. Aidan worked very hard on creating this line but I didn't get the time to create the arrow at the end of it. I am dissapointed that I could not achieve this goal.
-     
- ***Grade: 5/5 Always wanted to work, even when his assignment was done. Contributed well to the vector files 
- 
- # Aidan, Andrew Hale, Andrew Joseph 
- !!! 19/20 I didn't get to all the goals, namely drawing a vector with an arrowhead. However, Andrew and I worked extensively on the vector code and learned a lot about creating new JFrame elements (Andrew Hale learned more about adding text and polygon drawing) while I worked really hard on drawing rectangles and learning a lot about imported graphics. Much of our learning went into the journal, including Andrew Josephs. Andrew Joseph definitely contributed to keeeping on track, adding what he was working on to the journal, and producing content for the main project. 
- 
- # Alex, Atharva
- 19/20. We did a good job on working on the graphing calculator, but I feel like we could have shifted our priorities and made the framework first right after converting to mvc instead of first reworking the ui; as this would give Atharva more time to work on his part.
+***Grade: 5/5. Contributed heavily to the graphing calculator code.
 
  <br /> <br />
 # ##########Links to Journals################
@@ -236,7 +167,7 @@ that I feel are more minor than major, 1 point seems
 like an appropriate deduction for these slight mistakes.
 
 
-Readme Justifications (Week 7) for Alex and Atharva:
+Readme justifications (Week 7) for Alex and Atharva:
 
 Alex-this week I worked on making a main menu for the graphing calculator part of the main project. I also worked on splitting Mr. M's calculator code into mvc for Calculator 2, and I guided Atharva to make a text-based Calculator UI for Calculator 2 (link to calculator 2: https://github.com/AlexH04/Calculator2-MVC--Alex-Atharva). Next ween I plan to organize the main project as mvc now that I have more experience with how it works.
   Individual block of code: src/Graphing_Calculator/GraphCubic was imported from the previous calculator project and src/Graphing_Calculator/GraphMain was coded my me this week.
