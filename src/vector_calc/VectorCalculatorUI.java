@@ -21,94 +21,61 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
 //You MUST move these text fields to here so that they can be accessed throughout the whole file instead of getting an "unknown symbol" error
 
 
-    private enum STATE { INITIAL, SAVE1, SAVE2, CALC }
-
-    private STATE mathState;
 
     // calculator values
     private double arg1;
     private double arg2;
     private double calcAnswer;
+
     /**
      * Launch the application.
      */
 
 
 
-    public static void main(String[] args) {
-        EventQueue.invokeLater(() -> {
-            try {
-                VectorCalculatorUI frame = new VectorCalculatorUI();
-                frame.setVisible(true);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        });
-    }
-
-
-    private void calculateAnswer()  // method to perform calculation
+    public void calculateAnswer(double mag, double direc)  // method to perform calculation
     {
-        System.out.println("This is the value of arg1:" + arg1);
-        System.out.println("\nThis is the value of arg1:" + arg1);
-        VectorCreate resultant = new VectorCreate(arg1, arg2);
-        calcAnswer = resultant.resultantMag("magnitude");
-        String degrees = String.valueOf(resultant.resultantDirec());
-        System.out.println("\n\nThis is the value of resultant.resultant " + resultant.resultantMag("magnitude"));
-        System.out.println("\n\n CalcAnswer value: " + calcAnswer);
+        String degrees = String.valueOf(direc);
+        calcAnswer = mag;
         calcArea.setText(String.valueOf(calcAnswer));
         direction.setText(degrees + " \nRADIANS");
 
         //This section DRAWS the vector - Aidan
 
         //Note that calcAnswer is magnitude, and resultant.resultantDirec() is directionality
-        VectorDraw drawnVector = new VectorDraw(calcAnswer, resultant.resultantDirec());
+        VectorDraw drawnVector = new VectorDraw(calcAnswer, direc);
 
         System.out.println("\n\nEnd of vector painting");
         //End of vector drawing - Aidan
 
-        arg1 = Double.parseDouble(calcArea.getText());
-        mathState = STATE.CALC;
+        //arg1 = Double.parseDouble(calcArea.getText());
+      ;
     }
 
-//removed UpdateCalcArea because this vector calculator works too differently from the previous one to be involved in updating
-    //the calc area
+
     /**
      * Save values for Calculator.
      */
-    private void saveValueOfArg1(JTextField textfield) { // method to store 1st value in calculation (arg1)
-        arg1 = Double.parseDouble((textfield.getText()));
-        mathState = STATE.SAVE1;
+    private void resetBoxText(JTextField textfield) { // method to store 1st value in calculation (arg1)
+        textfield.setText("1.0");
 
     }
 
-    private void saveValueOfArg2(JTextField textfield) { // method to store 2nd value in calculation (arg2)
-        if (mathState != STATE.CALC) {
-            arg2 = Double.parseDouble((textfield.getText()));
-            mathState = STATE.SAVE2;
-
-        }
-    }
 
 
-
-    private void clearCalculator() {  // helper method to clear and update calculator to default
+    public void clearCalculator() {  // helper method to clear and update calculator to default
         // calculator control
         String calcAreaDefault = "0.0";
         calcArea.setText(calcAreaDefault);
-        mathState = STATE.INITIAL;
-
-        arg1 = 0.0;
-        arg2 = 0.0;
-        saveValueOfArg1(textField_horiz);
-        saveValueOfArg2(textField_horiz);
+        resetBoxText(textField_horiz);
+        resetBoxText(textField_vert);
         direction.setText("BLANK Radians");
         calcAnswer = 0.0;
     }
 
-    public VectorCalculatorUI() {
+    public VectorCalculatorUI(VectorControl control) {
         System.out.println("Calculating answer...");
-        getContentPane().setBackground(new Color(252, 209, 42));
+        getContentPane().setBackground(new Color(143, 0, 255));
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setBounds(100, 100, 500, 500);
         getContentPane().setLayout(null);
@@ -223,8 +190,8 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
             @Override
             public void mousePressed(MouseEvent e) {
                 //This code is for making sure arguments are consistent with what is typed in the text box
-                saveValueOfArg1(textField_vert);
-                saveValueOfArg2(textField_horiz);
+                control.saveValueOfArg1(textField_vert);
+                control.saveValueOfArg2(textField_horiz);
                 button_create.setBackground(Color.WHITE);
             }
 
@@ -235,7 +202,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         });
         button_create.addActionListener(e -> {
             System.out.println("Calculating answer...");
-            calculateAnswer();
+            control.calculateProperties();
             //The above action saves the value AND then calculates the answer
         });
         button_create.setOpaque(true);
@@ -277,7 +244,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
                 button_clear.setBackground(new Color(221, 160, 221));
             }
         });
-        button_clear.addActionListener(e -> clearCalculator());
+        button_clear.addActionListener(e -> control.clearMath());
         button_clear.setOpaque(true);
         button_clear.setForeground(Color.WHITE);
         button_clear.setBorder(new MatteBorder(4, 4, 4, 4, Color.WHITE));
