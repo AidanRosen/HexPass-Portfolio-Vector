@@ -8,10 +8,10 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class GraphMain extends JFrame {
-    JLabel prompt = new JLabel("Please enter an option: ");
-    JLabel options = new JLabel("1: Cubic    2: Polynomial    3: Trig    4: Exponent/Roots    5: Log/Ln");
-    JTextField userInput = new JTextField(5);
-    String choice = null;
+    public static JLabel prompt = new JLabel("Please enter an option: ");
+    public static JLabel options = new JLabel("1: Cubic    2: Polynomial    3: Trig    4: Exponent/Roots    5: Log/Ln");
+    public static JTextField userInput = new JTextField(5);
+    public static String choice = null;
     public static JLabel[][] Graph = new JLabel[101][101]; //for the graph
 
     public static void main(String[] args) {
@@ -38,38 +38,42 @@ public class GraphMain extends JFrame {
         getContentPane().add(options);
         getContentPane().add(userInput);
 
-        graphMainUI();
+        GraphMainUI.MainUI();
     }
 
-    public void graphMainUI() {
-
-        userInput.setText("");
-
-        userInput.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                choice = userInput.getText();
-
-                switch (choice) {
-                    case "1":
-                        GraphCubic.main(null);
-                        break;
-                    case "2":
-                        GraphPoly.main(null);
-                        break;
-                    case "3":
-                        GraphTrig.main(null);
-                        break;
-                    case "4":
-                        GraphExpo.main(null);
-                        break;
-                    case "5":
-                        GraphLog.main(null);
-                        break;
-                    default:
-                        graphMainUI(); //recursion
+    public static void GraphSetUp(double magX, double magY, double domainUpper, double rangeUpper) { //used by all other model files to set up axes
+        for (int i = 0; i < 101; i++) { //set up axes labelded with grid value
+            for (int j = 0; j < 101; j++) {
+                if (i == 50) {
+                    if (j > 50) { //for sorting out negatives and positives
+                        Graph[i][j] = new JLabel(Double.toString(j * magX - domainUpper));
+                        if (Math.floor(j * magX - domainUpper) == j * magX - domainUpper) { //if the value is something .0 (so the same as an integer), only display the int and not .0 to save space
+                            Graph[i][j].setText(Integer.toString((int)(j * magX - domainUpper))); //converts double to int, them to string, then to jlabel
+                        }
+                    } else if (j < 50) { //if negative
+                        Graph[i][j] = new JLabel("-" + Double.toString((domainUpper - j * magX)));
+                        if (Math.floor(domainUpper - j * magX) == domainUpper - j * magX) {
+                            Graph[i][j].setText("-" + Integer.toString((int)(domainUpper - j * magX)));
+                        }
+                    } else if (j == 50) {
+                        Graph[i][j] = new JLabel("0");
+                    }
+                } else if (j == 50) {
+                    if (i < 50) {
+                        Graph[i][j] = new JLabel(Double.toString((rangeUpper - i * magY)));
+                        if (Math.floor(rangeUpper - i * magY) == rangeUpper - i * magY) {
+                            Graph[i][j].setText(Integer.toString((int)(rangeUpper - i * magY)));
+                        }
+                    } else {
+                        Graph[i][j] = new JLabel("-" + Double.toString(i * magY - rangeUpper));
+                        if (Math.floor(i * magY - rangeUpper) == i * magY - rangeUpper) {
+                            Graph[i][j].setText("-" + Integer.toString((int)(i * magY - rangeUpper)));
+                        }
+                    }
+                } else {
+                    Graph[i][j] = new JLabel(" ");
                 }
             }
-        });
+        }
     }
 }

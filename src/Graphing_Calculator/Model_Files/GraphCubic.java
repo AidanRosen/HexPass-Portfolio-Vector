@@ -62,7 +62,13 @@ public class GraphCubic extends JFrame { //I think this also extends JFrame auto
 
     public GraphCubic () { //constructor for initializing labels and textboxes and add them to getcontentpane
         resetScreen();
-        inputBox.setBounds(50, 140, 70, 40);
+
+        getContentPane().setBackground(new Color(175, 238, 238));
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setBounds(100, 100, 1920, 1080); //sets size of the window
+        getContentPane().setLayout(null);
+
+        inputBox.setBounds(50, 140, 70, 40); //sets the size of all the labels and text boxes
         inputBox2.setBounds(170, 140, 70, 40);
         inputBox3.setBounds(290, 140, 70, 40);
         inputBox4.setBounds(410, 140, 70, 40);
@@ -82,7 +88,7 @@ public class GraphCubic extends JFrame { //I think this also extends JFrame auto
         Go.setBounds(700, 320, 100, 40);
 
         getContentPane().add(inputBox); //do it here instead of in the control file as the control file does not directly extend jframe and therefore getcontentpane doesn't work there
-        getContentPane().add(inputBox2);
+        getContentPane().add(inputBox2); //adds all the labels and textboxes onto the window
         getContentPane().add(inputBox3);
         getContentPane().add(inputBox4);
         getContentPane().add(inputBox5);
@@ -100,11 +106,6 @@ public class GraphCubic extends JFrame { //I think this also extends JFrame auto
 
         getContentPane().add(Go);
 
-        getContentPane().setBackground(new Color(175, 238, 238));
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setBounds(100, 100, 1920, 1080); //sets size of the window
-        getContentPane().setLayout(null);
-
         GraphCubicControl.promptA(); //sets up the actionlisteners from control file which saves the user input
         GraphCubicControl.promptB();
         GraphCubicControl.promptC();
@@ -115,6 +116,14 @@ public class GraphCubic extends JFrame { //I think this also extends JFrame auto
         Go.addActionListener(new ActionListener() {  //this has to be in here as Graph is not static and therefore cannot be accessed from the control file; if graph is made static, then non-static getcontentpane wouldn't work, and getcontentpane cannot be made static
             @Override
             public void actionPerformed(ActionEvent e) {
+                a = inputBox.getText(); //saves all user input
+                b = inputBox2.getText();
+                c = inputBox3.getText();
+                d = inputBox4.getText();
+                magX = inputBox5.getText();
+                magY = inputBox6.getText();
+                smoothness = inputBox7.getText();
+
                 if (a != null && b != null && c != null && d != null && magX != null && magY != null && smoothness != null) {
                     Graph(a, b, c, d, magX, magY, smoothness);
                 }
@@ -125,13 +134,12 @@ public class GraphCubic extends JFrame { //I think this also extends JFrame auto
     public void Graph(String a1, String b1, String c1, String d1, String magx1, String magy1, String smoothness1) {
 
         getContentPane().remove(errorMessage); //removes error message from last round
-        String[] inputs = {a1, b1, c1, d1, magx1, magy1, smoothness1};
+        String[] inputs = {a1, b1, c1, d1, magx1, magy1, smoothness1}; //checks that all inputted values are numbers
 
-        for (int i = 0; i < 6; i++) { //todo: magx as 0.1 causes nfe, graph display not showing
+        for (int i = 0; i < 6; i++) {
             try {
                 double numTest = Double.parseDouble(inputs[i]);
             } catch (NumberFormatException nfe) {
-                resetScreen();
                 errorMessage.setText("Inputs must be numbers");
                 this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING)); //closes current window
                 main(null); //creates new window and reruns program
@@ -139,32 +147,18 @@ public class GraphCubic extends JFrame { //I think this also extends JFrame auto
         }
 
         double sola, solb, vertexX;
-        double a = Double.parseDouble(a1), b = Double.parseDouble(b1), c = Double.parseDouble(c1), d = Double.parseDouble(d1), magX = Double.parseDouble(magx1), magY = Double.parseDouble(magy1), smoothness = Double.parseDouble(smoothness1);
+        double a = Double.parseDouble(a1), b = Double.parseDouble(b1), c = Double.parseDouble(c1), d = Double.parseDouble(d1), magX = Double.parseDouble(magx1), magY = Double.parseDouble(magy1), smoothness = Double.parseDouble(smoothness1); //converts input into numbers
 
         if (magX < 0.1 || magX > 10 || magY < 0.1 || magY > 10) {
-            resetScreen();
             errorMessage.setText("Magnitudes must be between 0.1 and 10");
             this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
             main(null);
         }
 
         if (smoothness < 0.01 || smoothness > 1) {
-            resetScreen();
             errorMessage.setText("Smoothness must be between 0.01 and 10");
             this.dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
             main(null);
-        }
-
-        for (int i = 0; i < 101; i++) {
-            for (int j = 0; j < 101; j++) {
-                if (i == 50) {
-                    GraphMain.Graph[i][j] = new JLabel("-");
-                } else if (j == 50) {
-                    GraphMain.Graph[i][j] = new JLabel("|");
-                } else {
-                    GraphMain.Graph[i][j] = new JLabel(" ");
-                }
-            }
         }
 
         double domainLower = -50.0 * magX;
@@ -172,15 +166,18 @@ public class GraphCubic extends JFrame { //I think this also extends JFrame auto
         double rangeLower = -50.0 * magY;
         double rangeUpper = 50.0 * magY;
 
+        GraphMain.GraphSetUp(magX, magY, domainUpper, rangeUpper);
+
         for (double x = domainLower; x < domainUpper; x += smoothness * magX) { //GraphCubics into a 2d array
+
             double y = (a * x * x * x + b * x * x + c * x + d); //plugs in x
 
             if (Math.abs(y) < rangeUpper && Math.abs(y) > rangeLower) {
-                GraphMain.Graph[50 - (int) Math.round((y / magY))][50 + (int) Math.round((x / magX))].setText("0"); //inputs into array scaled based on magnitude (eg if mag is 0.1 then each space in the graph/array is equal to 0.1 instead of 1/zooms in by 10x into the graph
+                GraphMain.Graph[50 - (int) Math.round((y / magY))][50 + (int) Math.round((x / magX))].setText("⬤"); //inputs into array scaled based on magnitude (eg if mag is 0.1 then each space in the graph/array is equal to 0.1 instead of 1/zooms in by 10x into the graph
                 //50 is the axes
-                //eg if y is -20, the program puts a 0 in the 2d array at row 50 - (-20) = row 70 from the top
-                //if x is 10, the program puts a 0 in column 50 + 10 = column 60 of the 2d array
-                //so "0" is inserted at (60, 70) or (10, -20) in graphical terms
+                //eg if y is -20, the program puts a ⬤ (which makes up the line/curve) in the 2d array at row 50 - (-20) = row 70 from the top
+                //if x is 10, the program puts a ⬤ in column 50 + 10 = column 60 of the 2d array
+                //so "⬤" is inserted at (60, 70) or (10, -20) in graphical terms
             }
         }
 

@@ -12,6 +12,7 @@ public class VectorDraw extends JFrame {
     //Works by creating a new frame/window and THEN drawing the vector
 
     int magnitude;
+    int trimag;
     int direction;
     public VectorDraw (double mag, double angle){
         setTitle("Drawn Vector");
@@ -217,6 +218,17 @@ public class VectorDraw extends JFrame {
         //parameters above are for coordinate spot, length (magnitude) and direction pointing (angle)
 
         //typecast magnitude, a double, into the integer size so that no errors occur when using a double in an integer parameter
+
+
+        trimag = this.magnitude + 50;
+        //Set corner x coordinate
+        int[]x = {this.trimag, this.trimag + 20, this.trimag};
+        //Set y coordinate
+        int[]y = {45, 58, 70};
+        //Draw triangle
+        g.setColor(new Color(0,0,0));
+        g.fillPolygon(x, y, 3);
+
 
 
         //size is in the "width" parameter

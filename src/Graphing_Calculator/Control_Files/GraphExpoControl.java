@@ -8,4 +8,8 @@ import java.awt.event.*;
 
 //control files are for user input
 public class GraphExpoControl extends GraphExpo {
+
+    public static void main(String[] args) {
+        //initialize actionlisteners for buttons which adds the user input in the textfields (textfield.getText) into the respective arraylist (coefficients, exponents or bases)
+    }
 }
