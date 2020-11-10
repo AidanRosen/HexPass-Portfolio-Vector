@@ -215,7 +215,8 @@ public class VectorDraw extends JFrame {
         //paintComponent is inbuilt !!! MUST use it here
         System.out.println(this.magnitude);
         System.out.println("The above is the value for size");
-        g.fillRect(50, 50, this.magnitude, 15);
+        g.fillRect(250, 250, this.magnitude, 5);
+        //In a 500x500 frame, (250,250) is the central coordinate
         //Need a way to modify the parameters of FILLRECTANGLE and not the PAINT parameters
         //parameters above are for coordinate spot, length (magnitude) and direction pointing (angle)
 

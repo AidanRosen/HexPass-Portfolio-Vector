@@ -40,4 +40,40 @@ public class GraphMain extends JFrame {
 
         GraphMainUI.MainUI();
     }
+
+    public static void GraphSetUp(double magX, double magY, double domainUpper, double rangeUpper) { //used by all other model files to set up axes
+        for (int i = 0; i < 101; i++) { //set up axes labelded with grid value
+            for (int j = 0; j < 101; j++) {
+                if (i == 50) {
+                    if (j > 50) { //for sorting out negatives and positives
+                        Graph[i][j] = new JLabel(Double.toString(j * magX - domainUpper));
+                        if (Math.floor(j * magX - domainUpper) == j * magX - domainUpper) { //if the value is something .0 (so the same as an integer), only display the int and not .0 to save space
+                            Graph[i][j].setText(Integer.toString((int)(j * magX - domainUpper))); //converts double to int, them to string, then to jlabel
+                        }
+                    } else if (j < 50) { //if negative
+                        Graph[i][j] = new JLabel("-" + Double.toString((domainUpper - j * magX)));
+                        if (Math.floor(domainUpper - j * magX) == domainUpper - j * magX) {
+                            Graph[i][j].setText("-" + Integer.toString((int)(domainUpper - j * magX)));
+                        }
+                    } else if (j == 50) {
+                        Graph[i][j] = new JLabel("0");
+                    }
+                } else if (j == 50) {
+                    if (i < 50) {
+                        Graph[i][j] = new JLabel(Double.toString((rangeUpper - i * magY)));
+                        if (Math.floor(rangeUpper - i * magY) == rangeUpper - i * magY) {
+                            Graph[i][j].setText(Integer.toString((int)(rangeUpper - i * magY)));
+                        }
+                    } else {
+                        Graph[i][j] = new JLabel("-" + Double.toString(i * magY - rangeUpper));
+                        if (Math.floor(i * magY - rangeUpper) == i * magY - rangeUpper) {
+                            Graph[i][j].setText("-" + Integer.toString((int)(i * magY - rangeUpper)));
+                        }
+                    }
+                } else {
+                    Graph[i][j] = new JLabel(" ");
+                }
+            }
+        }
+    }
 }

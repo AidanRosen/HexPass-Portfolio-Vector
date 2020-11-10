@@ -116,6 +116,14 @@ public class GraphCubic extends JFrame { //I think this also extends JFrame auto
         Go.addActionListener(new ActionListener() {  //this has to be in here as Graph is not static and therefore cannot be accessed from the control file; if graph is made static, then non-static getcontentpane wouldn't work, and getcontentpane cannot be made static
             @Override
             public void actionPerformed(ActionEvent e) {
+                a = inputBox.getText(); //saves all user input
+                b = inputBox2.getText();
+                c = inputBox3.getText();
+                d = inputBox4.getText();
+                magX = inputBox5.getText();
+                magY = inputBox6.getText();
+                smoothness = inputBox7.getText();
+
                 if (a != null && b != null && c != null && d != null && magX != null && magY != null && smoothness != null) {
                     Graph(a, b, c, d, magX, magY, smoothness);
                 }
@@ -153,32 +161,23 @@ public class GraphCubic extends JFrame { //I think this also extends JFrame auto
             main(null);
         }
 
-        for (int i = 0; i < 101; i++) { //set up axes
-            for (int j = 0; j < 101; j++) {
-                if (i == 50) {
-                    GraphMain.Graph[i][j] = new JLabel("-");
-                } else if (j == 50) {
-                    GraphMain.Graph[i][j] = new JLabel("|");
-                } else {
-                    GraphMain.Graph[i][j] = new JLabel(" ");
-                }
-            }
-        }
-
         double domainLower = -50.0 * magX;
         double domainUpper = 50.0 * magX;
         double rangeLower = -50.0 * magY;
         double rangeUpper = 50.0 * magY;
 
+        GraphMain.GraphSetUp(magX, magY, domainUpper, rangeUpper);
+
         for (double x = domainLower; x < domainUpper; x += smoothness * magX) { //GraphCubics into a 2d array
+
             double y = (a * x * x * x + b * x * x + c * x + d); //plugs in x
 
             if (Math.abs(y) < rangeUpper && Math.abs(y) > rangeLower) {
-                GraphMain.Graph[50 - (int) Math.round((y / magY))][50 + (int) Math.round((x / magX))].setText("0"); //inputs into array scaled based on magnitude (eg if mag is 0.1 then each space in the graph/array is equal to 0.1 instead of 1/zooms in by 10x into the graph
+                GraphMain.Graph[50 - (int) Math.round((y / magY))][50 + (int) Math.round((x / magX))].setText("⬤"); //inputs into array scaled based on magnitude (eg if mag is 0.1 then each space in the graph/array is equal to 0.1 instead of 1/zooms in by 10x into the graph
                 //50 is the axes
-                //eg if y is -20, the program puts a 0 in the 2d array at row 50 - (-20) = row 70 from the top
-                //if x is 10, the program puts a 0 in column 50 + 10 = column 60 of the 2d array
-                //so "0" is inserted at (60, 70) or (10, -20) in graphical terms
+                //eg if y is -20, the program puts a ⬤ (which makes up the line/curve) in the 2d array at row 50 - (-20) = row 70 from the top
+                //if x is 10, the program puts a ⬤ in column 50 + 10 = column 60 of the 2d array
+                //so "⬤" is inserted at (60, 70) or (10, -20) in graphical terms
             }
         }
 

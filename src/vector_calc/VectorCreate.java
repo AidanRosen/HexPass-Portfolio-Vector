@@ -41,22 +41,10 @@ public class VectorCreate { //created by Aidan Rosen EXCEPT for the sqrt method,
 
     }
 
-    public double resultantMag(String property) {
+    public double resultantMag() {
         //We are keeping the switch case in the event that the error with setting value
         //to what is returned no longer causes issues
         //previously, it returned a value that was not what we intended despite assigning it equal to this.magnitude or this.direction
-        double value = 0.0;
-        switch (property) {
-            case "magnitude":
-                value = 0 + this.magnitude;
-                System.out.println("This is the value of magnitude: " + String.valueOf(magnitude));
-
-            case "directionality":
-                value = this.directionality;
-
-        }
-
-        System.out.println("Before return: This is the value of value: " + String.valueOf(value));
         return this.magnitude;
     }
 
