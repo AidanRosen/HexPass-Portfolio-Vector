@@ -156,7 +156,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
 
         });
 
-        textField_horiz.setText("1.0");
+        textField_horiz.setText("10");
         textField_horiz.setBorder(new MatteBorder(4, 4, 4, 4, Color.WHITE));
         textField_horiz.setOpaque(true);
         textField_horiz.setForeground(Color.WHITE);
@@ -195,7 +195,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
             }
         });
 
-        textField_vert.setText("1.0");
+        textField_vert.setText("10");
         textField_vert.setBorder(new MatteBorder(4, 4, 4, 4, Color.WHITE));
         textField_vert.setOpaque(true);
         textField_vert.setForeground(Color.WHITE);

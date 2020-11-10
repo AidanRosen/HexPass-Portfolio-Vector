@@ -5,6 +5,8 @@ import java.awt.*;
 import java.awt.image.ImageObserver;
 import java.text.AttributedCharacterIterator;
 import javax.swing.JFrame;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 import javax.swing.text.html.HTMLDocument;
 
 public class VectorDraw extends JFrame {
@@ -14,6 +16,7 @@ public class VectorDraw extends JFrame {
     int magnitude;
     int trimag;
     int direction;
+
     public VectorDraw (double mag, double angle){
         setTitle("Drawn Vector");
         magnitude = (int) mag;
@@ -217,21 +220,22 @@ public class VectorDraw extends JFrame {
         //parameters above are for coordinate spot, length (magnitude) and direction pointing (angle)
 
         //typecast magnitude, a double, into the integer size so that no errors occur when using a double in an integer parameter
-
-
+        Graphics2D g2d = (Graphics2D) g.create();
         trimag = this.magnitude + 50;
         //Set corner x coordinate
-        int[]x = {this.trimag, this.trimag + 20, this.trimag};
-        //Set y coordinate
-        int[]y = {45, 58, 70};
+        g2d.rotate((this.direction * Math.PI) / 180);
         //Draw triangle
-        g.setColor(new Color(0,0,0));
-        g.fillPolygon(x, y, 3);
+        int[] x = {this.trimag, this.trimag + 20, this.trimag};
+        //Set y coordinate
+        int[] y = {45, 58, 70};
+        g2d.setColor(new Color(0, 0, 0));
+        g2d.fillPolygon(x, y, 3);
+        }
 
 
 
         //size is in the "width" parameter
         //Need a way to make it point a certain direction
         //g.fillRect(x, y, size, 15);
-    }
 }
+
