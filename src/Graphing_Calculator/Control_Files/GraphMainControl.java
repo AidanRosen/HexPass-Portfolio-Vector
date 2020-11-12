@@ -1,11 +1,12 @@
-package Graphing_Calculator;
+package Graphing_Calculator.Control_Files;
 
+import Graphing_Calculator.GraphMain;
 import Graphing_Calculator.Model_Files.*;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GraphMainUI extends GraphMain {
+public class GraphMainControl extends GraphMain {
     public static void MainUI() {
 
         userInput.setText("");
@@ -30,6 +31,9 @@ public class GraphMainUI extends GraphMain {
                         break;
                     case "5":
                         GraphLog.main(null);
+                        break;
+                    case "6":
+                        GraphRational.main(null);
                         break;
                     default:
                         MainUI(); //recursion
