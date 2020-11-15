@@ -13,7 +13,7 @@ import java.awt.Color;
 //It does not use objects yet.
 class Passcheck{
     //NEED to know how to control namespaces with instanced variables!
-    //Like, how to make a pssword string here AND in main
+    //Like, how to make a password string here AND in main
     public static void passCheck(){
         //This MUST be the same name as the class to work
         //System.out.println("code in Passcheck working");
@@ -21,7 +21,7 @@ class Passcheck{
         //^ this is important! it enables user input from java.util
         //String dummy = "dummy"; old code
         //Dummy will be replaced with the actual password variable
-        String passTest = null;
+        String passTest;
         //Initialized this way to be used later
         int attempts = 7;
 
@@ -47,7 +47,7 @@ class Passcheck{
                 System.out.println("This Username Exists!");
                 System.out.print("\033[H\033[2J");
                 animation();
-                VectorControl.prettyWindow(passTest);
+                ColoredWindow frame = new ColoredWindow(passTest);
                 Manager m = new Manager(UsernameChecker.username, AccountCreate.userPass.get(UsernameChecker.username)); //initializes Manager object with the username from UsernameChecker and the password from the hashmap
             }
             else {
@@ -85,7 +85,7 @@ class Passcheck{
             for (int j = 0; j < 11; j++) {
                 System.out.print(heart[i][j]);
             }
-            System.out.println("");
+
         }
 
         try {
@@ -101,7 +101,6 @@ class Passcheck{
             for (int j = 0; j < 11; j++) {
                 System.out.print(heartInv[i][j]);
             }
-            System.out.println("");
         }
 
         try {

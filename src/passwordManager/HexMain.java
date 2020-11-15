@@ -1,11 +1,12 @@
 package passwordManager;
 
+import javax.swing.*;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 //need this for user input with
 
 
-public class HexMain {
+public class HexMain extends JFrame {
 
     public HexMain (){
         HexMain.main(null);
@@ -17,7 +18,7 @@ public class HexMain {
         //accepts user input for INTEGERS
         Scanner choice = new Scanner(System.in);
         //hashmap initialization needed, see below
-        System.out.println("\n\nWelcome to the main menu OF PASSWORD MANAGERER with an -er");
+        System.out.println("\n\nWelcome to the main menu OF PASSWORD MANAGER with an -er");
         System.out.println("1. Account creation");
         if (accountMade){
             System.out.println("2. Username login");

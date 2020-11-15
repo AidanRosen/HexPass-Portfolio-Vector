@@ -2,20 +2,15 @@ import Graphing_Calculator.GraphMain;
 
 
 import passwordManager.HexMain;
-import passwordManager.ColoredWindow;
 
-import vector_calc.VectorCalculatorUI;
 import vector_calc.VectorControl;
+
+
 import view_control.GraphingCalculatorAJ;
 
-import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
-import java.awt.Font;
 import java.awt.Color;
-import javax.swing.JButton;
 import java.awt.event.*;
 import javax.swing.border.MatteBorder;
 import javax.swing.JMenu;
@@ -55,12 +50,11 @@ public class CentralMenu extends JFrame { //created by Aidan <3 Rosen
 
 
     CentralMenu() {
-        VectorControl.prettyWindow("ea3c53");
         getContentPane().setBackground(Color.BLUE);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setBounds(100, 100, 1000, 500);
         getContentPane().setLayout(null);
-
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         menuChoice.setOpaque(true);
         menuChoice.setForeground(Color.WHITE);
         menuChoice.setBorder(new MatteBorder(4, 4, 4, 4,new Color(61, 237, 151)));

@@ -40,10 +40,6 @@ public class VectorControl {
         view.calculateAnswer(magnitude, direction);
     }
 
-    public static void prettyWindow (String pass){
-        ColoredWindow window = new ColoredWindow(pass);
-    }
-
 }
 
 

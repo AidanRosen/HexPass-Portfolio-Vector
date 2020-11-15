@@ -18,7 +18,8 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
     private final JLabel direction = new JLabel("");
     private final JTextField textField_horiz = new JTextField("Type the magnitude of the Horizontal Component", 20);
     private final JTextField textField_vert = new JTextField("Type the magnitude of the Vertical Component", 20);
-//You MUST move these text fields to here so that they can be accessed throughout the whole file instead of getting an "unknown symbol" error
+
+    //You MUST move these text fields to here so that they can be accessed throughout the whole file instead of getting an "unknown symbol" error
 
 
 
@@ -43,13 +44,13 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         //This section DRAWS the vector - Aidan
 
         //Note that calcAnswer is magnitude, and resultant.resultantDirec() is directionality
-        VectorDraw drawnVector = new VectorDraw(calcAnswer, direc);
+        VectorCanvas drawVector = new VectorCanvas(calcAnswer, direc);
 
         System.out.println("\n\nEnd of vector painting");
         //End of vector drawing - Aidan
 
         //arg1 = Double.parseDouble(calcArea.getText());
-      ;
+
     }
 
 
