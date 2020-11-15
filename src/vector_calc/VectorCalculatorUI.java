@@ -50,7 +50,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         //End of vector drawing - Aidan
 
         //arg1 = Double.parseDouble(calcArea.getText());
-
+      
     }
 
 

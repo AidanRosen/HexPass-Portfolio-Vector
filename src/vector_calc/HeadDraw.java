@@ -18,6 +18,7 @@ public class HeadDraw extends JPanel{
     }
 
     public void drawTri(Graphics g){
+        //typecast magnitude, a double, into the integer size so that no errors occur when using a double in an integer parameter
         Graphics2D g2d = (Graphics2D) g.create();
         trimag = this.magnitude + 50;
         //Set corner x coordinate
