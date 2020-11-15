@@ -50,7 +50,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         //End of vector drawing - Aidan
 
         //arg1 = Double.parseDouble(calcArea.getText());
-      
+
     }
 
 
@@ -58,7 +58,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
      * Save values for Calculator.
      */
     private void resetBoxText(JTextField textfield) { // method to store 1st value in calculation (arg1)
-        textfield.setText("1.0");
+        textfield.setText("10.0");
 
     }
 
