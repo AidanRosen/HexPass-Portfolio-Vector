@@ -29,8 +29,13 @@ public class VectorDraw extends JPanel{
 
         super.paint(g);
         Graphics2D g2 = (Graphics2D) g;
-        Stroke stroke = new BasicStroke(6f);
-        g2.setStroke(stroke);
+        float[] dash1 = { 2f, 0f, 2f };
+        Stroke stroke1 = new BasicStroke(6f, BasicStroke.CAP_BUTT,
+                BasicStroke.JOIN_ROUND,
+                1.0f,
+                dash1,
+                2f);
+        g2.setStroke(stroke1);
         Line2D lin = new Line2D.Float(50, 400, 50 + xChange, 400 - yChange);
         //you MUST use 250 - ychange because JFrame coordinates go backwards to go up in the y axis
         g2.draw(lin);

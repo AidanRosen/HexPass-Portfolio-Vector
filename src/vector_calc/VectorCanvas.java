@@ -15,6 +15,7 @@ public class VectorCanvas extends JPanel{
 
     private List<VectorDraw> legs = new ArrayList<>();
     private List<HeadDraw> heads = new ArrayList<>();
+    private ResultantDraw solid;
 
     public VectorCanvas (double magnitude, double direction, double horizontal, double vertical){
         JFrame jF = new JFrame();
@@ -22,6 +23,8 @@ public class VectorCanvas extends JPanel{
         jF.setTitle("Drawn Vector");
         jF.setSize(500,500);
         jF.setVisible(true);
+
+        solid = new ResultantDraw(magnitude, direction, horizontal, vertical);
 
         legs.add(new VectorDraw(magnitude, direction,  horizontal, vertical));
 
@@ -37,9 +40,6 @@ public class VectorCanvas extends JPanel{
 
         //addShape(rectangle);
         jF.add(this);
-
-
-
     }
 
     @Override
@@ -48,12 +48,10 @@ public class VectorCanvas extends JPanel{
         for (VectorDraw shape : legs) {
             shape.drawRect(g);
         }
+        solid.drawResult(g);
         for (HeadDraw tri : heads) {
             tri.drawTri(g);
         }
     }
-
-
-
 
 }
