@@ -31,7 +31,7 @@ public class VectorCanvas extends JPanel{
         //draws flat vertical line
 
         heads.add(new HeadDraw(magnitude, direction, horizontal, vertical));
-
+    //commit change
 
         //Graphics a = null; //Fixed the enormous clutter of the old graphics object initialization
 
