@@ -1,15 +1,14 @@
 package Graphing_Calculator;
 //Alex Hu
-import Graphing_Calculator.Model_Files.*;
 //Anytime you need to access a variable or method from a class outside your package, you must import package_name.class_name
+import Graphing_Calculator.Control_Files.GraphMainControl;
+
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.*;
+        import javax.swing.*;
 
 public class GraphMain extends JFrame {
     public static JLabel prompt = new JLabel("Please enter an option: ");
-    public static JLabel options = new JLabel("1: Cubic    2: Polynomial    3: Trig    4: Exponent/Roots    5: Log/Ln");
+    public static JLabel options = new JLabel("1: Cubic    2: Polynomial    3: Trig    4: Exponents    5: Log/Ln    6: Rational");
     public static JTextField userInput = new JTextField(5);
     public static String choice = null;
     public static JLabel[][] Graph = new JLabel[101][101]; //for the graph
@@ -30,7 +29,7 @@ public class GraphMain extends JFrame {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setBounds(100, 100, 960, 540); //sets size of the window
         getContentPane().setLayout(null);
-        prompt.setBounds(50, 80, 500, 40); //sets location of text
+        prompt.setBounds(50, 80, 800, 40); //sets location of text
         options.setBounds(50, 120, 500, 40);
         userInput.setBounds(50, 160, 500, 40);
 
@@ -38,7 +37,7 @@ public class GraphMain extends JFrame {
         getContentPane().add(options);
         getContentPane().add(userInput);
 
-        GraphMainUI.MainUI();
+        GraphMainControl.MainUI();
     }
 
     public static void GraphSetUp(double magX, double magY, double domainUpper, double rangeUpper) { //used by all other model files to set up axes
