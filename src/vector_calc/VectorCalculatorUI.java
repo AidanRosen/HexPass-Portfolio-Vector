@@ -44,7 +44,6 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         //This section DRAWS the vector - Aidan
 
         //Note that calcAnswer is magnitude, and resultant.resultantDirec() is directionality
-        VectorCanvas drawVector = new VectorCanvas(calcAnswer, direc);
 
         System.out.println("\n\nEnd of vector painting");
         //End of vector drawing - Aidan
