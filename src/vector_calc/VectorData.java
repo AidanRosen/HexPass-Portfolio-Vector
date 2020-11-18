@@ -40,6 +40,13 @@ public class VectorData {
         return direction;
     }
 
+    public double getargOne() {
+        return arg1;
+    }
+
+    public double getargTwo() {
+        return arg2;
+    }
 
 
     public static void stackCreate(String[] args) {

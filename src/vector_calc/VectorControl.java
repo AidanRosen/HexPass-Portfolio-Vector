@@ -37,7 +37,10 @@ public class VectorControl {
         model.calculations();
         double direction = model.getDirection();
         double magnitude = model.getMag();
+        double legOne = model.getargOne();
+        double legTwo = model.getargTwo();
         view.calculateAnswer(magnitude, direction);
+        VectorCanvas drawVector = new VectorCanvas(magnitude, direction, legOne, legTwo);
     }
 
 }
