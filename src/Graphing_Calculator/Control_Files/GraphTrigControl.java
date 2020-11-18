@@ -21,7 +21,7 @@ public class GraphTrigControl extends GraphTrig {
                 }
 
                 if (funcLabel.getText().equals("Func")) {
-                    funcLabel.setText("sin");
+                    funcLabel.setText("sin^");
                 }
 
                 inputsValsCoef.add(inputBoxCoef.getText()); //saves the text from the input box into an arraylist when user chooses to graph

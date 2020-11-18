@@ -25,7 +25,7 @@ public class GraphingCalculatorUI extends JFrame {
 
     public GraphingCalculatorUI() { //constructor
         //print out the 2d array as a new window
-        getContentPane().setBackground(new Color(175, 238, 238));
+        getContentPane().setBackground(new Color(255, 255, 255));
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setBounds(100, 100, 1920, 1080); //sets size of the window
         getContentPane().setLayout(null);

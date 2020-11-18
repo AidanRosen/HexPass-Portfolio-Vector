@@ -61,6 +61,16 @@ public class GraphRational extends JFrame {
     public GraphRational() { //constructor for initializing labels and textboxes and add them to getcontentpane
         side = FRAC_SIDE.N;
 
+        inputBoxCoef.setText(""); //clears the inputbox for the next input
+        inputBoxExp.setText("");
+        inputBoxX.setText("");
+        inputBoxY.setText("");
+        inputBoxS.setText("");
+        inputsValsCoefN.removeAll(inputsValsCoefN);
+        inputsValsCoefD.removeAll(inputsValsCoefD);
+        inputsValsExpN.removeAll(inputsValsExpN);
+        inputsValsExpD.removeAll(inputsValsExpD);
+
         getContentPane().setBackground(new Color(175, 238, 238));
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setBounds(100, 100, 1920, 1080); //sets size of the window
@@ -123,6 +133,10 @@ public class GraphRational extends JFrame {
 
                 if (magX != null && magY != null && smoothness != null && inputsValsCoefN.size() == inputsValsExpN.size() && inputsValsCoefD.size() == inputsValsExpD.size()) { //is user has inputted these values
                     Graph(inputsValsCoefN, inputsValsExpN, inputsValsCoefD, inputsValsExpD, magX, magY, smoothness);
+                    inputsValsCoefN.removeAll(inputsValsCoefN);
+                    inputsValsCoefD.removeAll(inputsValsCoefD);
+                    inputsValsExpN.removeAll(inputsValsExpN);
+                    inputsValsExpD.removeAll(inputsValsExpD);
                 }
             }
         });

@@ -7,10 +7,6 @@ import java.awt.*;
 import java.awt.event.*;
 import java.lang.Math.*; //for trig functions
 import java.util.ArrayList;
-//todo: x axes scales incorrectly
-//todo: y axis should only display every 3rd number
-//todo: only sin works, all others show as y=0
-//todo: x-ints not showing
 
 import Graphing_Calculator.Control_Files.GraphPolyControl;
 import Graphing_Calculator.Control_Files.GraphTrigControl;
@@ -38,7 +34,7 @@ public class GraphTrig extends JFrame {
     public static JLabel promptX = new JLabel("Please enter the x magnitude/zoom level (0.1-10):");
     public static JLabel promptY = new JLabel("Please enter the y magnitude/zoom level (0.1-10):");
     public static JLabel errorMessage = new JLabel("");
-    public static JLabel XIntColon = new JLabel("Approximate x-intercept(s): ");
+    public static JLabel XIntColon = new JLabel("Approximate x-int(s) in terms of pi: ");
     public static JLabel YIntColon = new JLabel("Y-intercept: ");
 
     public static JTextField inputBoxCoef = new JTextField("");
@@ -66,6 +62,17 @@ public class GraphTrig extends JFrame {
 
 
     public GraphTrig() { //constructor for initializing labels and textboxes and add them to getcontentpane
+        inputBoxCoef.setText(""); //clears the inputbox for the next input
+        funcLabel.setText("Func");
+        inputBoxExp.setText("");
+        inputBoxX.setText("");
+        inputBoxY.setText("");
+        magX = null;
+        magY = null;
+        inputsValsCoef.removeAll(inputsValsCoef);
+        inputsValsFunc.removeAll(inputsValsFunc);
+        inputsValsExp.removeAll(inputsValsExp);
+
         getContentPane().setBackground(new Color(175, 238, 238));
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setBounds(100, 100, 1920, 1080); //sets size of the window
@@ -123,7 +130,7 @@ public class GraphTrig extends JFrame {
                 }
 
                 if (funcLabel.getText().equals("Func")) {
-                    funcLabel.setText("sin");
+                    funcLabel.setText("sin^");
                 }
 
                 inputsValsCoef.add(inputBoxCoef.getText()); //saves the text from the input box into an arraylist when user chooses to graph
@@ -135,6 +142,9 @@ public class GraphTrig extends JFrame {
 
                 if (magX != null && magY != null && inputsValsCoef.size() == inputsValsExp.size() && inputsValsExp.size() == inputsValsFunc.size()) { //is user has inputted these values
                     Graph(inputsValsCoef, inputsValsFunc, inputsValsExp, magX, magY);
+                    inputsValsCoef.removeAll(inputsValsCoef);
+                    inputsValsFunc.removeAll(inputsValsFunc);
+                    inputsValsExp.removeAll(inputsValsExp);
                 }
             }
         });
@@ -191,50 +201,41 @@ public class GraphTrig extends JFrame {
 
         for (int i = 0; i < 97; i++) { //requires a different set up for axes labeled with grid value in radians
             for (int j = 0; j < 97; j++) {
-                if (i == 48) {
-                    if (j > 48) { //for sorting out negatives and positives
-                        if (j % 3 == 0) { //only label every 3 grid boxes
-                            GraphMain.Graph[i][j] = new JLabel(Double.toString((j * magX) / Math.PI - (domainUpper / Math.PI)));
-                        } else {
-                            GraphMain.Graph[i][j] = new JLabel("-");
-                        }
 
-                        if (Math.floor(((j * magX) / Math.PI - (domainUpper / Math.PI))) == (j * magX) / Math.PI - (domainUpper / Math.PI)) { //if the value is something .0 (so the same as an integer), only display the int and not .0 to save space
-                            GraphMain.Graph[i][j].setText(Integer.toString((int)((j * magX) / Math.PI - (domainUpper / Math.PI)))); //converts double to int, them to string, then to jlabel
-                        }
-                    } else if (j < 48) { //if negative
-                        if (j % 3 == 0) {
-                            GraphMain.Graph[i][j] = new JLabel("-" + Double.toString((j * magX) / Math.PI - (domainUpper / Math.PI)));
-                        } else {
-                            GraphMain.Graph[i][j] = new JLabel("-");
-                        }
+                double value = ((j * magX) - (domainUpper * 6 / Math.PI))/ 6; //calculates the value in pi radians to display on the x axis
 
-                        if (Math.floor(((j * magX) / Math.PI - (domainUpper / Math.PI))) == (j * magX) / Math.PI - (domainUpper / Math.PI)) {
-                            GraphMain.Graph[i][j].setText("-" + Integer.toString((int)((j * magX) / Math.PI - (domainUpper / Math.PI))));
+                if (i == 48) { //x-axis
+                    if (j % 3 == 0) { //only label every 3 grid boxes, or every pi/2 radians
+
+                        GraphMain.Graph[i][j] = new JLabel(Double.toString(value));
+                        if (Math.floor(value) == value) { //if the value is something .0 (so the same as an integer), only display the int and not .0 to save space
+                            GraphMain.Graph[i][j].setText(Integer.toString((int)(value))); //converts double to int, them to string, then to jlabel
                         }
-                    } else if (j == 48) {
+                    } else {
+                        GraphMain.Graph[i][j] = new JLabel("-");
+                    }
+
+                    if (j == 48) {
                         GraphMain.Graph[i][j] = new JLabel("0");
                     }
-                } else if (j == 48) {
+                } else if (j == 48) { //y-axis
                     if (i < 48) {
-                        if (i % 3 == 0) { //only label every 3 grid boxes, or every pi/2 radians
+                        if (i % 3 == 0) { //only label every 3 grid boxes
                             GraphMain.Graph[i][j] = new JLabel(Double.toString((rangeUpper - i * magY / 3)));
+                            if (Math.floor(rangeUpper - i * magY) == rangeUpper - i * magY) {
+                                GraphMain.Graph[i][j].setText(Integer.toString((int)(rangeUpper - i * magY / 3)));
+                            }
                         } else {
                             GraphMain.Graph[i][j] = new JLabel("|");
-                        }
-
-                        if (Math.floor(rangeUpper - i * magY) == rangeUpper - i * magY) {
-                            GraphMain.Graph[i][j].setText(Integer.toString((int)(rangeUpper - i * magY / 3)));
                         }
                     } else {
                         if (i % 3 == 0) {
                             GraphMain.Graph[i][j] = new JLabel("-" + Double.toString(i * magY / 3 - rangeUpper));
+                            if (Math.floor(i * magY - rangeUpper) == i * magY - rangeUpper) {
+                                GraphMain.Graph[i][j].setText("-" + Integer.toString((int)(i * magY / 3 - rangeUpper)));
+                            }
                         } else {
                             GraphMain.Graph[i][j] = new JLabel("|");
-                        }
-
-                        if (Math.floor(i * magY - rangeUpper) == i * magY - rangeUpper) {
-                            GraphMain.Graph[i][j].setText("-" + Integer.toString((int)(i * magY / 3 - rangeUpper)));
                         }
                     }
                 } else {
@@ -246,17 +247,17 @@ public class GraphTrig extends JFrame {
         for (double x = domainLower; x < domainUpper; x += magX * (Math.PI / 6)) { //Graphs into a 2d array, x axis advances by pi/6 radians at a time
             y = 0.0; //resets y for every new x-value
             for (int i = 0; i < coefficients1.size(); i++) {
-                if (functions1.get(i).equals("sin")) { //calculations
+                if (functions1.get(i).equals("sin^")) { //calculations
                     y += (Math.pow(Math.sin(x), Double.parseDouble(exponents1.get(i))) * Double.parseDouble(coefficients1.get(i)));
-                } else if (functions1.get(i).equals("cos")) {
+                } else if (functions1.get(i).equals("cos^")) {
                     y += (Math.pow(Math.cos(x), Double.parseDouble(exponents1.get(i))) * Double.parseDouble(coefficients1.get(i)));
-                } else if (functions1.get(i).equals("tan")) {
+                } else if (functions1.get(i).equals("tan^")) {
                     y += (Math.pow(Math.tan(x), Double.parseDouble(exponents1.get(i))) * Double.parseDouble(coefficients1.get(i)));
-                } else if (functions1.get(i).equals("csc")) {
+                } else if (functions1.get(i).equals("csc^")) {
                     y += (Math.pow((1 / Math.sin(x)), Double.parseDouble(exponents1.get(i))) * Double.parseDouble(coefficients1.get(i)));
-                } else if (functions1.get(i).equals("sec")) {
+                } else if (functions1.get(i).equals("sec^")) {
                     y += (Math.pow((1 / Math.cos(x)), Double.parseDouble(exponents1.get(i))) * Double.parseDouble(coefficients1.get(i)));
-                } else if (functions1.get(i).equals("cot")) {
+                } else if (functions1.get(i).equals("cot^")) {
                     y += (Math.pow((1 / Math.tan(x)), Double.parseDouble(exponents1.get(i))) * Double.parseDouble(coefficients1.get(i)));
                 }
             }
@@ -264,8 +265,8 @@ public class GraphTrig extends JFrame {
             if (Math.abs(y) < rangeUpper && Math.abs(y) > rangeLower) { //puts x,y coordinates into 2d array if they are within -50,50 or otherwise specified by the magnitude
                 GraphMain.Graph[48 - (int) Math.round(((y * 3) / magY))][48 + (int) Math.round(((x / (Math.PI / 6)) / magX))].setText("⬤"); //inputs the coordinate into the 2darray
 
-                if (y == 0.0) { //approx x-intercept
-                    XInts.add(x); //stores current x-value as an x-int
+                if (y > -0.1 && y < 0.1) { //approx x-intercept
+                    XInts.add(x / Math.PI); //stores current x-value as an x-int
                 }
 
                 if (x == 0.0) { //y-int
@@ -276,7 +277,7 @@ public class GraphTrig extends JFrame {
 
         GraphingCalculatorUI.main(null); //prints out graph
 
-        XIntColon.setBounds(25, 700, 200, 50);
+        XIntColon.setBounds(25, 600, 200, 50);
         getContentPane().add(XIntColon);
         YIntColon.setBounds(1000, 50, 100, 50);
         getContentPane().add(YIntColon);
@@ -291,7 +292,7 @@ public class GraphTrig extends JFrame {
                 wrapText = 0;
             }
 
-            XIntDisplays.get(i).setBounds(225 + wrapText  * 100, 640 + rowNumber * 60, 100, 50);
+            XIntDisplays.get(i).setBounds(225 + wrapText  * 100, 540 + rowNumber * 60, 100, 50);
             getContentPane().add(XIntDisplays.get(i)); //adds that new jlabel to the screen
         }
 
