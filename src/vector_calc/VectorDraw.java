@@ -11,16 +11,17 @@ public class VectorDraw extends JPanel{
     int direction;
     int xChange;
     int yChange;
-    int trimag;
+    int yFinal;
 
 
-    public VectorDraw (double mag, double angle, double xDis, double yDis){
+    public VectorDraw (double mag, double angle, double xDis, double yDis, int finalY){
 
         magnitude = (int) mag;
         direction = (int) angle;
         xChange = (int) xDis;
         yChange = (int) yDis;
-        trimag = this.magnitude + 50;
+        yFinal = finalY;
+
 
     }
 
@@ -31,7 +32,7 @@ public class VectorDraw extends JPanel{
         Graphics2D g2 = (Graphics2D) g;
         Stroke stroke = new BasicStroke(6f);
         g2.setStroke(stroke);
-        Line2D lin = new Line2D.Float(50, 400, 50 + xChange, 400 - yChange);
+        Line2D lin = new Line2D.Float(50, 50 + yChange, 50 + xChange, yFinal);
         //you MUST use 250 - ychange because JFrame coordinates go backwards to go up in the y axis
         g2.draw(lin);
 

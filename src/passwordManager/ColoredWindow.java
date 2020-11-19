@@ -1,14 +1,29 @@
 package passwordManager;
 
 import java.awt.*;
-import javax.swing.JFrame;
+import javax.swing.*;
 
 import java.awt.Color;
 import java.awt.Dimension;
 
 
-public class ColoredWindow extends JFrame{
+public class ColoredWindow extends JFrame {
 
+
+    public ColoredWindow(String password) {
+
+        String colorUsed = "#" + password;
+        Color myColor = Color.decode(colorUsed);
+        JPanel pane = new JPanel();
+        setBounds(100, 100, 500, 500);
+        //setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        Container con = this.getContentPane();
+        getContentPane().setBackground(myColor);
+        con.add(pane);
+        setVisible(true);
+    }
+
+    /*
     public ColoredWindow(String password){
         //Uses the parameter above which should be the passTest passed in as the hex password.
         //You MUST define this as a string
@@ -27,9 +42,9 @@ public class ColoredWindow extends JFrame{
         setPreferredSize(new Dimension(550, 300));
 
         //Notice how Color is the object and .myColor is the data within that object
-        getContentPane().setLayout(null);
+        //getContentPane().setLayout(null);
         pack();
         setVisible(true);
 
-    }
+    }*/
 }

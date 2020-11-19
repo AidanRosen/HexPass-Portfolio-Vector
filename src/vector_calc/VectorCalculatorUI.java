@@ -39,7 +39,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         String degrees = String.valueOf(direc);
         calcAnswer = mag;
         calcArea.setText(String.valueOf(calcAnswer));
-        direction.setText(degrees + " \nRADIANS");
+        direction.setText(degrees + " \nDEGREES");
 
         //This section DRAWS the vector - Aidan
 
@@ -57,7 +57,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
      * Save values for Calculator.
      */
     private void resetBoxText(JTextField textfield) { // method to store 1st value in calculation (arg1)
-        textfield.setText("10.0");
+        textfield.setText("100.0");
 
     }
 
@@ -98,8 +98,8 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
         getContentPane().add(magLabel);
 
         //label for organization
-        JLabel label1 = new JLabel("Horizontal Component");
-        label1.setText("Horizontal Component");
+        JLabel label1 = new JLabel("Vertical Component");
+        label1.setText("Vertical Component");
         label1.setOpaque(true);
         label1.setForeground(Color.WHITE);
         label1.setFont(new Font("Lucida Grande", Font.BOLD, 12));
@@ -123,7 +123,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
 
         });
 
-        textField_horiz.setText("1.0");
+        textField_horiz.setText("100.0");
         textField_horiz.setBorder(new MatteBorder(4, 4, 4, 4, Color.WHITE));
         textField_horiz.setOpaque(true);
         textField_horiz.setForeground(Color.WHITE);
@@ -140,8 +140,8 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
 
 
         //label for organization
-        JLabel label2 = new JLabel("Vertical Component");
-        label2.setText("Vertical Component");
+        JLabel label2 = new JLabel("Horizontal Component");
+        label2.setText("Horizontal Component");
         label2.setOpaque(true);
         label2.setForeground(Color.WHITE);
         label2.setFont(new Font("Lucida Grande", Font.BOLD, 12));
@@ -162,7 +162,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
             }
         });
 
-        textField_vert.setText("1.0");
+        textField_vert.setText("100.0");
         textField_vert.setBorder(new MatteBorder(4, 4, 4, 4, Color.WHITE));
         textField_vert.setOpaque(true);
         textField_vert.setForeground(Color.WHITE);
@@ -215,6 +215,7 @@ public class VectorCalculatorUI extends JFrame { //From Andrew Hale
 
         direction.setOpaque(true);
         direction.setForeground(Color.WHITE);
+        direction.setText("BLANK Degrees");
         direction.setBorder(new MatteBorder(4, 4, 4, 4,new Color(61, 237, 151)));
         direction.setBackground(new Color(61, 237, 151));
         direction.setBounds(35, 242, 260, 30);

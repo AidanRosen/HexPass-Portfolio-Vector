@@ -27,10 +27,11 @@ public class HeadDraw extends JPanel{
         trimag = this.magnitude + 50; //a buffer for the first point
         //Set corner x coordinate
         //Draw triangle
-        g2d.rotate((this.direction * Math.PI) / 180, 50 + xChange, 400 - yChange); //This is what rotates the triangle, using radians
+        g2d.rotate((this.direction * Math.PI) / 180, 50 + xChange, 50); //This is what rotates the triangle, using radians
         //Set the x: and y: parameter to the final coordinate at the tip of the vector!
         int[] x  = {25 + xChange, 50 + xChange, 75 + xChange};
-        int [] y = {420 - yChange, 370 - yChange, 420 - yChange};
+        int [] y = {75, 25, 75};
+        //Where these y values are around the coordinate (x, 150)
         //int[] x = {this.trimag, this.trimag + 20, this.trimag};
         //Set y coordinate
         //int[] y = {45, 58, 70}; //45 is the trimag, middle is is the "central" or top point,
