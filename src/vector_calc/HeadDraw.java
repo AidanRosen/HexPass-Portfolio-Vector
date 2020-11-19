@@ -2,6 +2,7 @@ package vector_calc;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Random;
 
 public class HeadDraw extends JPanel{
 
@@ -35,7 +36,11 @@ public class HeadDraw extends JPanel{
         //int[] x = {this.trimag, this.trimag + 20, this.trimag};
         //Set y coordinate
         //int[] y = {45, 58, 70}; //45 is the trimag, middle is is the "central" or top point,
-        g2d.setColor(new Color(0, 0, 0));
+        Random rand = new Random();
+        float r = rand.nextFloat();
+        float z = rand.nextFloat();
+        float b = rand.nextFloat();
+        g2d.setColor(new Color(r, z, b)); //Creates random color every time you open the program
         g2d.fillPolygon(x, y, 3);
 
     }

@@ -52,6 +52,16 @@ public class GraphPoly extends JFrame {
     }
 
     public GraphPoly() { //constructor for initializing labels and textboxes and add them to getcontentpane
+        inputBoxCoef.setText(""); //clears the inputbox for the next input
+        inputBoxExp.setText("");
+        inputBoxX.setText("");
+        inputBoxY.setText("");
+        inputBoxS.setText("");
+        inputsValsCoef.removeAll(inputsValsCoef);
+        inputsValsExp.removeAll(inputsValsExp);
+        XInts.removeAll(XInts);
+        YInt = 0.0;
+
         getContentPane().setBackground(new Color(175, 238, 238));
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setBounds(100, 100, 1920, 1080); //sets size of the window
@@ -104,6 +114,8 @@ public class GraphPoly extends JFrame {
 
                 if (magX != null && magY != null && smoothness != null && inputsValsCoef.size() == inputsValsExp.size()) { //is user has inputted these values
                     Graph(inputsValsCoef, inputsValsExp, magX, magY, smoothness);
+                    inputsValsCoef.removeAll(inputsValsCoef);
+                    inputsValsExp.removeAll(inputsValsExp);
                 }
             }
         });

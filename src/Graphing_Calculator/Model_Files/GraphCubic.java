@@ -55,13 +55,18 @@ public class GraphCubic extends JFrame { //I think this also extends JFrame auto
         });
     }
 
-    public void resetScreen() {
-        getContentPane().removeAll(); //removes everything on the screen
-        repaint(); //reapplies background color
-    }
-
     public GraphCubic () { //constructor for initializing labels and textboxes and add them to getcontentpane
-        resetScreen();
+        inputBox.setText("");
+        inputBox2.setText("");
+        inputBox3.setText("");
+        inputBox4.setText("");
+        inputBox5.setText("");
+        inputBox6.setText("");
+        inputBox7.setText("");
+        a = null;
+        b = null;
+        c = null;
+        d = null;
 
         getContentPane().setBackground(new Color(175, 238, 238));
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -116,6 +121,13 @@ public class GraphCubic extends JFrame { //I think this also extends JFrame auto
         Go.addActionListener(new ActionListener() {  //this has to be in here as Graph is not static and therefore cannot be accessed from the control file; if graph is made static, then non-static getcontentpane wouldn't work, and getcontentpane cannot be made static
             @Override
             public void actionPerformed(ActionEvent e) {
+                String[]inputs = {a, b, c, d};
+                for (int i = 0; i < 4; i++) {
+                    if (inputs[i].equals(null)) {
+                        inputs[i] = "0";
+                    }
+                }
+
                 a = inputBox.getText(); //saves all user input
                 b = inputBox2.getText();
                 c = inputBox3.getText();
@@ -126,6 +138,10 @@ public class GraphCubic extends JFrame { //I think this also extends JFrame auto
 
                 if (a != null && b != null && c != null && d != null && magX != null && magY != null && smoothness != null) {
                     Graph(a, b, c, d, magX, magY, smoothness);
+                    a = null;
+                    b = null;
+                    c = null;
+                    d = null;
                 }
             }
         });

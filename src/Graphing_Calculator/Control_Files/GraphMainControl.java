@@ -30,9 +30,6 @@ public class GraphMainControl extends GraphMain {
                         GraphExpo.main(null);
                         break;
                     case "5":
-                        GraphLog.main(null);
-                        break;
-                    case "6":
                         GraphRational.main(null);
                         break;
                     default:
