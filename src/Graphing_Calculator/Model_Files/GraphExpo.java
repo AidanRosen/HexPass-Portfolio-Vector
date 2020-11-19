@@ -206,8 +206,6 @@ public class GraphExpo extends JFrame {
 
         GraphingCalculatorUI.main(null); //prints out graph
 
-        //add code for displaying the arraylist of jlabels of x-intercepts and the y-intercept
-        // use graphpoly's code as a reference for this
         XIntColon.setBounds(25, 500, 200, 50);
         getContentPane().add(XIntColon);
         YIntColon.setBounds(1000, 50, 100, 50);
