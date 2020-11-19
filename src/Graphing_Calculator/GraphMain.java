@@ -41,7 +41,7 @@ public class GraphMain extends JFrame {
     }
 
     public static void GraphSetUp(double magX, double magY, double domainUpper, double rangeUpper) { //used by all other model files to set up axes
-        for (int i = 0; i < 101; i++) { //set up axes labelded with grid value
+        for (int i = 0; i < 101; i++) { //set up axes labeled with grid value
             for (int j = 0; j < 101; j++) {
                 if (i == 50) {
                     if (j > 50) { //for sorting out negatives and positives
