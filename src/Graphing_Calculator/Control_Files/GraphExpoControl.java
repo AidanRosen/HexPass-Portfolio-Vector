@@ -10,6 +10,18 @@ import java.awt.event.*;
 public class GraphExpoControl extends GraphExpo {
 
     public static void main(String[] args) {
+        EnterNext.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Coefficients.add(Coefficient.getText());
+                BaseS.add(Base.getText());
+                ExponentS.add(Exponent.getText());
+                Coefficient.setText("");
+                Base.setText("");
+                Exponent.setText("");
+
+            }
+        });
         //initialize actionlisteners for buttons which adds the user input in the textfields (textfield.getText) into the respective arraylist (coefficients, exponents or bases)
     }
 }
