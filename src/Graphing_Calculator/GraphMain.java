@@ -8,7 +8,7 @@ import java.awt.*;
 
 public class GraphMain extends JFrame {
     public static JLabel prompt = new JLabel("Please enter an option: ");
-    public static JLabel options = new JLabel("1: Cubic    2: Polynomial    3: Trig    4: Exponents    5: Log/Ln    6: Rational");
+    public static JLabel options = new JLabel("1: Cubic    2: Polynomial    3: Trig    4: Exponents    5: Rational");
     public static JTextField userInput = new JTextField(5);
     public static String choice = null;
     public static JLabel[][] Graph = new JLabel[101][101]; //for the graph
