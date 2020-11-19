@@ -70,6 +70,8 @@ public class GraphRational extends JFrame {
         inputsValsCoefD.removeAll(inputsValsCoefD);
         inputsValsExpN.removeAll(inputsValsExpN);
         inputsValsExpD.removeAll(inputsValsExpD);
+        XInts.removeAll(XInts);
+        YInt = 0.0;
 
         getContentPane().setBackground(new Color(175, 238, 238));
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

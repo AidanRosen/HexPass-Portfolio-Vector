@@ -72,6 +72,8 @@ public class GraphTrig extends JFrame {
         inputsValsCoef.removeAll(inputsValsCoef);
         inputsValsFunc.removeAll(inputsValsFunc);
         inputsValsExp.removeAll(inputsValsExp);
+        XInts.removeAll(XInts);
+        YInt = 0.0;
 
         getContentPane().setBackground(new Color(175, 238, 238));
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
