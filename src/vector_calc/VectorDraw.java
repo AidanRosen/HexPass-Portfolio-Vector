@@ -4,6 +4,7 @@ package vector_calc;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.Line2D;
+import java.util.Random;
 
 public class VectorDraw extends JPanel{
 
@@ -30,12 +31,22 @@ public class VectorDraw extends JPanel{
 
         super.paint(g);
         Graphics2D g2 = (Graphics2D) g;
-        Stroke stroke = new BasicStroke(6f);
-        g2.setStroke(stroke);
+        float[] dash1 = { 2f, 0f, 2f };
+        Stroke stroke1 = new BasicStroke(6f, BasicStroke.CAP_BUTT,
+                BasicStroke.JOIN_ROUND,
+                1.0f,
+                dash1,
+                2f);
+        g2.setStroke(stroke1);
         Line2D lin = new Line2D.Float(50, 50 + yChange, 50 + xChange, yFinal);
         //you MUST use 250 - ychange because JFrame coordinates go backwards to go up in the y axis
+        Random rand = new Random();
+        float r = rand.nextFloat();
+        float z = rand.nextFloat();
+        float b = rand.nextFloat();
+        g2.setColor(new Color(r, z, b)); //Creates random color every time you open the program
+        //you MUST use 250 - ychange because JFrame coordinates go backwards to go up in the y axis
         g2.draw(lin);
-
 /*
         super.paintComponent(g);
         //paintComponent is inbuilt !!! MUST use it here

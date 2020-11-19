@@ -8,30 +8,40 @@ import javax.swing.JFrame;
 import java.awt.Shape;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 public class VectorCanvas extends JPanel{
 
     //Works by creating a new frame/window and THEN drawing the vector
 
-    private List<VectorDraw> legs = new ArrayList<>();
-    private List<HeadDraw> heads = new ArrayList<>();
+    private Vector<VectorDraw> legs = new Vector<>();
+    private Vector<HeadDraw> heads = new Vector<>();
+    private ResultantDraw solid;
 
     public VectorCanvas (double magnitude, double direction, double horizontal, double vertical){
         JFrame jF = new JFrame();
 
         jF.setTitle("Drawn Vector");
-        jF.setSize(500,500);
+        int width = (int) horizontal;
+        int height = (int) vertical;
+        jF.setSize(200 + width,100 + height);
         jF.setVisible(true);
 
-        legs.add(new VectorDraw(magnitude, direction,  horizontal, vertical));
+        //draws diagonal vector
+        solid = new ResultantDraw(magnitude, direction, horizontal, vertical, 50);
 
-        legs.add(new VectorDraw(0, 0.0,  horizontal, 0.0));
+
         //draws flat bottom line
-        legs.add(new VectorDraw(0, 90.0, 0.0, vertical));
-        //draws flat vertical line
+        legs.add(new VectorDraw(0, 0.0,  horizontal, vertical, 50 + height));
 
+        //draws flat vertical line
+        legs.add(new VectorDraw(0, 90.0, 0.0, vertical, 50));
+
+
+
+        //draws arrow head
         heads.add(new HeadDraw(magnitude, direction, horizontal, vertical));
-    //commit change
+
 
         //Graphics a = null; //Fixed the enormous clutter of the old graphics object initialization
 
@@ -48,9 +58,11 @@ public class VectorCanvas extends JPanel{
         for (VectorDraw shape : legs) {
             shape.drawRect(g);
         }
+        solid.drawResult(g);
         for (HeadDraw tri : heads) {
             tri.drawTri(g);
         }
+
     }
 
 

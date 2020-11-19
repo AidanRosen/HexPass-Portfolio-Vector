@@ -11,14 +11,15 @@ public class ResultantDraw extends JPanel {
     int direction;
     int xChange;
     int yChange;
+    int yFinal;
 
-
-    public ResultantDraw (double mag, double angle, double xDis, double yDis) {
+    public ResultantDraw (double mag, double angle, double xDis, double yDis, int finalY) {
 
         magnitude = (int) mag;
         direction = (int) angle;
         xChange = (int) xDis;
         yChange = (int) yDis;
+        yFinal = finalY;
 
     }
 
@@ -27,7 +28,7 @@ public class ResultantDraw extends JPanel {
         Graphics2D g2 = (Graphics2D) g;
         Stroke stroke2 = new BasicStroke(6f);
         g2.setStroke(stroke2);
-        Line2D lin = new Line2D.Float(50, 400, 50 + xChange, 400 - yChange);
+        Line2D lin = new Line2D.Float(50, 50 + yChange, 50 + xChange, yFinal);
         Random rand = new Random();
         float r = rand.nextFloat();
         float z = rand.nextFloat();
