@@ -11,7 +11,7 @@ NOTE: ***please type in lengths in the two blue squares of the vector calculator
 | Project portion | neat features | 
 | ---------------  | :------------:|
 |Vector Calculator| When resizing the window of the drawn vector, [the colors change randomly](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/1aee9d1e48f390d460f701281b9224f5653af82e/src/vector_calc/VectorDraw.java#L43). Do this by grabbing the side of the JFrame window and resizing. Also, [the JFrame adjusts automatically to any size of the vector dynamically](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/1aee9d1e48f390d460f701281b9224f5653af82e/src/vector_calc/VectorCanvas.java#L22). Vectors, an extension of stack, [are used to render objects](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/01896045b03db84a90dd989e097d44927798d3ed/src/vector_calc/VectorCanvas.java#L12)
-|
+
 
 # Critical thinking: 
 | Project Portion        | Code description hyperlinked           | Online resource hyperlinked if applicable  |
@@ -29,6 +29,10 @@ Self-grade:
 |name and self grade |peer 1 name and grade given| peer 2 name and grade given | peer 3 name and grade given | peer 4 name and grade given | 
 | ------------- |:-------------:| :-------------: | :-------------: | :-------------: |
 | Aidan [Diagrams in MS paint which helped clarify graphics math between all members](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.k0bmoxvc0qzb) and [overall slack communication clarification of general guidelines](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/slackEv.PNG) 25%| 
+
+# TODO's from journal: 
+[Weekly reflections and projections](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.cc009gc78h7o) and [stuff to add list](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.cfgj4ujjlrx0)
+
 
 # OLD (Week of early November)
 # How to run VectorCalculatorUI:
