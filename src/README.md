@@ -9,7 +9,7 @@ NOTE: ***please type in lengths in the two blue squares of the vector calculator
 
 
 # Critical thinking: 
-| Project Portion        | Code description hyperlinked           | Online resource if applicable  |
+| Project Portion        | Code description hyperlinked           | Online resource hyperlinked if applicable  |
 | ------------- |:-------------:| -----:|
 | Vector Calculator     | [Drawing triangles as polygons and doing geometric translations](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/0e31c41c766d907fe75bf340e8b4ad91d18f4cf0/src/vector_calc/HeadDraw.java#L36)  | [Refer to line with "g2d.rotate(Math.toRadians(45), 75, 75);"](http://www.java2s.com/Code/Java/2D-Graphics-GUI/RotationAboutCenter.htm) | 
 | Vector Calculator    | [Use of fifth parameter necessary to define end y-value and make the horizontal component render horizontally](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/0e31c41c766d907fe75bf340e8b4ad91d18f4cf0/src/vector_calc/VectorCanvas.java#L31)  |  No resource used |
