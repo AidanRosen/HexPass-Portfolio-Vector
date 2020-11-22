@@ -1,3 +1,10 @@
+# Week of 11/17
+# How to run VectorCalculatorUI:
+    
+1. Upon pressing play, a blue menu window will open --> click VectorCalculator in the top right --> type in the two adjacent squares beneath the label --> press the large blue square to the lower right --> check the new window behind the current one (frames display behind current frames) --> see the vector created
+
+![alt text](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/2020-11-22%2012-01-13.gif)
+
 # How to run VectorCalculatorUI:
 
     1.Upon running the application, click at the top right of the menu on "VectorCalculator". A new window will open with the 
