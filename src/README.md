@@ -2,7 +2,7 @@
 # How to run VectorCalculatorUI:
     
 ![alt text](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/2020-11-22%2012-01-13.gif)
-NOTE: ***please type in lengths in the two blue squares of the vector calculator between 50~ and 650~. Any larger is too big, and any smaller is generally unoticeable
+NOTE: ***please type in lengths in the two blue squares of the vector calculator between 50~ and 650~. Any larger is too big and renders past the monitor, and any smaller is generally unoticeable.
         Press the pink AC button in order to clear the calculator. You may open as many vector frames as you like by clicking the blue, square button in the lower right. 
         
 1. Apologies for grainy quality. Upon pressing play, a blue menu window will open --> click VectorCalculator in the top right --> type in the two adjacent squares beneath the label --> press the large blue square to the lower right --> check the new window behind the current one (frames display behind current frames) --> see the vector created
