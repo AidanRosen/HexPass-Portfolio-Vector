@@ -54,7 +54,7 @@ public class VectorCanvas extends JPanel{
         for (VectorDraw shape : legs) {
             shape.drawRect(g);
         }
-        //Here render the Resultant defined at the very top (ResultantDraw solid) outside a for loop because there is only one 
+        //Here render the Resultant defined at the very top (private ResultantDraw solid) outside a for loop because there is only one 
         solid.drawResult(g);
         for (HeadDraw tri : heads) {
             tri.drawTri(g);
