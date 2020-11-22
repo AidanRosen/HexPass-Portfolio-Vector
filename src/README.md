@@ -16,10 +16,9 @@ NOTE: ***please type in lengths in the two blue squares of the vector calculator
 | Vector Calculator | [Use of objects rendered all at once in a for loop to have a complete grasp of graphics rendering](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/86f7b88f514b693559aeeecb13ae7402fab164a9/src/vector_calc/VectorCanvas.java#L52)|  [Great Stack Overflow Explanation](https://stackoverflow.com/questions/22123266/drawing-multiple-jcomponents-to-a-frame)|
 | Vector Calculator | [MVC by passing in objects](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/d4969d3e931a5a505a3932660d1a1d7627dbaf74/src/vector_calc/VectorControl.java#L12) and [using getter and setter to connect between all those portions of MVC](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/d4969d3e931a5a505a3932660d1a1d7627dbaf74/src/vector_calc/VectorControl.java#L38) | [BlueJ photo of finalized connections](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/newMVC.PNG) | 
 
-# Collaboration
+# Collaboration:
 
-|  Project portion | example of collaboration | 
-
+| Project Portion        | example of collaboration |
 | VectorCalculator | [MS Paint diagrams shared between partners to effectively design project](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.k0bmoxvc0qzb) | 
 
 # OLD (Week of early November)
