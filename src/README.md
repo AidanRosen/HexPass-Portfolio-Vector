@@ -13,7 +13,7 @@ NOTE: ***please type in lengths in the two blue squares of the vector calculator
 | ------------- |:-------------:| -----:|
 | Vector Calculator     | [Drawing triangles as polygons and doing geometric translations](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/0e31c41c766d907fe75bf340e8b4ad91d18f4cf0/src/vector_calc/HeadDraw.java#L36)  | [Refer to line with "g2d.rotate(Math.toRadians(45), 75, 75);"](http://www.java2s.com/Code/Java/2D-Graphics-GUI/RotationAboutCenter.htm) | 
 | Vector Calculator    | [Use of fifth parameter necessary to define end y-value and make the horizontal component render horizontally](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/0e31c41c766d907fe75bf340e8b4ad91d18f4cf0/src/vector_calc/VectorCanvas.java#L31)  |  No resource used |
-| Vector Calculator | [Use of objects rendered all at once in a for loop to have a complete grasp of graphics rendering](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/86f7b88f514b693559aeeecb13ae7402fab164a9/src/vector_calc/VectorCanvas.java#L52)|  [Great Stack Overflow Explanation (https://stackoverflow.com/questions/22123266/drawing-multiple-jcomponents-to-a-frame)|
+| Vector Calculator | [Use of objects rendered all at once in a for loop to have a complete grasp of graphics rendering](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/86f7b88f514b693559aeeecb13ae7402fab164a9/src/vector_calc/VectorCanvas.java#L52)|  [Great Stack Overflow Explanation] (https://stackoverflow.com/questions/22123266/drawing-multiple-jcomponents-to-a-frame)|
 
 
 #OLD
