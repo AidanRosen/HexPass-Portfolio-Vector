@@ -2,12 +2,7 @@ package vector_calc;
 
 import javax.swing.JPanel;
 import java.awt.*;
-import java.awt.image.ImageObserver;
-import java.text.AttributedCharacterIterator;
 import javax.swing.JFrame;
-import java.awt.Shape;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Vector;
 
 public class VectorCanvas extends JPanel{

@@ -1,17 +1,16 @@
 package vector_calc;
 
-import java.awt.EventQueue;
+
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import java.awt.Font;
 import java.awt.Color;
-import java.awt.Graphics;
 import javax.swing.JButton;
 import java.awt.event.*;
 import javax.swing.border.MatteBorder;
-import java.awt.*;
+
 
 public class VectorCalculatorUI extends JFrame { //From Andrew Hale
     private final JLabel calcArea = new JLabel("");
