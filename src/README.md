@@ -19,6 +19,7 @@ NOTE: ***please type in lengths in the two blue squares of the vector calculator
 # Collaboration:
 
 | Project Portion        | example of collaboration |
+| ------------- |:-------------:| 
 | VectorCalculator | [MS Paint diagrams shared between partners to effectively design project](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.k0bmoxvc0qzb) | 
 
 # OLD (Week of early November)
