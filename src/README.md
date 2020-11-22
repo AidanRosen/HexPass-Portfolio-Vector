@@ -23,7 +23,7 @@ NOTE: ***please type in lengths in the two blue squares of the vector calculator
 
 # Collaboration:
 
-Scrum masters method of self evaluation: Despite how many of us were independent of each other, please try and link some evidence like a photo of code collaboration, a detailed slack message, late facetime calls, etc. along with the impact of the link i.e "with this [evidence] I was supported to XYZ" - Aidan 
+Scrum masters method of self evaluation: Despite how many of us were independent of each other, please try and link some evidence like a photo of code collaboration, a detailed slack message, late facetime calls, etc. along with the impact of the link i.e "with this [evidence] I was supported to XYZ". I will need details on MVP awards before deciding on the best way to handle those. - Aidan 
 
 Self-grade: 
 |name and self grade |peer 1 name and grade given| peer 2 name and grade given | peer 3 name and grade given | peer 4 name and grade given | 
