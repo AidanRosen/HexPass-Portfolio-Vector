@@ -7,6 +7,10 @@ NOTE: ***please type in lengths in the two blue squares of the vector calculator
         
 1. Apologies for grainy quality. Upon pressing play, a blue menu window will open --> click VectorCalculator in the top right --> type in the two adjacent squares beneath the label --> press the large blue square to the lower right --> check the new window behind the current one (frames display behind current frames) --> see the vector created
 
+# Features
+| Project portion | neat features | 
+| ---------------  | :------------:|
+|Vector Calculator| When resizing the window of the drawn vector, [the colors change randomly](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/1aee9d1e48f390d460f701281b9224f5653af82e/src/vector_calc/VectorDraw.java#L43). Do this by grabbing the side of the JFrame window and resizing. Also, [the JFrame adjusts automatically to any size of the vector dynamically](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/1aee9d1e48f390d460f701281b9224f5653af82e/src/vector_calc/VectorCanvas.java#L22)
 
 # Critical thinking: 
 | Project Portion        | Code description hyperlinked           | Online resource hyperlinked if applicable  |
@@ -18,16 +22,12 @@ NOTE: ***please type in lengths in the two blue squares of the vector calculator
 
 # Collaboration:
 
-| Project Portion        | example of collaboration |
-| ------------- |:-------------:| 
-| VectorCalculator | [Aidan and Andrew Hale's MS Paint diagrams shared between partners to effectively design project](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.k0bmoxvc0qzb) | 
-
 Scrum masters method of self evaluation: Despite how many of us were independent of each other, please try and link some evidence like a photo of code collaboration, a detailed slack message, late facetime calls, etc. along with the impact of the link i.e "with this [evidence] I was supported to XYZ" - Aidan 
 
 Self-grade: 
 |name and self grade |peer 1 name and grade given| peer 2 name and grade given | peer 3 name and grade given | peer 4 name and grade given | 
 | ------------- |:-------------:| :-------------: | :-------------: | :-------------: |
-| Aidan [Diagrams in MS paint which helped clarify graphics math between all members](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.k0bmoxvc0qzb) and [overall slack communication clarification of general guidelines]() | 
+| Aidan [Diagrams in MS paint which helped clarify graphics math between all members](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.k0bmoxvc0qzb) and [overall slack communication clarification of general guidelines](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/slackEv.PNG) 25%| 
 
 # OLD (Week of early November)
 # How to run VectorCalculatorUI:
