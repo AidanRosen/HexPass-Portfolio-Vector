@@ -19,7 +19,7 @@ public class VectorCanvas extends JPanel{
         jF.setTitle("Drawn Vector");
         int width = (int) horizontal;
         int height = (int) vertical;
-        jF.setSize(200 + width,100 + height);
+        jF.setSize(200 + width,100 + height); //Doing 200 + width and 100 + height, where width and height are integers, allows for dynamic window building because width and height come from the data numbers
         jF.setVisible(true);
 
         //draws diagonal vector
