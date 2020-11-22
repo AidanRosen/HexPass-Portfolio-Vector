@@ -28,14 +28,19 @@ public class HeadDraw extends JPanel{
         trimag = this.magnitude + 50; //a buffer for the first point
         //Set corner x coordinate
         //Draw triangle
+        
+        //MUST do 50 + x change in order to translate the triangle to the final coordinate which MUST have a y value of 50
         g2d.rotate((this.direction * Math.PI) / 180, 50 + xChange, 50); //This is what rotates the triangle, using radians
         //Set the x: and y: parameter to the final coordinate at the tip of the vector!
+        
+        //Tricky to convert after changing window size to change bounds based on input
+        //xChange represents the horizontal component of the vector. Note that each position in the array lines up with the yValues. 
         int[] x  = {25 + xChange, 50 + xChange, 75 + xChange};
+        //These arrays follow the coordinates of the triangle as (lower left, upper middle, lower right) 
+        
+        //These values are hardcoded not because it was EZ but because it provided a single y value to which all vectors would point
         int [] y = {75, 25, 75};
-        //Where these y values are around the coordinate (x, 150)
-        //int[] x = {this.trimag, this.trimag + 20, this.trimag};
-        //Set y coordinate
-        //int[] y = {45, 58, 70}; //45 is the trimag, middle is is the "central" or top point,
+        
         Random rand = new Random();
         float r = rand.nextFloat();
         float z = rand.nextFloat();

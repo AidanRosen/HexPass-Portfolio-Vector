@@ -1,3 +1,22 @@
+# Week of 11/17
+# How to run VectorCalculatorUI:
+    
+![alt text](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/2020-11-22%2012-01-13.gif)
+NOTE: ***please type in lengths in the two blue squares of the vector calculator between 50~ and 650~. Any larger is too big and renders past the monitor, and any smaller is generally unoticeable.
+        Press the pink AC button in order to clear the calculator. You may open as many vector frames as you like by clicking the blue, square button in the lower right. 
+        
+1. Apologies for grainy quality. Upon pressing play, a blue menu window will open --> click VectorCalculator in the top right --> type in the two adjacent squares beneath the label --> press the large blue square to the lower right --> check the new window behind the current one (frames display behind current frames) --> see the vector created
+
+
+# Critical thinking: 
+| Project Portion        | Code description hyperlinked           | Online resource if applicable  |
+| ------------- |:-------------:| -----:|
+| Vector Calculator     | [Drawing triangles as polygons and doing geometric translations](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/0e31c41c766d907fe75bf340e8b4ad91d18f4cf0/src/vector_calc/HeadDraw.java#L36)  | [Refer to line with "g2d.rotate(Math.toRadians(45), 75, 75);"](http://www.java2s.com/Code/Java/2D-Graphics-GUI/RotationAboutCenter.htm) | 
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
+#OLD
 # How to run VectorCalculatorUI:
 
     1.Upon running the application, click at the top right of the menu on "VectorCalculator". A new window will open with the 
