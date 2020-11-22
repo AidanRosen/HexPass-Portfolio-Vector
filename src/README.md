@@ -20,7 +20,14 @@ NOTE: ***please type in lengths in the two blue squares of the vector calculator
 
 | Project Portion        | example of collaboration |
 | ------------- |:-------------:| 
-| VectorCalculator | [MS Paint diagrams shared between partners to effectively design project](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.k0bmoxvc0qzb) | 
+| VectorCalculator | [Aidan and Andrew Hale's MS Paint diagrams shared between partners to effectively design project](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.k0bmoxvc0qzb) | 
+
+Scrum masters method of self evaluation: Despite how many of us were independent of each other, please try and link some evidence like a photo of code collaboration, a detailed slack message, late facetime calls, etc. along with the impact of the link i.e "with this [evidence] I was supported to XYZ" - Aidan 
+
+Self-grade: 
+|name and self grade |peer 1 name and grade given| peer 2 name and grade given | peer 3 name and grade given | peer 4 name and grade given | 
+| ------------- |:-------------:| :-------------: | :-------------: | :-------------: |
+| Aidan [Diagrams in MS paint which helped clarify graphics math between all members](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.k0bmoxvc0qzb) and [overall slack communication clarification of general guidelines]() | 
 
 # OLD (Week of early November)
 # How to run VectorCalculatorUI:
