@@ -117,7 +117,7 @@ NOTES and future work:
 
 # How to run graphing calculator:
 
-    1. Choose a graphing option from the main menu. Type in the corresponding number of the type of function you would like to graph 
+    1. Choose a graphing option from the main menu. Type in the corresponding number of the type of function you would like to graph. 
     
     2. A new window will pop up that requires user input. If you fail to input a valid value (eg. you put in text instead of a number), the program will restart.
     (ex. If you were graphing and polynomial, and you wanted to graph 2x^3, you would enter in 2 and 3 in their corresponding boxes.
