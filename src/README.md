@@ -12,6 +12,8 @@ NOTE: ***please type in lengths in the two blue squares of the vector calculator
 | ---------------  | :------------:|
 |Vector Calculator| When resizing the window of the drawn vector, [the colors change randomly](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/1aee9d1e48f390d460f701281b9224f5653af82e/src/vector_calc/VectorDraw.java#L43). Do this by grabbing the side of the JFrame window and resizing. Also, [the JFrame adjusts automatically to any size of the vector dynamically](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/1aee9d1e48f390d460f701281b9224f5653af82e/src/vector_calc/VectorCanvas.java#L22). Vectors, an extension of stack, [are used to render objects](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/01896045b03db84a90dd989e097d44927798d3ed/src/vector_calc/VectorCanvas.java#L12)
 
+# Video
+
 
 # Critical thinking: 
 | Project Portion        | Code description hyperlinked           | Online resource hyperlinked if applicable  |
@@ -20,6 +22,9 @@ NOTE: ***please type in lengths in the two blue squares of the vector calculator
 | Vector Calculator    | [Use of fifth parameter necessary to define end y-value and make the horizontal component render horizontally](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/0e31c41c766d907fe75bf340e8b4ad91d18f4cf0/src/vector_calc/VectorCanvas.java#L31)  |  No resource used |
 | Vector Calculator | [Use of objects rendered all at once in a for loop to have a complete grasp of graphics rendering](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/86f7b88f514b693559aeeecb13ae7402fab164a9/src/vector_calc/VectorCanvas.java#L52)|  [Great Stack Overflow Explanation](https://stackoverflow.com/questions/22123266/drawing-multiple-jcomponents-to-a-frame)|
 | Vector Calculator | [MVC by passing in objects](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/d4969d3e931a5a505a3932660d1a1d7627dbaf74/src/vector_calc/VectorControl.java#L12) and [using getter and setter to connect between all those portions of MVC](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/d4969d3e931a5a505a3932660d1a1d7627dbaf74/src/vector_calc/VectorControl.java#L38) | [BlueJ photo of finalized connections](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/newMVC.PNG) | 
+| Vector Calculator | [Convetting degrees to radians](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/HeadDraw.java#L31) so the computer has the correct rotation based on the angle given | Refrenced math examples online |
+| Vector Calculator | [Cartesian coordinates for the triangle](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/HeadDraw.java#L38) and [Cartesian coordinates for lines](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/ResultantDraw.javaL#31) | [Drawing Triangles](https://stackoverflow.com/questions/29447994/how-do-i-draw-a-triangle-in-java) |
+| Vector Calculator | Making [dashed lines for the compoents](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorDraw.java#L34) | [Dashed lines in Java](http://www.java2s.com/Tutorials/Java/Graphics/Graphics_Settings/Use_dashed_stroke_to_draw_dashed_line_in_Java.htm) |
 
 # Collaboration:
 
