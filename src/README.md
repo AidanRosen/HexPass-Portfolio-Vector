@@ -24,7 +24,7 @@ but not parethesis or other functions such as square root, or trig functions.
 3.After imputting your function, click calculate and a screen with a graph will appear.
 Please wait here, the graph can take a small amount of time(around a minute at most) to generate.
 
-#How To Run Atharva/Alex Graphing Calculator:
+# How To Run Atharva/Alex Graphing Calculator:
 
 When you run the code, a menu will pop up asking for which type of equation you want to graph. Choose the appropriate equation.
 
