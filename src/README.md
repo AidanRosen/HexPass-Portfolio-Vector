@@ -9,6 +9,8 @@ NOTE: ***please type in lengths in the two blue squares of the vector calculator
 
 # How to run AJGraphingCalculator:
 
+[Operating it with a function](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/ezgif.com-gif-maker.gif)
+
 First open the graphing calculator from the main menu.
 You will see an empty text box, and two buttons. If you are trying to do 
 a normal calculation, click "normal" then input your calculation and click caclulate
