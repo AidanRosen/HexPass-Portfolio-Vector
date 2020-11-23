@@ -117,13 +117,14 @@ NOTES and future work:
 
 # How to run graphing calculator:
 
-    1. Choose a graphing option from the main menu. 
+    1. Choose a graphing option from the main menu. Type in the corresponding number of the type of function you would like to graph 
     
-    2. A new window will pop up that will need user input. If you fail to input a valid value (eg. you put in text instead of a number), the program will restart.
+    2. A new window will pop up that requires user input. If you fail to input a valid value (eg. you put in text instead of a number), the program will restart.
+    (ex. If you were graphing and polynomial, and you wanted to graph 2x^3, you would enter in 2 and 3 in their corresponding boxes.
     
     3. When you are finished inputting the equation, click "Graph" or follow the instructions to create the graph.
     
-    4. A graph of the function will be displayed in a new window. 
+    4. A graph of the function will be displayed in a new window (points without a line). 
     
     5. You may still go back to the second window to edit your inputs to create a new graph, or back to the first window to choose a different type of graph.
         *Smoothness refers to the horizontal distance between each coordinate that is shown in the graph. Smaller values mean a more connected line.
@@ -157,7 +158,7 @@ Here is the link to the line where the bug about having to press enter twice was
 
 Here is the link to the graphing calculator section of the portfolio project that I worked on: https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/tree/master/src/Graphing_Calculator
 
-Some of our gorals this week included completeing the UI, figuring out how to create a new JFrame window post-frame creation, and create new graph options.
+Some of our goals this week included completeing the UI, figuring out how to create a new JFrame window post-frame creation, and create new graph options.
 
     I completed the UI for the main menu of the graphing calculator.
     
