@@ -1,3 +1,4 @@
+
 # Week of 11/17
 # How to run VectorCalculatorUI:
     
@@ -8,8 +9,6 @@ NOTE: ***please type in lengths in the two blue squares of the vector calculator
 1. Apologies for grainy quality. Upon pressing play, a blue menu window will open --> click VectorCalculator in the top right --> type in the two adjacent squares beneath the label --> press the large blue square to the lower right --> check the new window behind the current one (frames display behind current frames) --> see the vector created
 
 # How to run AJGraphingCalculator:
-
-![Operating it with a function gif](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/ezgif.com-gif-maker.gif)
 
 First open the graphing calculator from the main menu.
 You will see an empty text box, and two buttons. If you are trying to do 
@@ -22,15 +21,30 @@ but not parethesis or other functions such as square root, or trig functions.
 
 2. Only use x as your variable, the calculator isn't set up to use both x and y, or other variables.
 
-3.After inputting your function, click calculate and a screen with a graph will appear.
+3.After imputting your function, click calculate and a screen with a graph will appear.
 Please wait here, the graph can take a small amount of time(around a minute at most) to generate.
 
+#How To Run Atharva/Alex Graphing Calculator:
+
+When you run the code, a menu will pop up asking for which type of equation you want to graph. Choose the appropriate equation.
+
+1. Enter all the terms you want. For example, if you want to graph 5sin θ - tan^2 θ, use Trig and enter 5 for the coefficient of term 1, 1 as the exponent and sin as the function. For term 2, enter -1 as the coefficient and 2 as the exponent.
+If you want to graph (x^3)/(-5x^0.5 + 0.1x + 7), use Rational and enter 1 for coefficient and 3 as exponent of term 1. Then, click the button to switch to the denominator. There, you enter -5 for coefficient and 0.5 for exponent of term 1; 0.1 coefficient and 1 exponent for term 2 and 7 coefficient 0 exponent for term 3.
+The user input will be saved whenever you press any button except for the trig functions.
+
+2. Enter the magnitudes and smoothness: magnitude is like the zoom level of each axis; eg. an X-Magnitude of 10 will zoom out the x-axis by 10 times; ie. each horizontal grid space will represent a value of 10 rather than 1. Conversely, a magnitude less than 1 represents zooming in. So if your x-mag is 5 and your y-mag is 0.5, you graph will appear 10 times thinner than normal.
+Smoothness is how connected the line is; a smoothness value of 1 means that points will only spawn every integer x-value; while smaller smoothnesses like 0.01 means that every 0.01 increase/decrease in x-value, a new y-value will be generated. This can cause multiple y-values for a single x-value or vice versa as the 2D array is limited to whole numbers (unless your magnitude is a decimal).
+
+3. Click "graph" and if your user input was correct, a new JFrame window will pop up with the graph. The original window will also display some information such as approximate intercepts. If you entered non-numerical or invalid inputs, the graph will not be generated and an error message will be generated at the bottom of the window, prompting you to try again.
+
+4. Every time you click "Graph", all existing user inputs stored in the arraylists are cleared.
 
 # Features
 | Project portion | neat features | 
 | ---------------  | :------------:|
-|Vector Calculator| When resizing the window of the drawn vector, [the colors change randomly](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/1aee9d1e48f390d460f701281b9224f5653af82e/src/vector_calc/VectorDraw.java#L43). Do this by grabbing the side of the JFrame window and resizing. Also, [the JFrame adjusts automatically to any size of the vector dynamically](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/1aee9d1e48f390d460f701281b9224f5653af82e/src/vector_calc/VectorCanvas.java#L22). Vectors, an extension of stack, [are used to render objects](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/01896045b03db84a90dd989e097d44927798d3ed/src/vector_calc/VectorCanvas.java#L12)
-| AJGraphing Calculator | The graph [draws itself](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/8d6026c75ea934249659a62290e8476e9f9b3ca1/src/AJGraphingCalculator/View/TheGraph.java#L55) by using recursion in paint
+| Vector Calculator | When resizing the window of the drawn vector, [the colors change randomly](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/1aee9d1e48f390d460f701281b9224f5653af82e/src/vector_calc/VectorDraw.java#L43). Do this by grabbing the side of the JFrame window and resizing. Also, [the JFrame adjusts automatically to any size of the vector dynamically](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/1aee9d1e48f390d460f701281b9224f5653af82e/src/vector_calc/VectorCanvas.java#L22). Vectors, an extension of stack, [are used to render objects](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/01896045b03db84a90dd989e097d44927798d3ed/src/vector_calc/VectorCanvas.java#L12)
+| AJGraphing Calculator | The graph draws itself by using recursion in paint
+| A&A Graphing Calculator | The graph supports as complicated equations as you like and has a unique method of user input. It also calculates approximate intercepts with a wrap text function.
 
 # Video
 [Video](https://drive.google.com/file/d/1phIvOBFDWPhBOPkg7f3a6cDzGLOLfMEJ/view?usp=sharing)
@@ -45,14 +59,15 @@ Please wait here, the graph can take a small amount of time(around a minute at m
 | Vector Calculator | [Convetting degrees to radians](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/HeadDraw.java#L33) so the computer has the correct rotation based on the angle given | Refrenced math examples online |
 | Vector Calculator | [Cartesian coordinates for the triangle](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/HeadDraw.java#L38) and [Cartesian coordinates for lines](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/ResultantDraw.java#L31) | [Drawing Triangles](https://stackoverflow.com/questions/29447994/how-do-i-draw-a-triangle-in-java) |
 | Vector Calculator | Making [dashed lines for the compoents](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorDraw.java#L34) | [Dashed lines in Java](http://www.java2s.com/Tutorials/Java/Graphics/Graphics_Settings/Use_dashed_stroke_to_draw_dashed_line_in_Java.htm) |
-| AJGraphing Calculator | Generating the graph through use of [iteration in paint](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/8d6026c75ea934249659a62290e8476e9f9b3ca1/src/AJGraphingCalculator/View/TheGraph.java#L55)
-| AJGraphing Calculator | Seperating the function and [putting the pieces into an object](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/8d6026c75ea934249659a62290e8476e9f9b3ca1/src/AJGraphingCalculator/Model/Seperator.java#L161)
-| AJGraphing Calculator | [handling the function](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/8d6026c75ea934249659a62290e8476e9f9b3ca1/src/AJGraphingCalculator/Model/Point.java#L32) by using the newly created object - through seperation- to generate values as a point on a graph
-| AJGraphing Calculator | using MVC for creating [UI parameters](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/98e69fd18d8d0adcdbb649820c658a51070ab714/src/AJGraphingCalculator/Control/GCcontrol.java#L98)
-
-![alt text](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/newMVC.PNG)
-
-The above is a photo of the Vector Calculator MVC in BlueJ in case the link was not pressed 
+| AJGraphing Calculator | Generating the graph
+| AJGraphing Calculator | Seperating the function
+| AJGraphing Calculator | handling the function
+| AJGraphing Calculator | using MVC for creating UI parameters
+| A&A Graphing Calculator | [using very specific algorithms to label axes based on magnitude and especially for trig labeling in radians]()
+| A&A Graphing Calculator | [Finding a way to calculate y-outputs for every x-input when there is a variable number of terms in the equation]()
+| A&A Graphing Calculator | [Converting Cartesian coordinates into 2D array[][] where the origin is at [51][51]]()
+| A&A Graphing Calculator | [Wrapping text around the edges of the window manually without any predefined functions]()
+| A&A Graphing Calculator | [Utilizing the quadratic formula to help find x-intercepts]()
 
 # Collaboration:
 
@@ -64,8 +79,8 @@ Self-grade:
 | Aidan [Diagrams in MS paint which helped clarify graphics math between all members](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.k0bmoxvc0qzb) and [overall slack communication clarification of general guidelines](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/slackEv.PNG) 25%| Andrew Hale: Aidan did a great job adding to the [journal](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#) and also would consitantly put in work over weekend or after school making the [vector componets](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorDraw.java) and many other parts to the calculator 5/5 | |Andrew Joseph: Aidan worked tirelessly on the Journal and made sure every meeting to get project updates, and make plans for the week [see weekly reflections](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit) 5/5|
 | Andrew Hale made [video]() and worked after school for multiple hours over zoom with Aidan 4/5 | Aidan Rosen: Andrew did work really hard on this project and he worked really well in a team environ. He asked really good questions, attended tutorial, and [helped lead others](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/hale.PNG)|Andrew Joseph: Andrew Hale spent a lot of time researching UI and other subjects for help getting the project done [see research](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit), he also worked heavily on the project with Aidian to complete the [UI](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/f2477af403665293e3ddc5d42b388678e7293f07/src/vector_calc/VectorDraw.java#L9) for the vector 5/5|
 | Andrew Joseph collaborated some with Aidan and Andrew Hale to understand UI. Shared plans, and planned, with Alex and Atharva on how to create a graphing calculator. 4/5 | Andrew Hale: Andrew helped us many time with draw and lines in java during zoom calls. I cannot cite a specific artifact because most of it was from talking during class 5/5 | Aidan Rosen: Andrew Joseph really improved his communication skills over the course of this project and, despite mostly being independent, worked really well when he needed to with others 5/5 | 
-| Alex | Andrew Hale: Alex did an amazing job. He always responded quickly to slack messages and never ceased to deviver. Alex was responsible for most of the creation of our [N@TM Section](http://ntm.nighthawkcoders.cf/period1/). 5/5 | Aidan Rosen: Alex is very prompt with his responses and is skilled in working with others. Despite working on separate ends of our project, he kept his part on track with Atharva. As to an artifact, refer to Andrew Hale's link 5/5| Andrew Joseph: Alex worked with me to create a comprehensive plan of what the graphing calculator was going to look like. Though we ended up doing seperate graphing calculators, this combined plan was at least partially integrated into both of our designs. [Plan](https://docs.google.com/presentation/d/1WK289219G0Ghy-Gx8RGlxnLjarwmvXKdLWXgoxYw74c/edit#slide=id.ga37d9b1d11_2_35) 5/5
-| Atharva | Andrew Hale: During zoom calls Atharva was always working to help. His project with Alex is super cool and his part in the [video](https://drive.google.com/file/d/1phIvOBFDWPhBOPkg7f3a6cDzGLOLfMEJ/view?usp=sharing) is well made. However, he is not the best at responding to slack messages. 4/5 | Aidan Rosen: Atharva does his work but involvement and contribution certainly leaves much to be desired. 4/5 | Andrew Joseph: Atharva worked well with communicating with the group to make sure that everyone was up to date on the projects and assignments 4/5.
+| Alex worked in and out of class with Atharva to work out the logic with the graphing calculator and testing it for different edge cases. We spent a lot of time on the calculator as there were many functions to create and there were a lot of bugs with things such as Null Pointer Exceptions, bad logic in labeling axes and graphs generating as y=0. Overall I felt that I contributed a lot to the project 5/5.| Andrew Hale: Alex did an amazing job. He always responded quickly to slack messages and never ceased to deviver. Alex was responsible for most of the creation of our [N@TM Section](http://ntm.nighthawkcoders.cf/period1/). 5/5 | Aidan Rosen: Alex is very prompt with his responses and is skilled in working with others. Despite working on separate ends of our project, he kept his part on track with Atharva. As to an artifact, refer to Andrew Hale's link 5/5|
+| Atharva | Andrew Hale: During zoom calls Atharva was always working to help. His project with Alex is super cool and his part in the [video](https://drive.google.com/file/d/1phIvOBFDWPhBOPkg7f3a6cDzGLOLfMEJ/view?usp=sharing) is well made. However, he is not the best at responding to slack messages. 4/5 | Aidan Rosen: Atharva does his work but involvement and contribution certainly leaves much to be desired. 4/5 | 
 
 # Creativity
 Please look to the [random color generation for the vector rendering which also rerenders a new color each time the window is resized](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/3fa57c093665a689139de163a7c5a0f05a661dae/src/vector_calc/VectorDraw.java#L43)
@@ -254,4 +269,3 @@ Alex-this week I worked on making a main menu for the graphing calculator part o
 Atharva- This week I worked on making the text based UI for the calculator and Alex guided me on how to do so, since I have little experience with coding. Next week, I plan to contribute more to our portfolio and communicate strongly both in and out of the classroom (by using Zoom when necessary).
 Individual block of code: Calculator2-MVC--Alex-Atharva/mvc-idea/src/view_control/CalculatorTextUI.java 
 Self-grade: 4/5 because I could have probably communicated better this week and checked slack on a regular basis; I would only check after long periods of time, which made communication slightly harder for my teammates. I will make sure to improve on this for next week.
-
