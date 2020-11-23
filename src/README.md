@@ -47,6 +47,11 @@ Please wait here, the graph can take a small amount of time(around a minute at m
 | AJGraphing Calculator | Seperating the function
 | AJGraphing Calculator | handling the function
 | AJGraphing Calculator | using MVC for creating UI parameters
+
+![alt text](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/newMVC.PNG)
+
+The above is a photo of the MVC in BlueJ in case the link was not pressed 
+
 # Collaboration:
 
 Scrum masters method of self evaluation: Despite how many of us were independent of each other, please try and link some evidence like a photo of code collaboration, a detailed slack message, late facetime calls, etc. along with the impact of the link i.e "with this [evidence] I was supported to XYZ". I will need details on MVP awards before deciding on the best way to handle those. - Aidan 
