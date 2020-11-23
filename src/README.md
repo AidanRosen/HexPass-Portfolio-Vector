@@ -50,7 +50,7 @@ Please wait here, the graph can take a small amount of time(around a minute at m
 
 ![alt text](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/newMVC.PNG)
 
-The above is a photo of the MVC in BlueJ in case the link was not pressed 
+The above is a photo of the Vector Calculator MVC in BlueJ in case the link was not pressed 
 
 # Collaboration:
 
