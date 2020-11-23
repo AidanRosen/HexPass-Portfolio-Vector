@@ -1,24 +1,21 @@
-//Andrew Joseph
-//NOTE: not currently functional, kinks will be worked out in the future, basic layout is here for now.
-package view_control;
+package AJGraphingCalculator.View;
 
-import src.ControlAJGC.GCcontrol;
-import src.ModelAJGC.Seperator;
 
+import AJGraphingCalculator.Control.GCcontrol;
 import javax.swing.*;
 import javax.swing.border.MatteBorder;
-import javax.swing.text.JTextComponent;
 import java.awt.*;
 import javax.swing.JButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.ArrayList;
 
 
-public class GraphingCalculatorAJ extends JFrame {
+public class GraphingCalculatorUI extends JFrame {
     public JTextField TBar = new JTextField();
     public static JTextField JBar = new JTextField();
     public static String input = new String();
+
+
 
     /*char[] x;
     char[] y;
@@ -26,17 +23,10 @@ public class GraphingCalculatorAJ extends JFrame {
     //char[][] point = new char[][] {double x, OPERATOR, double y};
 
     public static void main(String[] args) {
-        EventQueue.invokeLater(() -> {
-            try {
-                GraphingCalculatorAJ frame = new GraphingCalculatorAJ();
-                frame.setVisible(true);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        });
+        AJGraphingCalculator.Control.GCcontrol control = new AJGraphingCalculator.Control.GCcontrol();
     }
 
-    public GraphingCalculatorAJ() {
+    public GraphingCalculatorUI(GCcontrol control) {
 
 
         getContentPane().setBackground(new Color(175, 238, 238));
@@ -57,7 +47,32 @@ public class GraphingCalculatorAJ extends JFrame {
         JBar.setFont(new Font("Lucida Grande", Font.PLAIN, 32));
         JBar.setHorizontalAlignment(SwingConstants.RIGHT);
         JBar.setBounds(18, 166, 377, 67);
-        getContentPane().add(JBar);
+
+
+        JButton normalCalc = new JButton("Normal Calculation");
+        normalCalc.setBorder(new MatteBorder(4, 4, 4, 4, Color.WHITE));
+        normalCalc.setOpaque(true);
+        normalCalc.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                normalCalc.setBackground(Color.WHITE);
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                getContentPane().remove(normalCalc);
+                ;
+            }
+        });
+
+        normalCalc.addActionListener(d -> {
+
+            getContentPane().add(JBar);
+
+        });
+
+        normalCalc.setBounds(205, 86, 75, 40);
+        getContentPane().add(normalCalc);
 
 
         JButton GCalculate = new JButton("Calculate");
@@ -81,7 +96,11 @@ public class GraphingCalculatorAJ extends JFrame {
             input = TBar.getText();
 
             //   Convert(input);
-            new GCcontrol(input);
+            try {
+                control.getPoints(input);
+            } catch (InterruptedException interruptedException) {
+                interruptedException.printStackTrace();
+            }
         });
         GCalculate.setBounds(35, 86, 75, 40);
         getContentPane().add(GCalculate);
@@ -99,3 +118,4 @@ public class GraphingCalculatorAJ extends JFrame {
     */
 
 }
+

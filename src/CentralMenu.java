@@ -6,7 +6,7 @@ import passwordManager.HexMain;
 import vector_calc.VectorControl;
 
 
-import view_control.GraphingCalculatorAJ;
+import AJGraphingCalculator.View.GraphingCalculatorUI;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -33,8 +33,7 @@ public class CentralMenu extends JFrame { //created by Aidan <3 Rosen
     //action listener for A.Joseph's calculator code in the submenu of graphing calculator
     class AjCalcAction implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            GraphingCalculatorAJ frame = new GraphingCalculatorAJ();
-            frame.setVisible(true);
+            AJGraphingCalculator.Control.GCcontrol control = new AJGraphingCalculator.Control.GCcontrol();
 
         }
     }
