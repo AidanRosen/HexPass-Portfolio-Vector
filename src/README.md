@@ -60,7 +60,8 @@ Self-grade:
 | Alex | Andrew Hale: Alex did an amazing job. He always responded quickly to slack messages and never ceased to deviver. Alex was responsible for most of the creation of our [N@TM Section](http://ntm.nighthawkcoders.cf/period1/). 5/5 |
 | Atharva | Andrew Hale: During zoom calls Atharva was always working to help. His project with Alex is super cool and his part in the [video](https://drive.google.com/file/d/1phIvOBFDWPhBOPkg7f3a6cDzGLOLfMEJ/view?usp=sharing) is well made. However, he is not the best at responding to slack messages. 4/5 |
 
-
+# Creativity
+Please look to the [random color generation for the vector rendering which also rerenders a new color each time the window is resized](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/3fa57c093665a689139de163a7c5a0f05a661dae/src/vector_calc/VectorDraw.java#L43)
 
 
 # TODO's from journal: 
