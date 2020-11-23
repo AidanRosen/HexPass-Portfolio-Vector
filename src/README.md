@@ -20,7 +20,7 @@ but not parethesis or other functions such as square root, or trig functions.
 
 2. Only use x as your variable, the calculator isn't set up to use both x and y, or other variables.
 
-3.After imputting your function, click calculate and a screen with a graph will appear.
+3.After inputting your function, click calculate and a screen with a graph will appear.
 Please wait here, the graph can take a small amount of time(around a minute at most) to generate.
 
 
