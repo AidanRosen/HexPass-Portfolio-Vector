@@ -36,6 +36,7 @@ Self-grade:
 |name and self grade |peer 1 name and grade given| peer 2 name and grade given | peer 3 name and grade given | peer 4 name and grade given | 
 | ------------- |:-------------:| :-------------: | :-------------: | :-------------: |
 | Aidan [Diagrams in MS paint which helped clarify graphics math between all members](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.k0bmoxvc0qzb) and [overall slack communication clarification of general guidelines](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/slackEv.PNG) 25%| Andrew: Aidan did a great job adding to the [journal](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#) and also would consitantly put in work over weekend or after school making the [vector componets](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorDraw.java) and many other parts to the calculator |
+| Andrew made [video]() and worked after school for multiple hours over zoom with Aidan |
 
 # TODO's from journal: 
 [Weekly reflections and projections](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.cc009gc78h7o) and [stuff to add list](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.cfgj4ujjlrx0). Please open in new tab. Book mark opens towards bottom of the screen. Title is on left side of table. 
