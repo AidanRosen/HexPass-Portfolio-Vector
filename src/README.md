@@ -7,10 +7,29 @@ NOTE: ***please type in lengths in the two blue squares of the vector calculator
         
 1. Apologies for grainy quality. Upon pressing play, a blue menu window will open --> click VectorCalculator in the top right --> type in the two adjacent squares beneath the label --> press the large blue square to the lower right --> check the new window behind the current one (frames display behind current frames) --> see the vector created
 
+# How to run AJGraphingCalculator:
+
+First open the graphing calculator from the main menu.
+You will see an empty text box, and two buttons. If you are trying to do 
+a normal calculation, click "normal" then input your calculation and click caclulate
+
+If you are putting in a function, here are the rules for the calculator to avoid errors:
+
+1. try to use basic functions, the calculator can handle most simple operations,
+but not parethesis or other functions such as square root, or trig functions.
+
+2. Only use x as your variable, the calculator isn't set up to use both x and y, or other variables.
+
+3.After imputting your function, click calculate and a screen with a graph will appear.
+Please wait here, the graph can take a small amount of time(around a minute at most) to generate.
+
+
 # Features
 | Project portion | neat features | 
 | ---------------  | :------------:|
 |Vector Calculator| When resizing the window of the drawn vector, [the colors change randomly](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/1aee9d1e48f390d460f701281b9224f5653af82e/src/vector_calc/VectorDraw.java#L43). Do this by grabbing the side of the JFrame window and resizing. Also, [the JFrame adjusts automatically to any size of the vector dynamically](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/1aee9d1e48f390d460f701281b9224f5653af82e/src/vector_calc/VectorCanvas.java#L22). Vectors, an extension of stack, [are used to render objects](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/01896045b03db84a90dd989e097d44927798d3ed/src/vector_calc/VectorCanvas.java#L12)
+
+| AJGraphing Calculator | The graph draws itself by using recursion in paint
 
 # Video
 
@@ -25,7 +44,10 @@ NOTE: ***please type in lengths in the two blue squares of the vector calculator
 | Vector Calculator | [Convetting degrees to radians](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/HeadDraw.java#L33) so the computer has the correct rotation based on the angle given | Refrenced math examples online |
 | Vector Calculator | [Cartesian coordinates for the triangle](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/HeadDraw.java#L38) and [Cartesian coordinates for lines](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/ResultantDraw.java#L31) | [Drawing Triangles](https://stackoverflow.com/questions/29447994/how-do-i-draw-a-triangle-in-java) |
 | Vector Calculator | Making [dashed lines for the compoents](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorDraw.java#L34) | [Dashed lines in Java](http://www.java2s.com/Tutorials/Java/Graphics/Graphics_Settings/Use_dashed_stroke_to_draw_dashed_line_in_Java.htm) |
-
+| AJGraphing Calculator | Generating the graph
+| AJGraphing Calculator | Seperating the function
+| AJGraphing Calculator | handling the function
+| AJGraphing Calculator | using MVC for creating UI parameters
 # Collaboration:
 
 Scrum masters method of self evaluation: Despite how many of us were independent of each other, please try and link some evidence like a photo of code collaboration, a detailed slack message, late facetime calls, etc. along with the impact of the link i.e "with this [evidence] I was supported to XYZ". I will need details on MVP awards before deciding on the best way to handle those. - Aidan 
@@ -36,7 +58,11 @@ Self-grade:
 |name and self grade |peer 1 name and grade given| peer 2 name and grade given | peer 3 name and grade given | peer 4 name and grade given | 
 | ------------- |:-------------:| :-------------: | :-------------: | :-------------: |
 | Aidan [Diagrams in MS paint which helped clarify graphics math between all members](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.k0bmoxvc0qzb) and [overall slack communication clarification of general guidelines](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/slackEv.PNG) 25%| Andrew: Aidan did a great job adding to the [journal](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#) and also would consitantly put in work over weekend or after school making the [vector componets](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorDraw.java) and many other parts to the calculator 5/5 |
-| Andrew made [video]() and worked after school for multiple hours over zoom with Aidan 4/5 |
+| Andrew Hale made [video]() and worked after school for multiple hours over zoom with Aidan 4/5 |
+| Andrew Joseph collaborated some with Aidan and Andrew Hale to understand UI. Shared plans, and planned, with Alex and Atharva on how to create a graphing calculator. 4/5 | |
+
+
+
 
 # TODO's from journal: 
 [Weekly reflections and projections](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.cc009gc78h7o) and [stuff to add list](https://docs.google.com/document/d/1tpO2c3qkdsvuKmP1z2kaieqsh3c0ZXMnNC4YMyD1iuk/edit#bookmark=id.cfgj4ujjlrx0). Please open in new tab. Book mark opens towards bottom of the screen. Title is on left side of table. 
