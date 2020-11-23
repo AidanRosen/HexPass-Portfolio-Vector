@@ -63,11 +63,11 @@ Smoothness is how connected the line is; a smoothness value of 1 means that poin
 | AJGraphing Calculator | Seperating the function
 | AJGraphing Calculator | handling the function
 | AJGraphing Calculator | using MVC for creating UI parameters
-| A&A Graphing Calculator | [using very specific algorithms to label axes based on magnitude and especially for trig labeling in radians]()
-| A&A Graphing Calculator | [Finding a way to calculate y-outputs for every x-input when there is a variable number of terms in the equation]()
-| A&A Graphing Calculator | [Converting Cartesian coordinates into 2D array[][] where the origin is at [51][51]]()
-| A&A Graphing Calculator | [Wrapping text around the edges of the window manually without any predefined functions]()
-| A&A Graphing Calculator | [Utilizing the quadratic formula to help find x-intercepts]()
+| A&A Graphing Calculator | [using very specific algorithms to label axes based on magnitude and especially for trig labeling in radians](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/Graphing_Calculator/Model_Files/GraphTrig.java#L204)
+| A&A Graphing Calculator | [Finding a way to calculate y-outputs for every x-input when there is a variable number of terms in the equation](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/Graphing_Calculator/Model_Files/GraphPoly.java#L184)
+| A&A Graphing Calculator | [Converting Cartesian coordinates into 2D array where the origin is at 51, 51](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/Graphing_Calculator/Model_Files/GraphPoly.java#L189)
+| A&A Graphing Calculator | [Wrapping text around the edges of the window manually without any predefined functions](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/Graphing_Calculator/Model_Files/GraphPoly.java#L209)
+| A&A Graphing Calculator | [Checking if a String is numerical using exceptions](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/Graphing_Calculator/Model_Files/GraphPoly.java#L130) | [Online resource](https://www.baeldung.com/java-check-string-number) 
 
 # Collaboration:
 
