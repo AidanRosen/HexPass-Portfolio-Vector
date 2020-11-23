@@ -32,7 +32,7 @@ Please wait here, the graph can take a small amount of time(around a minute at m
 | AJGraphing Calculator | The graph draws itself by using recursion in paint
 
 # Video
-
+[Video](https://drive.google.com/file/d/1phIvOBFDWPhBOPkg7f3a6cDzGLOLfMEJ/view?usp=sharing)
 
 # Critical thinking: 
 | Project Portion        | Code description hyperlinked           | Online resource hyperlinked if applicable  |
