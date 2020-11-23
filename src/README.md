@@ -28,7 +28,7 @@ Please wait here, the graph can take a small amount of time(around a minute at m
 | Project portion | neat features | 
 | ---------------  | :------------:|
 |Vector Calculator| When resizing the window of the drawn vector, [the colors change randomly](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/1aee9d1e48f390d460f701281b9224f5653af82e/src/vector_calc/VectorDraw.java#L43). Do this by grabbing the side of the JFrame window and resizing. Also, [the JFrame adjusts automatically to any size of the vector dynamically](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/1aee9d1e48f390d460f701281b9224f5653af82e/src/vector_calc/VectorCanvas.java#L22). Vectors, an extension of stack, [are used to render objects](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/01896045b03db84a90dd989e097d44927798d3ed/src/vector_calc/VectorCanvas.java#L12)
-| AJGraphing Calculator | The graph draws itself by using recursion in paint
+| AJGraphing Calculator | The graph [draws itself](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/8d6026c75ea934249659a62290e8476e9f9b3ca1/src/AJGraphingCalculator/View/TheGraph.java#L55) by using recursion in paint
 
 # Video
 [Video](https://drive.google.com/file/d/1phIvOBFDWPhBOPkg7f3a6cDzGLOLfMEJ/view?usp=sharing)
@@ -43,10 +43,10 @@ Please wait here, the graph can take a small amount of time(around a minute at m
 | Vector Calculator | [Convetting degrees to radians](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/HeadDraw.java#L33) so the computer has the correct rotation based on the angle given | Refrenced math examples online |
 | Vector Calculator | [Cartesian coordinates for the triangle](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/HeadDraw.java#L38) and [Cartesian coordinates for lines](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/ResultantDraw.java#L31) | [Drawing Triangles](https://stackoverflow.com/questions/29447994/how-do-i-draw-a-triangle-in-java) |
 | Vector Calculator | Making [dashed lines for the compoents](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/vector_calc/VectorDraw.java#L34) | [Dashed lines in Java](http://www.java2s.com/Tutorials/Java/Graphics/Graphics_Settings/Use_dashed_stroke_to_draw_dashed_line_in_Java.htm) |
-| AJGraphing Calculator | Generating the graph
-| AJGraphing Calculator | Seperating the function
-| AJGraphing Calculator | handling the function
-| AJGraphing Calculator | using MVC for creating UI parameters
+| AJGraphing Calculator | Generating the graph through use of [iteration in paint](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/8d6026c75ea934249659a62290e8476e9f9b3ca1/src/AJGraphingCalculator/View/TheGraph.java#L55)
+| AJGraphing Calculator | Seperating the function and [putting the pieces into an object](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/8d6026c75ea934249659a62290e8476e9f9b3ca1/src/AJGraphingCalculator/Model/Seperator.java#L161)
+| AJGraphing Calculator | [handling the function](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/8d6026c75ea934249659a62290e8476e9f9b3ca1/src/AJGraphingCalculator/Model/Point.java#L32) by using the newly created object - through seperation- to generate values as a point on a graph
+| AJGraphing Calculator | using MVC for creating [UI parameters](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/98e69fd18d8d0adcdbb649820c658a51070ab714/src/AJGraphingCalculator/Control/GCcontrol.java#L98)
 
 ![alt text](https://github.com/AidanRosen/HexPass-Portfolio-Vector-IDEA/blob/master/src/newMVC.PNG)
 
